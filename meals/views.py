@@ -9,4 +9,4 @@ class RecipeList(generic.ListView):
     model = Recipe
     queryset = Recipe.objects.filter(status=1).order_by('-date_added')
     template_name = 'recipes.html'
-    paginate_by = 6
+    
