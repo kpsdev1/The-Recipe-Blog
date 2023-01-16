@@ -13,7 +13,7 @@
                 <div class="card-body text-center">
                     <h5 class="card-title">{{ recipe.title }}</h5>
                     <p class="card-text"> Posted by {{ recipe.author }}</p>
-                    <a href="{% url 'recipe_details' recipe.slug %}" class="btn btn-primary">Read more</a>
+                    <a href="{% url 'recipe_details' recipe.slug %}" class="btn btn-green">Read more</a>
                 </div>
             </div>
         </div>
@@ -23,7 +23,7 @@
 </div>
 
 {% if is_paginated %}
-    <div class="pagination justify-content-center mt-2">
+    <div class="pagination justify-content-center mt-4 mb-4">
         {% if page_obj.has_previous %}
         <a href="?page={{ page_obj.previous_page_number }}" class="btn btn-dark me-2">< BACK</a>
         {% endif %}
