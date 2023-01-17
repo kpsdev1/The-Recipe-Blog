@@ -70,22 +70,25 @@ h4 {
     text-decoration: underline;
 }
 
-/* login/logout and registeration css */
+/* login page */
+.img-position-relative {
+    position: relative;
+}
+
 .login-head {
     background-color: #f1f2f2;
-    
 }
 
 .login-head > h1 {
     color: #8fac42;
-    margin-top: 8%;
+    margin-top: 10%;
     padding-top: 50px;
 }
 
 .login-head > p {
     font-size: 1.4em;
     padding-bottom: 50px;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
 }
 
 .login-head a {
@@ -96,7 +99,9 @@ h4 {
 
 .login-img {
     position: absolute;
-    top: 10px;
+    bottom: 0;
+    left: 15px;
+    
 }
 
 .login {
@@ -107,11 +112,43 @@ h4 {
     border: 1px solid #8fac42;
 }
 
+/* Registeration page */
+.signup {
+    margin-bottom: 15%;
+}
+
+.signup-img {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+}
+.signup label {
+    width: 140px;
+    display: inline-block;
+
+}
+
+.signup input {
+    border: 1px solid #8fac42;
+}
+
 .btn-green{
     background-color: #8fac42;
     color: white;
 }
 
+/* Logout page */
+.logout {
+    padding: 50px 0 50px 0;
+    margin-top: 10%;
+    margin-bottom: 30%;
+    background-color: #f1f2f2;
+}
+
+.logout h1 {
+    font-weight: 900;
+    color: #8fac42;
+}
 
 /* footer style  */
 .footer-line {
@@ -147,19 +184,18 @@ h4 {
 }
 
 /* max widths */
-@media screen and (max-width: 1200px) {
-    .login-img {
-        top: -15px;
-        left: 20px;
-    }
-}
 
-@media screen and (max-width: 1000px) {
+
+
+@media screen and (max-width: 800px) {
     .login-img {
         display: none;
     }
-}
-@media screen and (max-width: 800px) {
+
+    .signup-img {
+        display: none;
+    }
+    
     .social-media {
         width: 40%;
     }
