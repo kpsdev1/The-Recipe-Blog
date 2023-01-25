@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load crispy_forms_tags %}
 {% block content %}
 
-<div class="container">
+
     <div class="row">
         <div class="col-12">
             <div class="card border-0 mt-4">
@@ -22,5 +23,48 @@
             </div> 
         </div>
     </div> 
-</div>
+
+    <div class="row">
+        <div class="col-12 mb-2 pb-4">
+            <div class="card comment-card">
+                <h2 class="text-center">Comment Section</h2>
+                <div class="card-body">
+                {% for comment in comments %}
+                <div class="comment-body md-4">
+                    <p>{{ comment.info }}</p>
+                    <p class="mb-2"> Written by <span class="wrote-on">{{ comment.name }}</span> on <span class="wrote-on">{{ comment.date_added }}</span></p>
+                    
+                    {% if user.is_authenticated and user.username == comment.name %}
+                    <a href="{% url 'delete_comment' comment.id %}" class="delete-comment">X <span>Delete</span></a>
+                    {% endif %}   
+                </div>   
+                  
+                {% endfor %}
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% if user.is_authenticated %}
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card post_comment">
+                <div class="card-body">
+                    <h5>Post a Comment:</h5>
+                    <p>By: {{ user.username }}</p>
+                    <form method="post">
+                        {{ comment_form | crispy }}
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-green mt-2">Post</button>
+                    </form>
+                    {% endif %}
+                </div>       
+            </div>
+        </div>
+    </div>
+
 {% endblock %}
