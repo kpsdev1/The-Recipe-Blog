@@ -69,4 +69,20 @@ class RecipeDetails(View):
 def delete_comment(request, comment_id):
     comment = Comment.objects.get(pk=comment_id)
     comment.delete()
-    return HttpResponseRedirect (reverse('recipe_details', args=[comment.recipe.slug]))
+    return HttpResponseRedirect(reverse('recipe_details', args=[comment.recipe.slug]))
+
+
+def edit_comment(request, comment_id):
+    comment = Comment.objects.get(pk=comment_id)
+    form = CommentForm(request.POST or None, instance=comment)
+    if form.is_valid():
+        form.save()
+        return HttpResponseRedirect(reverse('recipe_details', args=[comment.recipe.slug]))
+    return render(
+        request,
+        "edit_comment.html",
+        {
+            "comment": comment,
+            "form": form
+        },
+    )

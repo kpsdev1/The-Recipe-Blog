@@ -92,6 +92,7 @@ h4 {
     text-decoration: none;
     color: #9e0606;
     font-weight: bold;
+    
     position: absolute;
     top: 0;
     right: 10px;
@@ -109,6 +110,12 @@ h4 {
     font-weight:100;
 }
 
+.edit-comment {
+    position: absolute;
+    top: 6px;
+    right: 40px;
+    font-size: .8em;
+}
 
 
 

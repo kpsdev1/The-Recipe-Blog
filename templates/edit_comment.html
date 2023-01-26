@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<h3 class="text-center mt-4">Edit comment that you posted on {{ comment.date_added }}</h3>
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card post_comment">
+            <div class="card-body">
+                <form method="post">
+                    {{ form | crispy }}
+                    <br>
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-green mt-2">Update Comment</button>
+                    
+                </form>
+            </div>       
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
