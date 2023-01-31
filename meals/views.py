@@ -86,3 +86,17 @@ def edit_comment(request, comment_id):
             "form": form
         },
     )
+
+
+class RecipeLike(View):
+
+    def post(self, request, slug):
+        recipe = get_object_or_404(Recipe, slug=slug)
+
+        if recipe.likes.filter(id=request.user.id).exists():
+            recipe.likes.remove(request.user)
+        
+        else:
+            recipe.likes.add(request.user)
+        
+        return HttpResponseRedirect(reverse('recipe_details', args=[slug]))
