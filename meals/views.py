@@ -1,8 +1,10 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
+from django.contrib import messages
 from django.views import generic, View
 from .models import Recipe, Comment
-from .forms import CommentForm
+from .forms import CommentForm, RecipeForm
 from django.http import HttpResponseRedirect
+from django.utils.text import slugify
 
 def home(request):
     return render(request, 'index.html')
@@ -50,6 +52,7 @@ class RecipeDetails(View):
             comment = comment_form.save(commit=False)
             comment.recipe = recipe
             comment.save()
+            messages.success(request, 'Your Comment has been Posted')
         else:
             comment_form = CommentForm()
 
@@ -65,6 +68,22 @@ class RecipeDetails(View):
         )
 
 
+def add(request):
+    form = RecipeForm()
+    if request.method == 'POST':
+        form = RecipeForm(request.POST)
+        if form.is_valid():
+            event = form.save(commit=False)
+            event.author = request.user
+            event.slug = slugify(event.title)
+            event.save()
+    
+    context = {'form': form}
+    return render(request, 'add_recipe.html', context)
+
+
+
+
 
 def delete_comment(request, comment_id):
     comment = Comment.objects.get(pk=comment_id)
@@ -72,11 +91,13 @@ def delete_comment(request, comment_id):
     return HttpResponseRedirect(reverse('recipe_details', args=[comment.recipe.slug]))
 
 
+
 def edit_comment(request, comment_id):
     comment = Comment.objects.get(pk=comment_id)
     form = CommentForm(request.POST or None, instance=comment)
     if form.is_valid():
         form.save()
+        messages.success(request, 'Comment was updated successful')
         return HttpResponseRedirect(reverse('recipe_details', args=[comment.recipe.slug]))
     return render(
         request,
@@ -95,7 +116,7 @@ class RecipeLike(View):
 
         if recipe.likes.filter(id=request.user.id).exists():
             recipe.likes.remove(request.user)
-        
+
         else:
             recipe.likes.add(request.user)
         

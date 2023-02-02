@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+{% load cloudinary %}
+
+<div class="container mt-4 text-center">
+    {% if user.is_authenticated %}
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form | crispy }}
+        <input type="submit"> 
+    </form>
+    {% endif %}
+</div>
+
+{% endblock %}

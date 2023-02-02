@@ -4,6 +4,8 @@
 
 <h1 class="text-center mt-4"><u>Recipe List</u></h1>
 
+<a href="{% url 'add_recipe' %}" class="btn btn-green">Add Recipe</a>
+
 <div class="container">
     <div class="row">
         {% for recipe in recipe_list %}
