@@ -68,23 +68,31 @@ class RecipeDetails(View):
         )
 
 
-def add(request):
+def create_recipe(request):
     form = RecipeForm()
     if request.method == 'POST':
-        form = RecipeForm(request.POST)
+        form = RecipeForm(request.POST, request.FILES)
         if form.is_valid():
             event = form.save(commit=False)
             event.author = request.user
             event.slug = slugify(event.title)
+            event.status = 1
             event.save()
+            messages.success(request, 'Your recipe was added successfully')
+            return redirect('recipes')
     
     context = {'form': form}
     return render(request, 'add_recipe.html', context)
 
 
+def delete_recipe(request, recipe_id):
+    comment = Recipe.objects.get(pk=recipe_id)
+    comment.delete()
+    messages.success(request, 'Recipe was Deleted successfully')
+    return redirect('recipes')
 
 
-
+# Comment views 
 def delete_comment(request, comment_id):
     comment = Comment.objects.get(pk=comment_id)
     comment.delete()

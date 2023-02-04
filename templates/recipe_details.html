@@ -5,11 +5,13 @@
 
 
 
-
     <div class="row">
         <div class="col-12">
             <div class="card border-0 mt-4">
                 <img src="{{ recipe.image.url }}" class="detail-img" alt="Image from selected recipe">
+                {% if user.is_authenticated and user == recipe.author %}
+                    <a href="{% url 'delete_recipe' recipe.id %}" class="delete-recipe">X<span>Delete Recipe</span></a>
+                {% endif %}
                 <div class="card-body">
                     <h3 class="recipe-detail-heading text-center">{{ recipe.title }}</h5>
                     <p class="card-text text-center author"> Posted by {{ recipe.author }}</p>
