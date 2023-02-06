@@ -86,10 +86,27 @@ def create_recipe(request):
 
 
 def delete_recipe(request, recipe_id):
-    comment = Recipe.objects.get(pk=recipe_id)
-    comment.delete()
+    recipe = Recipe.objects.get(pk=recipe_id)
+    recipe.delete()
     messages.success(request, 'Recipe was Deleted successfully')
     return redirect('recipes')
+
+
+def edit_recipe(request, recipe_id):
+    recipe = Recipe.objects.get(pk=recipe_id)
+    form = RecipeForm(request.POST or None, request.FILES or None, instance=recipe)
+    if form.is_valid():
+        form.save()
+        messages.success(request, 'Recipe was updated successful')
+        return HttpResponseRedirect(reverse('recipe_details', args=[recipe.slug]))
+    return render(
+        request,
+        "edit_recipe.html",
+        {
+            "recipe": recipe,
+            "form": form
+        },
+    )
 
 
 # Comment views 

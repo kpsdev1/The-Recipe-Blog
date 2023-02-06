@@ -94,6 +94,12 @@ h4 {
     left: 15px;
     font-weight:100;
 }
+
+.edit-recipe {
+    position: absolute;
+    top: -4px;
+    right: 30px;
+}
     
 
 

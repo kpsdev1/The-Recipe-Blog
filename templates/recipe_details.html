@@ -11,6 +11,7 @@
                 <img src="{{ recipe.image.url }}" class="detail-img" alt="Image from selected recipe">
                 {% if user.is_authenticated and user == recipe.author %}
                     <a href="{% url 'delete_recipe' recipe.id %}" class="delete-recipe">X<span>Delete Recipe</span></a>
+                    <a href="{% url 'edit_recipe' recipe.id %}" class=""><i class="fa fa-pencil edit-recipe"></i></a>
                 {% endif %}
                 <div class="card-body">
                     <h3 class="recipe-detail-heading text-center">{{ recipe.title }}</h5>
