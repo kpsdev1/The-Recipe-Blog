@@ -32,6 +32,7 @@
                 <a class="nav-item nav-link" href="{% url 'home' %}">Home</a>
                 <a class="nav-item nav-link" href="{% url 'recipes' %}">Recipes</a>
                 {% if user.is_authenticated %}
+                <a class="nav-item nav-link me-4" href="{% url 'wines' %}">Wines</a>
                 <a class="nav-item nav-link me-4" href="{% url 'account_logout' %}">Logout</a>
                 {% else %}
                 <a class="nav-item nav-link" href="{% url 'account_signup' %}">Register</a>
