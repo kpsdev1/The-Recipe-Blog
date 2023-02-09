@@ -4,11 +4,10 @@
 
 <h1 class="text-center mt-4"><u>Recipe List</u></h1>
 
-{% if user.is_authenticated %}
-    <a href="{% url 'add_recipe' %}" class="btn btn-green">Add Recipe</a>
-{% endif %}
-
 <div class="container">
+    {% if user.is_authenticated %}
+        <a href="{% url 'add_recipe' %}" class="btn btn-green">Add Recipe</a>
+    {% endif %}
     <div class="row">
         {% for recipe in recipe_list %}
         <div class="col-md-6 col-lg-4">
@@ -22,8 +21,7 @@
             </div>
         </div>
         {% endfor %}
-    </div>
-    
+    </div> 
 </div>
 
 {% if is_paginated %}
