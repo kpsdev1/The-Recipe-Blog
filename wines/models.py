@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from django.urls import reverse
 
 WINE_CHOICES = (
     ('choose', 'Choose'),
@@ -19,7 +20,7 @@ class Wine(models.Model):
     country_of_origin = models.CharField(max_length=50, blank=False)
     date_added = models.DateTimeField(auto_now_add=True)
     posted_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name="wines")
-    approved = models.BooleanField(default=False)
+    
 
 
     class Meta:
@@ -27,3 +28,6 @@ class Wine(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return reverse('wine_details', args=[str(self.id)])

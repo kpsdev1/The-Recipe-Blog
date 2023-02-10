@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <!-- <img src="{{ wine.image.url }}" alt="Image of a wine added by a user"> -->
+            
+            <div class="text-center">
+                    <h5">{{ wine.name }}</h5>
+                    <p class="card-text"> Wine type: {{ wine.type }}</p>
+                    <p class="card-text"> Strength: {{ wine.alcohol_precentage}}%</p>
+                    <p class="card-text"> Country Of Origin: {{ wine.country_of_origin }}</p>        
+        </div>
+    </div>
+</div>
+{% endblock %}
