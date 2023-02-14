@@ -5,17 +5,19 @@
 
 <h1 class="text-center">Add A Wine Below</h1>
 
-<div class="container mt-4 create-recipe">
-    <div class="">
-        {% if user.is_authenticated %}
-        <form method="post" enctype="multipart/form-data">
-            {% csrf_token %}
-            {{ form | crispy }}
-            
-            <button type="submit" class="btn btn-green mt-4">Submit</button>
-            <a href="{% url 'wines' %} "class="btn btn-warning mt-4">Cancel</a>
-        </form>
-        {% endif %}
+<div class="container mt-4 create-form wine-form">
+    <div class="row mt-4">
+        <div class="col-sm-12 col-lg-6 offset-lg-3 mt-4">
+            {% if user.is_authenticated %}
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form | crispy }}
+                
+                <button type="submit" class="btn btn-green mt-4">Submit</button>
+                <a href="{% url 'wines' %} "class="btn btn-warning mt-4">Cancel</a>
+            </form>
+            {% endif %}
+        </div>
     </div>
 </div>
 

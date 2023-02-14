@@ -164,6 +164,16 @@ h4 {
 }
 
 
+/* -----------wine form---------------- */
+.wine-form {
+    margin-bottom: 20%;
+}
+
+.wine-form select {
+    width: 50%;
+    margin: 0 auto;
+    border-color: #8fac42;;
+}
 
 
 /* login page */
@@ -246,28 +256,24 @@ h4 {
     color: #8fac42;
 }
 
-/* Add recipe section */
+/*------Forms for adding recipes, wine and editing wine------ */
 
-.create-recipe {
+.create-form {
     text-align: center;
     
 }
 
-.create-recipe input, .create-recipe textarea{
+.create-form input, .create-form textarea{
     border: 1px solid #8fac42;
     
 }
 
-.create-recipe input {
-    width: 40%;
+.create-form input {
+    width: 80%;
     margin: 0 auto;
 }
-.create-recipe textarea {
-    width: 60%;
-}
 
-
-.create-recipe label {
+.create-form label {
     margin-top: 2%;
     font-weight: 900;
 }
@@ -287,6 +293,7 @@ h4 {
 
 
 /* footer style  */
+
 .footer-line {
     width: 40%;
     margin: 2% auto;
@@ -359,9 +366,25 @@ h4 {
 
 
 @media screen and (max-width: 800px) {
-    /* recipe detail page */
-   
+    
+    
+    .create-form input {
+        width: 100%;
+        margin: 0;
+    }
 
+    .create-form label {
+        margin-top: 2%;
+        font-weight: 700;
+        text-align: left;
+    }
+  
+    
+
+   .center-medium {
+        text-align: center;
+   }
+    
     /* login and signup */
     .login-img {
         display: none;
