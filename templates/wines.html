@@ -14,7 +14,7 @@
                 <img src="{{ wine.image.url }}" class="card-img-top" alt="Image of a wine added by a user">
                 <div class="card-body text-center">
                     <h5 class="card-title">{{ wine.name }}</h5>
-                    <p class="card-text mb-4"> Posted by: {{ wine.posted.by }}</p>
+                    <p class="card-text mb-4"> Posted by: {{ wine.posted_by }}</p>
                     <a href="{% url 'wine_details' wine.pk %}" class="btn btn-green">View</a>
                     
                 </div>

@@ -4,6 +4,17 @@
     font-family: Athiti, sans-serif;
 }
 
+/* ----this was added to keep footer at the bottom credit 30secondsofcode */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+  }
+/* ---------------------------------------------------------------- */
 
 .logo {
     font-family: Allerta Stencil, sans-serif;
@@ -16,6 +27,9 @@
     
 }
 
+.active {
+    font-weight: 600;
+}
 
 .box {
     height: 300px;
@@ -83,17 +97,6 @@ h4 {
     margin-top: 0;
 }
 
-.delete-recipe span {
-    display: none;
-}
-
-.delete-recipe:hover span {
-    display: inline;
-    position: absolute;
-    top: 0px;
-    left: 15px;
-    font-weight:100;
-}
 
 .edit-recipe {
     position: absolute;
@@ -163,17 +166,26 @@ h4 {
     height: 15vh;
 }
 
+/* -----------Wine detail section----------- */
 
-/* -----------wine form---------------- */
-.wine-form {
-    margin-bottom: 20%;
-}
+
+/* -----------wine form for adding and editing wine---------------- */
+
 
 .wine-form select {
     width: 50%;
     margin: 0 auto;
     border-color: #8fac42;;
 }
+
+/* -----------Delete modal for wines----------- */
+
+.modal-delete {
+    background-color: #dedede;
+    font-weight: bold;
+}
+
+
 
 
 /* login page */
@@ -295,7 +307,7 @@ h4 {
 /* footer style  */
 
 .footer-line {
-    width: 40%;
+    width: 30%;
     margin: 2% auto;
 }
 .social-media {
@@ -320,7 +332,6 @@ h4 {
     font-size: 150%;
     color: #8fac42;
 }
-
 
 
 
@@ -379,11 +390,26 @@ h4 {
         text-align: left;
     }
   
-    
-
    .center-medium {
         text-align: center;
    }
+
+
+   /* recipe details */
+   .delete-recipe {
+        font-size: larger;
+        font-weight: bold;
+        top: -7px;
+        right: 5px;
+    }
+
+
+    .edit-recipe {
+        position: absolute;
+        top: 0;
+        right: 35px;
+    }
+    
     
     /* login and signup */
     .login-img {
@@ -428,6 +454,13 @@ h4 {
     .recipe-detail-card {
         width: 95%;
         margin: 0;
+    }
+   
+    /* recipe delete modal */
+    .recipe-delete-modal {
+        width: 90%;
+        margin-right: 10%;
+        
     }
 
     /* comment section  */
@@ -482,8 +515,6 @@ h4 {
 
     .detail-img {
         width: 100%;
-        
-        
     }
 
 }

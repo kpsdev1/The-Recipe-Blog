@@ -4,16 +4,20 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-12">
-            <!-- <img src="{{ wine.image.url }}" alt="Image of a wine added by a user"> -->
-            
-            <div class="text-center">
-                    <h5">{{ wine.name }}</h5>
+        <div class="col-md-12 col-lg-6 offset-lg-3">
+            <div class="card mt-5 wine-card-sm">
+              <div class="text-center">
+                <img src="{{ wine.image.url }}" class="card-img-top mb-4" alt="Image of a wine added by a user">
+                    <h4>{{ wine.name }}</h4>
+                    <p class="card-text mb-4"> Posted by: {{ wine.posted_by }}</p>
                     <p class="card-text"> Wine type: {{ wine.type }}</p>
                     <p class="card-text"> Strength: {{ wine.alcohol_precentage}}%</p>
-                    <p class="card-text"> Country Of Origin: {{ wine.country_of_origin }}</p>  
-                    <a href="{% url 'edit_wine' wine.pk %}" class="btn btn-green" >Edit</a>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Delete</button>      
+                    <p class="card-text mb-4"> Country Of Origin: {{ wine.country_of_origin }}</p>
+                    {% if user.is_authenticated and user == wine.posted_by %}  
+                    <a href="{% url 'edit_wine' wine.pk %}" class="btn btn-info mb-4" >Edit</a>
+                    <button type="button" class="btn btn-danger mb-4" data-toggle="modal" data-target="#deleteModal">Delete</button>      
+                    {% endif %}
+                </div>
             </div>
          </div>
     </div>
@@ -21,22 +25,25 @@
 
 
   
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- This Modal is from bootstrapmodals page-->
+  <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
+      <div class="modal-content modal-delete">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Delete Wine</h5>
+          <h5 class="modal-title" id="deleteModalLabel">Delete Wine</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <p>Are you sure you want to Delete this Wine</p>
+          <p>Are you sure you want to delete {{ wine.name }}?</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-        
+          <form action="{% url 'delete_wine' pk=wine.pk %}" method="POST">
+            {% csrf_token %}
+            <button class="btn btn-danger" value="Confirm">Yes</button>
+          </form>
         </div>
       </div>
     </div>

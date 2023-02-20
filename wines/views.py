@@ -40,7 +40,7 @@ class WineCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
         return super().form_valid(form)
 
 
-class WineUpdateView(UpdateView):
+class WineUpdateView(LoginRequiredMixin, UpdateView):
     """ 
     View to edit a wine
     """
@@ -48,3 +48,11 @@ class WineUpdateView(UpdateView):
     template_name = 'edit_wine.html'
     form_class = WineForm
 
+
+class WineDeleteView(LoginRequiredMixin, DeleteView):
+    """ 
+    View to edit a wine
+    """
+    model = Wine
+    success_url = reverse_lazy('wines')
+    template_name = 'wines.html'
