@@ -16,7 +16,7 @@
                 <div class="card-body text-center">
                     <h5 class="card-title">{{ recipe.title }}</h5>
                     <p class="card-text"> Posted by {{ recipe.author }}</p>
-                    <a href="{% url 'recipe_details' recipe.slug %}" class="btn btn-green">Read more</a>
+                    <a href="{% url 'recipe_details' recipe.slug %}" class="btn btn-green {% if not user.is_authenticated %} disabled  btn-secondary {% endif %}">Read more</a>
                 </div>
             </div>
         </div>
