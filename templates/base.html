@@ -8,6 +8,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,15 +17,16 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>The Recipe Blog</title>
 </head>
+
 <body>
-<!-- Alert messages at the top of the screen -->
+  <!-- Alert messages at the top of the screen -->
   {% if messages %}
     <div class="container-lg g-0">
-      <div id="message-alert" class="alert alert-warning">
-        {% for message in messages %}
-        {{ message }}
-        {% endfor %}
-      </div>
+        <div id="message-alert" class="alert alert-warning">
+          {% for message in messages %}
+          {{ message }}
+          {% endfor %}
+        </div>
     </div>
   {% endif %}
 
@@ -39,45 +41,44 @@
                 <a class="nav-item nav-link {% if request.path == home %} active {% endif %}" href="{% url 'home' %}">Home</a>
                 <a class="nav-item nav-link {% if request.path == recipes %} active {% endif %}" href="{% url 'recipes' %}">Recipes</a>
                 {% if user.is_authenticated %}
-                <a class="nav-item nav-link me-4 {% if request.path == wines %} active {% endif %}" href="{% url 'wines' %}">Wines</a>
-                <a class="nav-item nav-link me-4 {% if request.path == logout %} active {% endif %}" href="{% url 'account_logout' %}">Logout</a>
+                  <a class="nav-item nav-link me-4 {% if request.path == wines %} active {% endif %}" href="{% url 'wines' %}">Wines</a>
+                  <a class="nav-item nav-link me-4 {% if request.path == logout %} active {% endif %}" href="{% url 'account_logout' %}">Logout</a>
                 {% else %}
-                <a class="nav-item nav-link {% if request.path == register %} active {% endif %}" href="{% url 'account_signup' %}">Register</a>
-                <a class="nav-item nav-link me-4 {% if request.path == login %} active {% endif %}" href="{% url 'account_login' %}">Login</a>
+                  <a class="nav-item nav-link {% if request.path == register %} active {% endif %}" href="{% url 'account_signup' %}">Register</a>
+                  <a class="nav-item nav-link me-4 {% if request.path == login %} active {% endif %}" href="{% url 'account_login' %}">Login</a>
                 {% endif %}
               </div>
             </div>
-          </nav>
+        </nav>
     </header>
     <div class="container-lg g-0 wrapper">
-        {% block content %}
+          {% block content %}
 
-        {% endblock %}
-        
+          {% endblock %}
     </div>
-   
+    
     <footer>
       <hr class="footer-line container-lg">
       <ul class="social-media">
-          <li>
-              <a href="https://twitter.com" target="_blank" rel="noopener"
-                  aria-label="Visit our twitter page (opens in a new tab)"><i class="fa-brands fa-twitter"></i></a>
-          </li>
-          <li>
-              <a href="https://facebook.com" target="_blank" rel="noopener"
-                  aria-label="Visit our facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
-          </li>
-          <li>
-              <a href="https://youtube.com" target="_blank" rel="noopener"
-                  aria-label="Visit our youtube page (opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
-          </li>
-          <li>
-              <a href="https://instagram.com" target="_blank" rel="noopener"
-                  aria-label="Visit our instagram page (opens in a new tab)"><i
-                      class="fa-brands fa-instagram"></i></a>
-          </li>
-      </ul>
-   </footer>
+            <li>
+                <a href="https://twitter.com" target="_blank" rel="noopener"
+                    aria-label="Visit our twitter page (opens in a new tab)"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="https://facebook.com" target="_blank" rel="noopener"
+                    aria-label="Visit our facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://youtube.com" target="_blank" rel="noopener"
+                    aria-label="Visit our youtube page (opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li>
+                <a href="https://instagram.com" target="_blank" rel="noopener"
+                    aria-label="Visit our instagram page (opens in a new tab)"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </li>
+        </ul>
+    </footer>
   
   
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -87,5 +88,5 @@
     <script src="https://kit.fontawesome.com/0cb8d0cade.js" crossorigin="anonymous"></script>
     <script src="{% static 'js/script.js' %}"></script>
 
-  </body>
+</body>
 </html>
