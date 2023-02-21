@@ -34,7 +34,7 @@ footer {
 }
 
 .background1 {
-    background-image: url("./images/home.jpg");
+    background-image: url("../images/home.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
