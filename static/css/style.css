@@ -34,7 +34,7 @@ footer {
 }
 
 .background1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('./images/home.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/images/home.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
