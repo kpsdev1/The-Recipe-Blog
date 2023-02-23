@@ -33,7 +33,7 @@ footer {
     font-weight: 600;
 }
 
-.background1 {
+.home-background {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('https://res.cloudinary.com/dudp7r482/image/upload/v1677092172/home_wp1kai.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,7 +52,7 @@ footer {
     top: 21%;
     text-align: center;
     text-shadow: 0.5px 0.5px #111111;
-    color: #5f8751;
+    color: #8fac42;
     font-family: satisfy, sans-serif;;
     font-size: 3em;
     
