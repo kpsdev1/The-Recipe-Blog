@@ -55,6 +55,7 @@ functionality of the site.
 - Below the heading there is a text box that explains what the site is about, the text box has a white border around it and the backgound is abit darker, the text is then in white shich really makes it stand out.
 
 ![HomePage](readme-docs/images/home.jpg) 
+- - -  
 
 ### Recipes Page
 - At the top of the recipes page, right below the Nav bar there is a H1 heading that says **Recipes List** which is underlined and centered.
@@ -68,4 +69,19 @@ functionality of the site.
 
 
 **Recipes page when user is logged in** 
-![Recipes](readme-docs/images/recipes-logged-in.jpg)    
+![Recipes](readme-docs/images/recipes-logged-in.jpg)
+  
+[Back to the top](#the-recipe-blog)
+- - -    
+  
+### Recipe Details
+- At the top of the of the redipe details page in the center is the photo of the recipe.
+- If the user who nposted the recipe is looking at it then delete and edit button are at the top right.
+- Below the image and center d is the title of the recipe and the autor who has posted it.
+- Below the image to the left you have a like button that shows how many people liked the recipe, the heart will be empty outline and 0 next to it if no one hads liked it, and it will be filled red if liked.
+- Underneath the like button you have **Description**, **Ingredients** and **Cooking Instructions** fields.
+- Then there is the comment section below this, which has a H2 heading that says **Comment Section**, The comment section has a border around it, and comments have a light grey backgound colour, which makes them stand out. The authors name and date is displayed below the comment and there is an edit and delete button in the top right of the comment which is only visible to the author of the comment.
+- Below this is the **Post a Comment** section which has has border around it. Inside is the **info** text area where the user can enter their comment ans then below that is the green **Post** button.
+
+![Recipe details](readme-docs/images/recipe-details1.jpg)
+![Recipe Details](readme-docs/images/recipe-details2.jpg)
