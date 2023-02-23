@@ -84,4 +84,7 @@ functionality of the site.
 - Below this is the **Post a Comment** section which has has border around it. Inside is the **info** text area where the user can enter their comment ans then below that is the green **Post** button.
 
 ![Recipe details](readme-docs/images/recipe-details1.jpg)
+
+**I had to breadk this into 2 screenshots** 
+
 ![Recipe Details](readme-docs/images/recipe-details2.jpg)
