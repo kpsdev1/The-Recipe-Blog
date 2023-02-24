@@ -173,12 +173,27 @@ functionality of the site.
 [Back to the top](#the-recipe-blog)
 - - -
 
-### Register
-- The **Register** page has grey banner running accross the page and it has an image at the right hand side of the banner. In the center of the Banner is a heading saying **Sign Up** and
+### Register Page
+- The **Register** page has grey banner running accross the page and it has an image at the right hand side of the banner. In the center of the Banner is a green heading saying **Sign Up** and
 beneath that it tells the user if they already have an account they can click here to go to the login page.
 - Benath this is a centered from so that user can enter a **Username**, a **Email** which is optional and then enter the **password** which they will have to confirm by entering it again.
 - At the bottom of the from there is a green **Signup** button.
-- When the user fills out the from and clicks the **Signup** button then they will be logged in and redirected to the home page.
+- When the user fills out the form and clicks the **Signup** button then they will be logged in and redirected to the home page.
+- The register nav link is not visible when a user is already signed in.
 
 ![Register](readme-docs/images/register.jpg)
+- - -
+
+### Login Page
+- The **login** page is similar to the register page as it has a grey banner running accross the page and it has an image at the left hand side of the banner. In the center of the Banner is a green heading saying **Sign In** and underneath  it tells the user if they dont have an account they can click here to go to the register page.
+- Below the banner and center is the login form with the **Username** and **Password**  fields and a **Remember Me** checkbox. At the bottom of the form is a green ** SIGN IN** Button and once clicked it signs the user in and redirect them to the home page.
+- The login Nav link changes to a logout link when the user is signed in.
+
+![Signin](readme-docs/images/signin.jpg)
+- - -
+
+### The Logout page
+- The **logout** page follows the same style as the regiser and login pages with a grey banner accross the screen, It has a green heading that says **Sign out** and as the user if they are sure they want to sign out. Below this is a green **Sign Out** button which when clicked signs the user out.
+
+![Signout](readme-docs/images/signout.jpg)
 - - -
