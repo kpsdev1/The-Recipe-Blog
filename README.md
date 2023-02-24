@@ -197,3 +197,17 @@ beneath that it tells the user if they already have an account they can click he
 
 ![Signout](readme-docs/images/signout.jpg)
 - - -
+
+## Technologies Used
+
+### Languages, Tools and Frameworks
+- [Balsamiq](https://en.wikipedia.org/wiki/Balsamiq) was used to create the wireframes.
+- [HTML](https://en.wikipedia.org/wiki/HTML) was used for the mark up.
+- [CSS](https://en.wikipedia.org/wiki/CSS)  was used to style the site.
+- [Django](https://www.djangoproject.com/) was the framework that was used.
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language)), django is a python framework.
+- [Bootstrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)) was used to style the site.
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) was used for interactiveness.
+- [Gitpod](https://www.gitpod.io/about) was used to create this site and then push everything to github.
+- [Visual Studio Code](https://en.wikipedia.org/wiki/Visual_Studio_Code) was used to work on the site locally.
+- [Heroku](https://en.wikipedia.org/wiki/Heroku) is used to host this site.
