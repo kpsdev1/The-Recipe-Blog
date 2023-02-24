@@ -75,26 +75,26 @@ functionality of the site.
 - - -    
   
 ### Recipe Details
-- At the top of the of the redipe details page in the center is the photo of the recipe.
-- If the user who nposted the recipe is looking at it then delete and edit button are at the top right.
-- Below the image and center d is the title of the recipe and the autor who has posted it.
-- Below the image to the left you have a like button that shows how many people liked the recipe, the heart will be empty outline and 0 next to it if no one hads liked it, and it will be filled red if liked.
+- At the top of the of the recipe details page in the center is the photo of the recipe.
+- If the user who posted the recipe is looking at it, then the delete and edit buttons are at the top right.
+- Below the image and center is the title of the recipe and the author who has posted it.
+- Below the image to the left you have a like button that shows how many people liked the recipe, the heart will be an empty outline with a 0 next to it if no one has liked it, and it will be filled red if liked.
 - Underneath the like button you have **Description**, **Ingredients** and **Cooking Instructions** fields.
 - Then there is the comment section below this, which has a H2 heading that says **Comment Section**, The comment section has a border around it, and comments have a light grey backgound colour, which makes them stand out. The authors name and date is displayed below the comment and there is an edit and delete button in the top right of the comment which is only visible to the author of the comment.
-- Below this is the **Post a Comment** section which has has border around it. Inside is the **info** text area where the user can enter their comment ans then below that is the green **Post** button.
+- Below this is the **Post a Comment** section which has has border around it. Inside is the **info** text area where the user can enter their comment and then below that is the green **Post** button.
 
 ![Recipe details](readme-docs/images/recipe-details.png)
 - - -   
 
 ### Add Recipe Page
 - When a user clicks the **Add Recipe** button on the recipes page they are taken to the **Add Recipe page** where they are greeted with a form to enter their recipe.
-- At the top there is a H1 heading that says **Add Your Recipe below** with the form fields beneath it. I kept the form big and simple, so that it is for the user to use and everything is centered.
-- For the **Description**, **Ingredients** and **Cooking Instructions** fields the summernote widget is used so that a user can easily format their text and style it whatevr way they wish.
-- Below this is a **Submit** button that is in green and once clicked the recipe will be submitted and the user returns to the recipe page where they will see their recipe as first in the list.
+- At the top there is a H1 heading that says **Add Your Recipe below** with the form fields beneath it. I kept the form big and simple, so that it is easy for the user to use and everything is centered.
+- For the **Description**, **Ingredients** and **Cooking Instructions** fields the summernote widget is used so that a user can easily format their text and style it whatever way they wish.
+- Below this is a **Submit** button that is in green and once clicked the recipe will be submitted and the user returned to the recipe page where they will see their recipe as the first in the list.
 - Beside the **Submit** button there is a orange **Cancel** button that once clicked will bring the user back to the recipe page.
   
 ![Add-recipe](readme-docs/images/add-recipe.png)
----
+- - -
 
 ### Edit Recipe Page
 - The **Edit Recipe page** is accessed when the user clicks the edit recipe pencil icon on the recipe details page.
@@ -105,19 +105,23 @@ functionality of the site.
 - - -
 
 ### Delete Recipe
-- When a user clicks on the delete icon on the recipe details page a boot strap modal pops up in the center and ask the user to confirm.
-- The modal is a square box with a grey background, with a heading that says **Delete Recipe** and  text center asks **Are you sure you want to delete the recipe**.
-- At the bottom right of the modal box is a red **Yes** button to confim if they want to delete it. The button is red becuase red is associated with danger and if clicked the recipe will be gone. Once click the recipe will be deleted and the user witll be returned to the recipes page.
-- Beside the **Yes** button there is a **Cancel** button, that when clicked will make the modal disappear, there is also an **x** in the Top right of the modal that will also get right of it.
+- When a user clicks on the delete icon on the recipe details page a bootstrap modal pops up in the center and ask the user to confirm.
+- The modal is a square box with a grey background, with a heading that says **Delete Recipe** and text centered asks **Are you sure you want to delete the recipe**.
+- At the bottom right of the modal box is a red **Yes** button to confim if they want to delete it. The button is red because red is associated with danger and if clicked the recipe will be gone. Once clicked the recipe will be deleted and the user will be returned to the recipes page.
+- Beside the **Yes** button there is a **Cancel** button, that when clicked will make the modal disappear, there is also an **x** in the top right of the modal that will also get right of it.
 - If the user clicks anywhere else on the screen the modal will also disapear.
 - Please note that only the user who created the recipe can delete it from here.
 
 ![Delete Recipe](readme-docs/images/delete-recipe.jpg)
+- - -
 
 ### Edit comment Page
 - When the edit comment icon is clicked at the right of the comment, the user is brought to the edit comment page.
 - This is just a bigger version of the **Post a Comment** section on the recipe details page, but it has the comment message you posted in the **info** box for you to edit.
-- Above this ther is a heading tells you to **Edit the comment you posted on the certain date and time**
+- Above this there is a heading that tells you to **Edit the comment you posted on the certain date and time**
 - There is an green **update** button below the text box that when clciked will update the comment bring you back to the recipe details page where you can view your updated comment.
 - Beside this is an amber **Cancel** button that returns the user to recipe details page, if they decide not to update the comment.
 - Please note that only the user who created the comment can edit it from here.
+
+![edit comment](readme-docs/images/edit-comment.jpg)
+- - -
