@@ -87,7 +87,7 @@ functionality of the site.
 - - -   
 
 ### Add Recipe Page
-- When a user clicks the **Add Recipe** button on the recipes page they are taken to the **Add Recipe page** where they are greeted with a form to enter their recipe.
+- When a user clicks the **Add Recipe** button on the **recipes** page they are taken to the **Add Recipe page** where they are greeted with a form to enter their recipe.
 - At the top there is a H1 heading that says **Add Your Recipe below** with the form fields beneath it. I kept the form big and simple, so that it is easy for the user to use and everything is centered.
 - For the **Description**, **Ingredients** and **Cooking Instructions** fields the summernote widget is used so that a user can easily format their text and style it whatever way they wish.
 - Below this is a **Submit** button that is in green and once clicked the recipe will be submitted and the user returned to the recipe page where they will see their recipe as the first in the list.
@@ -102,6 +102,8 @@ functionality of the site.
 - Please note that only the user who created the recipe can edit it from here.
 
 ![Edit Recipe](readme-docs/images/edit-recipe.png)
+
+[Back to the top](#the-recipe-blog)
 - - -
 
 ### Delete Recipe
@@ -119,9 +121,40 @@ functionality of the site.
 - When the edit comment icon is clicked at the right of the comment, the user is brought to the edit comment page.
 - This is just a bigger version of the **Post a Comment** section on the recipe details page, but it has the comment message you posted in the **info** box for you to edit.
 - Above this there is a heading that tells you to **Edit the comment you posted on the certain date and time**
-- There is an green **update** button below the text box that when clciked will update the comment bring you back to the recipe details page where you can view your updated comment.
+- There is an green **update** button below the text box that when clciked will update the comment and bring you back to the recipe details page where you can view your updated comment.
 - Beside this is an amber **Cancel** button that returns the user to recipe details page, if they decide not to update the comment.
 - Please note that only the user who created the comment can edit it from here.
 
 ![edit comment](readme-docs/images/edit-comment.jpg)
+- - -
+
+### Wines
+
+
+- - -
+
+### Wine Details page
+- When a user clicks the green **View** button on one of the Wine cards from the **Wines** page they are brought to the wine details page.
+- Here the user will see a larger bootstrap card that is centered, this displays the image larger and all of the wine details. There is a border around the card which is standard with bootstrap cards.
+- At the bottom of the wine card there is a **Edit** and **Delete** Button.
+
+![Wine details](readme-docs/images/wine-details.jpg)
+- - -
+
+### Add Wine Page
+- When a user clicks the **Add Wine** button on the **Wines** page they are taken to the **Add Wine page** where they are greeted with a form to enter the details of the wine.
+- At the top is a H1 heading that says for the user to **Add a Wine Below**
+- below the heading is a simple form that is centered on the page and ask the user to fillin int he following fields enter the **Name** of the wine, upload an **Image**, choose a type of **wine** from the drop down, add the **Alcohol percentage** and finally add the **Country of Orgin** for the wine.
+- Below this is a green **Submit** button that when clicked adds the wine and brings the user back to the Wines page, where they can see the wine they added as the first in the list.
+- Beside the **Submit** button is an amber **Cancel** button, that will bring the user back to the **Wines** page if they decide that they do not want to post a wine.
+
+![add wine](readme-docs/images/add-wine.jpg)
+- - -
+
+### Edit Wine Page
+- The **Edit Wine page** is accessed when the user clicks the **Edit** button on the **Wine details** page.
+- This exactly the same as the **Add Wine** page only for it has the details that the user already enter filled into the form fields so that the user can edit them and the heading also says **Edit Wine**
+- Please note that only the user who created the wine can edit it from here.
+
+![edit wine](readme-docs/images/edit-wine.jpg)
 - - -
