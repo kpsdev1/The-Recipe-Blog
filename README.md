@@ -83,8 +83,15 @@ functionality of the site.
 - Then there is the comment section below this, which has a H2 heading that says **Comment Section**, The comment section has a border around it, and comments have a light grey backgound colour, which makes them stand out. The authors name and date is displayed below the comment and there is an edit and delete button in the top right of the comment which is only visible to the author of the comment.
 - Below this is the **Post a Comment** section which has has border around it. Inside is the **info** text area where the user can enter their comment ans then below that is the green **Post** button.
 
-![Recipe details](readme-docs/images/recipe-details1.jpg)
+![Recipe details](readme-docs/images/recipe-details.png)
+- - -   
 
-**I had to breadk this into 2 screenshots** 
-
-![Recipe Details](readme-docs/images/recipe-details2.jpg)
+### Add Recipe Page
+- When a user clicks the **Add Recipe** button on the recipes page they are taken to the **Add Recipe page** where they are greeted with a form to enter their recipe.
+- At the top there is a H1 heading that says **Add Your Recipe below** with the form fields beneath it.
+- For the **Description**, **Ingredients** and **Cooking Instructions** fields the summernote widget is used so that a user can easily format their text.
+- Below this is a **Submit** button that is in green and once clicked the recipe will be submitted and the user returns to the recipe page where they will see their recipe as first in the list.
+- Beside the **Submit** button there is a orange **Cancel** button that once clicked will bring the user back to the recipe page.
+  
+![Add-recipe](readme-docs/images/add-recipe.png)
+---
