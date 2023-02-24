@@ -112,7 +112,7 @@ functionality of the site.
 - If the user clicks anywhere else on the screen the modal will also disapear.
 - Please note that only the user who created the recipe can delete it from here.
 
-![Delete Recipe](readme-docs/images/delete-recipe.png)
+![Delete Recipe](readme-docs/images/delete-recipe.jpg)
 
 ### Edit comment Page
 - When the edit comment icon is clicked at the right of the comment, the user is brought to the edit comment page.
