@@ -99,6 +99,7 @@ functionality of the site.
 ### Edit Recipe Page
 - The **Edit Recipe page** is accessed when the user clicks the edit recipe pencil icon on the recipe details page.
 - This is practically the same as the **Add Recipe page**. The only difference is that the form is already filled in with the details you entered before so that you can change them, and also the heading says **Edit Your Recipe**
+- After editing the Recipe a success message will be displayed at the top of the screen.
 - Please note that only the user who created the recipe can edit it from here.
 
 ![Edit Recipe](readme-docs/images/edit-recipe.png)
@@ -113,6 +114,7 @@ functionality of the site.
 - Beside the **Yes** button there is a **Cancel** button, that when clicked will make the modal disappear, there is also an **x** in the top right of the modal that will also get right of it.
 - If the user clicks anywhere else on the screen the modal will also disapear.
 - Please note that only the user who created the recipe can delete it from here.
+- After deleting the Recipe a success message will be displayed at the top of the screen.
 
 ![Delete Recipe](readme-docs/images/delete-recipe.jpg)
 - - -
@@ -124,6 +126,7 @@ functionality of the site.
 - There is an green **update** button below the text box that when clciked will update the comment and bring you back to the recipe details page where you can view your updated comment.
 - Beside this is an amber **Cancel** button that returns the user to recipe details page, if they decide not to update the comment.
 - Please note that only the user who created the comment can edit it from here.
+- After editing the Comment a success message will be displayed at the top of the screen.
 
 ![edit comment](readme-docs/images/edit-comment.jpg)
 - - -
@@ -155,6 +158,27 @@ functionality of the site.
 - The **Edit Wine page** is accessed when the user clicks the **Edit** button on the **Wine details** page.
 - This exactly the same as the **Add Wine** page only for it has the details that the user already enter filled into the form fields so that the user can edit them and the heading also says **Edit Wine**
 - Please note that only the user who created the wine can edit it from here.
+- After editing the Wine a success message will be displayed at the top of the screen.
 
 ![edit wine](readme-docs/images/edit-wine.jpg)
+- - -
+
+### Delete Wine
+- When a user clicks on the **Delete** button on the **Wine details** page a bootstrap modal pops up in the center and ask the user to confirm.
+- This Modal is practically the same as the Delete recipe modal.
+- After deleting the Wine a success message will be displayed at the top of the screen.
+
+![Delete wine](readme-docs/images/delete-wine.jpg)
+
+[Back to the top](#the-recipe-blog)
+- - -
+
+### Register
+- The **Register** page has grey banner running accross the page and it has an image at the right hand side of the banner. In the center of the Banner is a heading saying **Sign Up** and
+beneath that it tells the user if they already have an account they can click here to go to the login page.
+- Benath this is a centered from so that user can enter a **Username**, a **Email** which is optional and then enter the **password** which they will have to confirm by entering it again.
+- At the bottom of the from there is a green **Signup** button.
+- When the user fills out the from and clicks the **Signup** button then they will be logged in and redirected to the home page.
+
+![Register](readme-docs/images/register.jpg)
 - - -
