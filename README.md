@@ -21,9 +21,9 @@ functionality of the site.
     * [Delete Recipe Page](#delete-recipe)
     * [Edit Comment Page](#edit-comment-page)
     * [Wines](#wines)
-    * [Wines Detail Page](#wines-detail-page)#
-    * [Add Wines Page](#add-wines-page)
-    * [Edit Wines Page](#edit-wines-page)
+    * [Wine Detail Page](#wine-detail-page)
+    * [Add Wine Page](#add-wine-page)
+    * [Edit Wine Page](#edit-wine-page)
     * [Delete Wine](#delete-wine)
     * [Register Page](#register-page)
     * [Login Page](#login-page)
