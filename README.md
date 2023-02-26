@@ -199,8 +199,6 @@ beneath that it tells the user if they already have an account they can click he
 - - -
 
 ## Technologies Used
-
-### Languages, Tools and Frameworks
 - [Balsamiq](https://en.wikipedia.org/wiki/Balsamiq) was used to create the wireframes.
 - [HTML](https://en.wikipedia.org/wiki/HTML) was used for the mark up.
 - [CSS](https://en.wikipedia.org/wiki/CSS)  was used to style the site.
@@ -209,5 +207,25 @@ beneath that it tells the user if they already have an account they can click he
 - [Bootstrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)) was used to style the site.
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript) was used for interactiveness.
 - [Gitpod](https://www.gitpod.io/about) was used to create this site and then push everything to github.
-- [Visual Studio Code](https://en.wikipedia.org/wiki/Visual_Studio_Code) was used to work on the site locally.
 - [Heroku](https://en.wikipedia.org/wiki/Heroku) is used to host this site.
+- [Github](https://en.wikipedia.org/wiki/GitHub) was used for store the code.
+- [Git](https://en.wikipedia.org/wiki/Git) was used for version control.
+- [Cloudinary](https://cloudinary.com/) was used to store the images.
+- [PosgreSQL](https://en.wikipedia.org/wiki/PostgreSQL) was used as the database.
+- - -
+
+## Credits
+- Django For begginers book, I wish i had read this book before i started the project as it would have made everything so much easier, I had most of the project done before i started to read this book but after reading the first 8 chapters i decided to go back and add the **Wines** app to the project to test out what I had learned, this made me understand how to create simple class based views. The first 4 chapters can be read [here](https://djangoforbeginners.com/introduction/).
+- Code Institutes **I Think I Can Blog** walk through was a great help, this really thought me the fundamentals of creating a project with django, I would have been totally lost without this.
+- Emmanuel Okiches youtube video for how to add an **active** class using djangos template lanuage. The video can be found [here](https://www.youtube.com/watch?v=e_D_hoJ1kAc).
+- Denis Ivy's Django Framework(3.0) crash course on youtube was a great help for me in creating this project, this is a briliant resourse if you are learning Django. The vidoes can be found [here](https://www.youtube.com/watch?v=xv_bwpA_aEA&list=PL-51WBLyFTg2vW-_6XBoUpE7vpmoR3ztO).
+- The Net Ninja's Django Tutorial on youtube is another great resource that helped me understand the framework, The youtube video series starts [here](https://www.youtube.com/watch?v=n-FTlQ7Djqc&list=PL4cUxeGkcC9ib4HsrXEYpQnTOTZE1x0uc&index=1).
+- [Stack Overflow](https://stackoverflow.com/) is probably a developers best resource, this provide me with many answers to my questions.
+- [W3schools](https://www.w3schools.com/) this was great for looking up forgotten **CSS** syntax and how to use it.
+
+
+## Acknowledgements:
+- I would like to thank my mentor Adegbenga Adeye for all help throughout the project and for being really positive about the course.
+- I would like to thank Code Institutes Slack Communtiy as this helped me so much when I got stuck on part of my project and also with course challenges.
+- I would also like to thank our chort facilitators Kenan Wright and Kasia Bogucka, for answering any course related questions I asked and for porviding us with a weekly study schedule.
+
