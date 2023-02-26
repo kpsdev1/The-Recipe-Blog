@@ -11,6 +11,11 @@ functionality of the site.
 ## Table Of Contents:
 1. [UX Design](#ux-design)
 2. [Features](#features)
+  * [Navigation](#Navigation-bar)
+  * [footer](#footer)
+  * [Home Page](#home-page)
+
+
 3. [Future Features](#future-features)
 4. [Technologies Used](#technologies-used)
 5. [Testing](#testing)
