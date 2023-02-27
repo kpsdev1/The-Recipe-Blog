@@ -45,7 +45,7 @@ Below are the wireframes for the site that I created using balsamiq.
 <details>
 
  <summary>Home Page</summary>
-![Home page](readme-docs/wireframes/wireframe-home.jpg)
+![colour scheme](readme-docs/wireframes/wireframe-home.jpg)  
 </details>
 
 ### Agile Methodology
