@@ -39,6 +39,28 @@ functionality of the site.
 
 ## UX Design:
 
+### Wireframes
+Below are the wireframes for the site that I created using balsamiq.
+<details>
+ <summary>Home Page</summary>
+![Home page](readme-docs/wireframes/wireframe-home.jpg)
+</details>
+
+### Agile Methodology
+Github projects was used to track the development of this website using the agile approach, the project can be found [here](#https://github.com/users/kpsdev1/projects/5).
+
+### Typography
+- The font that was used for the logo was **Allerta Stencil**.
+- The font that was used for the heading on the home page was **Satisfy**.
+- **Athiti** font was used for the body.
+
+
+### Colour Scheme
+For this site i decide to keep the main color scheme very simple, with the text either being white or black and the navbar backgound and icons being green.
+I did also have one some button like the delete and cancel button red and orange, but the main color scheme of the site was black, white and green.
+  
+![colour scheme](readme-docs/images/color-scheme.jpg)  
+
 
 ## Features:
 
