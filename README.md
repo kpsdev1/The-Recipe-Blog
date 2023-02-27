@@ -234,11 +234,11 @@ beneath that it tells the user if they already have an account they can click he
 ## Deployment
 This website is deployed to Heroku from a github repository, the following steps were taken:
 
-[ElephantSQL](https://www.elephantsql.com/)
+
 #### Creating Respository on Github
 - First make sure you are signed into [Github](https://github.com/) and go to code institutes template, which can be found [here](https://github.com/Code-Institute-Org/gitpod-full-template).
 - Then click on **use this template** and select **Create a new repository** from the drop down. Enter the name for the repository and click **Create repository from template**.
-- Once the repository was created, click the green **gitpod** button to create a workspace in gitpod so that I could wirte the code for the site.
+- Once the repository was created, click the green **gitpod** button to create a workspace in gitpod so that I could write the code for the site.
 
 #### Creating app on Heroku
 - After creating the repository on github, head over to [heroku](https://www.heroku.com/) and sign in.
@@ -246,21 +246,21 @@ This website is deployed to Heroku from a github repository, the following steps
 - Give the app a name(this must be unique) and select a **region** I chose **Europe** as I am in Europe, Then click **Create app**.
 
 #### Create a database On ElephantSQL
-- Log in the [ElephantSQL](https://www.elephantsql.com/) and click **Create new Instance**
-- Enter a **Name** and keep the plan as **Tiny Turtle Free**, then **tags** field can be left blank, Select a regions closest to you, I selected **EU-West-1(Ireland)** as im in Ireland. Then click **Review** and afterwards clcik **create instance**.
+- Log into the [ElephantSQL](https://www.elephantsql.com/) website and click **Create new Instance**
+- Enter a **Name** and keep the plan as **Tiny Turtle Free**, then **tags** field can be left blank, Select a regions closest to you, I selected **EU-West-1(Ireland)** as im in Ireland. Then click **Review** and afterwards click **create instance**.
 - On The Dashboard click on your database instance name.
 - You will see the details for your database instance, in the url section click on the copy icon to copy the database url.
-- Head over to gitpod and  create an **Database URL** in you env.py file and set it equal to the copied url.
+- Head over to gitpod and create an **Database URL** enviroment variable in you env.py file and set it equal to the copied url.
 
 #### Deploying to Heroku.
 - Head back over to [heroku](https://www.heroku.com/) and click on your **app** and then go to the **Settings tab**
-- On the **settings page** scroll down to the **config vars** section and enter the **DATABASE_URL** which you will set equal to the elephantSQL url, create **Secret key** this can be anything.
-**CLOUDINARY_URL** this will be set to your cloudinary url and finall**Port** which will be set to 8000.
+- On the **settings page** scroll down to the **config vars** section and enter the **DATABASE_URL** which you will set equal to the elephantSQL url, create **Secret key** this can be anything,
+**CLOUDINARY_URL** this will be set to your cloudinary url and finally **Port** which will be set to 8000.
 - Then scroll to the top and go to the **deploy tab** and go down to the **Deployment method** section and select **Github** and then sign into your account.
-- Below that in the **search for a repository to connect to** search box eenter the name of your repository that you created on **github** and click **connect**
+- Below that in the **search for a repository to connect to** search box enter the name of your repository that you created on **github** and click **connect**
 - Once it has connected scroll down to the **Manual Deploy** and click **Deploy branch** when it has deployed you will see a **view app** button below and this will bring you to your newly deployed app.
-- Please not that when deployig manually you will have to deploy after each change you make to your repository.
-
+- Please note that when deploying manually you will have to deploy after each change you make to your repository.
+- - -
 
 ## Credits
 - Django For begginers book, I wish i had read this book before i started the project as it would have made everything so much easier, I had most of the project done before i started to read this book but after reading the first 8 chapters i decided to go back and add the **Wines** app to the project to test out what I had learned, this made me understand how to create simple class based views. The first 4 chapters can be read [here](https://djangoforbeginners.com/introduction/).
