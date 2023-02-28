@@ -40,14 +40,45 @@ functionality of the site.
 ## UX Design:
 
 ### Wireframes
-Below are the wireframes for the site that I created using balsamiq.
+Below are the wireframes for the site that I created using balsamiq. Please note that the website has changed a bit from the orginal wireframes.
 
 <details>
     <summary>Home Page</summary>  
-    
-![colour scheme](readme-docs/wireframes/wireframe-home.jpg)  
-</details>
 
+![Wireframe of home page](readme-docs/wireframes/wireframe-home.jpg)  
+</details>
+  
+<details>
+    <summary>Recipe Page</summary>  
+    
+![Wireframe of recipe page](readme-docs/wireframes/wireframe-recipes.jpg)  
+</details>  
+
+<details>
+    <summary>Recipe Details Page</summary>  
+    
+![Wireframe of recipe details page](readme-docs/wireframes/wireframe-recipe-details.jpg)  
+</details>  
+  
+<details>
+    <summary>Add Page</summary>  
+    
+![Wireframe of Add recipe page](readme-docs/wireframes/wireframe-add-recipe.jpg)  
+</details>  
+
+<details>
+    <summary>Register Page</summary>  
+    
+![Wireframe of Register page](readme-docs/wireframes/wireframe-register.jpg)  
+</details>  
+  
+<details>
+    <summary>Login Page</summary>  
+    
+![Wireframe of Login page](readme-docs/wireframes/wireframe-signin.jpg)  
+</details>  
+  
+  
 ### Agile Methodology
 Github projects was used to track the development of this website using the agile approach, the project can be found [here](#https://github.com/users/kpsdev1/projects/5).
 
