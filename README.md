@@ -78,7 +78,7 @@ Below are the wireframes for the site that I created using balsamiq. Please note
     
 ![Wireframe of Login page](readme-docs/wireframes/wireframe-signin.jpg)  
 </details>  
-  
+- - - 
   
 ### Agile Methodology
 Github projects was used to track the development of this website using the agile approach, the project can be found [here](#https://github.com/users/kpsdev1/projects/5).
@@ -94,7 +94,7 @@ For this site i decide to keep the main color scheme very simple, with the text 
 I did also have one some button like the delete and cancel button red and orange, but the main color scheme of the site was black, white and green.
   
 ![colour scheme](readme-docs/images/color-scheme.jpg)  
-
+- - - 
 ### DataBase Diagram
 Below is the Data base diagram that I created using LucidCharts.
 
