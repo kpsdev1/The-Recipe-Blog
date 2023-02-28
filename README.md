@@ -43,8 +43,8 @@ functionality of the site.
 Below are the wireframes for the site that I created using balsamiq.
 
 <details>
-
- <summary>Home Page</summary>
+    <summary>Home Page</summary>  
+    
 ![colour scheme](readme-docs/wireframes/wireframe-home.jpg)  
 </details>
 
