@@ -10,6 +10,12 @@ functionality of the site.
 
 ## Table Of Contents:
 1. [UX Design](#ux-design)
+    * [Wireframes](#wireframes)
+    * [Agile Methodology](#agile-methodology)
+    * [Typography](#typography)
+    * [Colour Scheme](#colour-sheme)
+    * [Database Diagram](#database-diagram)
+    
 2. [Features](#features)
     * [Navigation](#Navigation-bar)
     * [footer](#footer)
@@ -28,6 +34,7 @@ functionality of the site.
     * [Register Page](#register-page)
     * [Login Page](#login-page)
     * [Logout Page](#logout-page)
+    
 3. [Future Features](#future-features)
 4. [Technologies Used](#technologies-used)
 5. [Testing](#testing)
