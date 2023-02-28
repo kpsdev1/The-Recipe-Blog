@@ -40,7 +40,8 @@ functionality of the site.
 ## UX Design:
 
 ### Wireframes
-Below are the wireframes for the site that I created using balsamiq. Please note that the website has changed a bit from the orginal wireframes.
+Below are the wireframes for the site that I created using balsamiq. Please note that the website has changed a bit from the orginal wireframes and not every single page is there as i added some pages like the wines section towards the end of the project after the wireframes were created.
+
 
 <details>
     <summary>Home Page</summary>  
@@ -93,6 +94,11 @@ For this site i decide to keep the main color scheme very simple, with the text 
 I did also have one some button like the delete and cancel button red and orange, but the main color scheme of the site was black, white and green.
   
 ![colour scheme](readme-docs/images/color-scheme.jpg)  
+
+### DataBase Diagram
+Below is the Data base diagram that I created using LucidCharts.
+
+![Database Diagram](readme-docs/wireframes/database.jpg)  
 
 
 ## Features:
