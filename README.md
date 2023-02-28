@@ -13,7 +13,7 @@ functionality of the site.
     * [Wireframes](#wireframes)
     * [Agile Methodology](#agile-methodology)
     * [Typography](#typography)
-    * [Colour Scheme](#colour-sheme)
+    * [Colour Scheme](#colour-scheme)
     * [Database Diagram](#database-diagram)
     
 2. [Features](#features)
@@ -34,7 +34,7 @@ functionality of the site.
     * [Register Page](#register-page)
     * [Login Page](#login-page)
     * [Logout Page](#logout-page)
-    
+
 3. [Future Features](#future-features)
 4. [Technologies Used](#technologies-used)
 5. [Testing](#testing)
