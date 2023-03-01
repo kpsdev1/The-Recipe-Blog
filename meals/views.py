@@ -6,10 +6,14 @@ from .forms import CommentForm, RecipeForm
 from django.http import HttpResponseRedirect
 from django.utils.text import slugify
 
+
 def home(request):
+    """ Returns the home page"""
     return render(request, 'index.html')
 
+
 class RecipeList(generic.ListView):
+    """Renders a list of all recipes and only dislays 6 per page"""
     paginate_by = 6
     model = Recipe
     queryset = Recipe.objects.filter(status=1).order_by('-date_added')
@@ -17,7 +21,10 @@ class RecipeList(generic.ListView):
 
 
 class RecipeDetails(View):
-
+    """
+    View to show the recipe detail page
+    which displays all the recipe details
+    """
     def get(self, request, slug, *args, **kwargs):
         queryset = Recipe.objects.filter(status=1)
         recipe = get_object_or_404(queryset, slug=slug)
@@ -69,6 +76,7 @@ class RecipeDetails(View):
 
 
 def create_recipe(request):
+    """This is the view that allows users add a recipe"""
     form = RecipeForm()
     if request.method == 'POST':
         form = RecipeForm(request.POST, request.FILES)
@@ -80,12 +88,13 @@ def create_recipe(request):
             event.save()
             messages.success(request, 'Your recipe was added successfully')
             return redirect('recipes')
-    
+
     context = {'form': form}
     return render(request, 'add_recipe.html', context)
 
 
 def delete_recipe(request, recipe_id):
+    """This is the view that allows users delete their recipe"""
     recipe = Recipe.objects.get(pk=recipe_id)
     recipe.delete()
     messages.success(request, 'Recipe was Deleted successfully')
@@ -93,12 +102,15 @@ def delete_recipe(request, recipe_id):
 
 
 def edit_recipe(request, recipe_id):
+    """This is the view that allows users update their recipe"""
     recipe = Recipe.objects.get(pk=recipe_id)
-    form = RecipeForm(request.POST or None, request.FILES or None, instance=recipe)
+    form = RecipeForm(
+        request.POST or None, request.FILES or None, instance=recipe)
     if form.is_valid():
         form.save()
         messages.success(request, 'Recipe was updated successful')
-        return HttpResponseRedirect(reverse('recipe_details', args=[recipe.slug]))
+        return HttpResponseRedirect(
+            reverse('recipe_details', args=[recipe.slug]))
     return render(
         request,
         "edit_recipe.html",
@@ -109,21 +121,24 @@ def edit_recipe(request, recipe_id):
     )
 
 
-# Comment views 
 def delete_comment(request, comment_id):
+    """This is the view that allows users delete their Comment"""
     comment = Comment.objects.get(pk=comment_id)
     comment.delete()
-    return HttpResponseRedirect(reverse('recipe_details', args=[comment.recipe.slug]))
-
+    messages.success(request, 'Comment was deleted successfully')
+    return HttpResponseRedirect(
+        reverse('recipe_details', args=[comment.recipe.slug]))
 
 
 def edit_comment(request, comment_id):
+    """This is the view that allows users edit their Comment"""
     comment = Comment.objects.get(pk=comment_id)
     form = CommentForm(request.POST or None, instance=comment)
     if form.is_valid():
         form.save()
         messages.success(request, 'Comment was updated successful')
-        return HttpResponseRedirect(reverse('recipe_details', args=[comment.recipe.slug]))
+        return HttpResponseRedirect(
+            reverse('recipe_details', args=[comment.recipe.slug]))
     return render(
         request,
         "edit_comment.html",
@@ -135,14 +150,12 @@ def edit_comment(request, comment_id):
 
 
 class RecipeLike(View):
-
+    """This is the class view to like and unlike a recipe"""
     def post(self, request, slug):
         recipe = get_object_or_404(Recipe, slug=slug)
 
         if recipe.likes.filter(id=request.user.id).exists():
             recipe.likes.remove(request.user)
-
         else:
             recipe.likes.add(request.user)
-        
         return HttpResponseRedirect(reverse('recipe_details', args=[slug]))
