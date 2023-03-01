@@ -8,7 +8,12 @@
     <div class="row">
         <div class="col-12">
             <div class="card border-0 mt-4">
-                <img src="{{ recipe.image.url }}" class="detail-img" alt="Image from selected recipe">
+                {% if "placeholder" in recipe.image.url %}
+                    <img src="https://res.cloudinary.com/dudp7r482/image/upload/v1677701569/default-recipe_hiybq1.jpg" class="detail-img" alt="Default image">
+                {% else %}
+                    <img src="{{ recipe.image.url }}" class="detail-img" alt="Image from selected recipe">
+                {% endif %}  
+
                 {% if user.is_authenticated and user == recipe.author %}
                     <a href="" class="delete-recipe" data-toggle="modal" data-target="#deleteRecipeModal">X</a>
                     <a href="{% url 'edit_recipe' recipe.id %}" class=""><i class="fa fa-pencil edit-recipe"></i></a>
@@ -86,8 +91,7 @@
 
 
 <!-- Post a comment section -->
-{% if user.is_authenticated %}
-
+  {% if user.is_authenticated %}
     <div class="row">
         <div class="col-12">
             <div class="card post-comment">
@@ -99,7 +103,7 @@
                         {% csrf_token %}
                         <button type="submit" class="btn btn-green mt-2">Post</button>
                     </form>
-                    {% endif %}
+   {% endif %}
                 </div>       
             </div>
         </div>
