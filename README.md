@@ -340,6 +340,7 @@ This website is deployed to Heroku from a github repository, the following steps
 - The Net Ninja's Django Tutorial on youtube is another great resource that helped me understand the framework, The youtube video series starts [here](https://www.youtube.com/watch?v=n-FTlQ7Djqc&list=PL4cUxeGkcC9ib4HsrXEYpQnTOTZE1x0uc&index=1).
 - [Stack Overflow](https://stackoverflow.com/) is probably a developers best resource, this provide me with many answers to my questions.
 - [W3schools](https://www.w3schools.com/) this was great for looking up forgotten **CSS** syntax and how to use it.
+- [bbcgoodfood.](https://www.bbcgoodfood.com/) as some of the recipes came from this site. This site is a great resource for anyone who likes cooking.
 
 
 ## Acknowledgements:
