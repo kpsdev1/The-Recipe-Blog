@@ -9,9 +9,10 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Wine
 from .forms import WineForm
 
+
 class WineList(LoginRequiredMixin, ListView):
     """
-    Displays all the Wines
+    view to Display all the Wines
     """
     model = Wine
     paginate_by = 6
@@ -20,10 +21,11 @@ class WineList(LoginRequiredMixin, ListView):
 
 class WineDetailView(LoginRequiredMixin, DetailView):
     """
-    This provides the detailed view of the wine
+    This view provides the detailed view of the wine
     """
     model = Wine
     template_name = 'wine_details.html'
+
 
 class WineCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     """
@@ -41,8 +43,8 @@ class WineCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
 
 
 class WineUpdateView(LoginRequiredMixin, UpdateView):
-    """ 
-    View to edit a wine
+    """
+    This is the view to edit a wine
     """
     model = Wine
     template_name = 'edit_wine.html'
@@ -50,8 +52,8 @@ class WineUpdateView(LoginRequiredMixin, UpdateView):
 
 
 class WineDeleteView(LoginRequiredMixin, DeleteView):
-    """ 
-    View to edit a wine
+    """
+    This is the view to delete a wine
     """
     model = Wine
     success_url = reverse_lazy('wines')

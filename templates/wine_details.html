@@ -2,12 +2,12 @@
 {% block content %}
 
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12 col-lg-6 offset-lg-3">
-            <div class="card mt-5 wine-card-sm">
+<div class="container g-0">
+    <div class="row mb-4">
+        <div class="col-sm-12 col-lg-6 offset-lg-3">
+            <div class="card mt-4">
               <div class="text-center">
-                <img src="{{ wine.image.url }}" class="card-img-top mb-4" alt="Image of a wine added by a user">
+                <img src="{{ wine.image.url }}" class="card-img-top wine-img mb-4" alt="Image of a wine added by a user">
                     <h4>{{ wine.name }}</h4>
                     <p class="card-text mb-4"> Posted by: {{ wine.posted_by }}</p>
                     <p class="card-text"> Wine type: {{ wine.type }}</p>

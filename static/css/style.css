@@ -21,18 +21,18 @@ footer {
 .logo {
     font-family: Allerta Stencil, sans-serif;
     color: white;
-    
 }
 
+/* Nav Bar */
 .custom-nav {
     background: #8fac42;
-    
 }
 
 .active {
     font-weight: 600;
 }
 
+/* Index Page */
 .home-background {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('https://res.cloudinary.com/dudp7r482/image/upload/v1677092172/home_wp1kai.jpg');
     background-repeat: no-repeat;
@@ -40,7 +40,6 @@ footer {
     width: 100%;
     height: 100vh;
     position: relative;
-    
 }
 
 .home-heading {
@@ -54,8 +53,7 @@ footer {
     text-shadow: 0.5px 0.5px #111111;
     color: #8fac42;
     font-family: satisfy, sans-serif;;
-    font-size: 3em;
-    
+    font-size: 3em; 
 }
 
 .box {
@@ -90,15 +88,15 @@ footer {
     margin-top: 5%;
 }
 
+/* displays image in recipes and wines page */
 .card-img-top {
     width: 100%;
     height: 40vh;
-    object-fit: cover;
-    
+    object-fit: cover; 
 }
 
 
-/* recipe details custom css */
+/* recipe details Page */
 
 .detail-img {
     margin: 0 auto;
@@ -112,6 +110,7 @@ footer {
     font-size: 2em;
     font-weight: bold;
 }
+
 .author {
     font-style: italic;
 }
@@ -127,6 +126,7 @@ h4 {
     text-decoration: underline;
 }
 
+/* Delete recipe  */
 .delete-recipe {
     text-decoration: none;
     color: #9e0606;
@@ -139,7 +139,7 @@ h4 {
     margin-top: 0;
 }
 
-
+/* edit recipe */
 .edit-recipe {
     position: absolute;
     top: -4px;
@@ -148,7 +148,7 @@ h4 {
     
 
 
-/* comments section */
+/* comments section on recipe details page*/
 .comment-card {
     border-radius: 0%;
     max-width: 60%;
@@ -166,11 +166,11 @@ h4 {
     font-weight: 900;
 }
 
+/* delete comment */
 .delete-comment {
     text-decoration: none;
     color: #9e0606;
     font-weight: bold;
-    
     position: absolute;
     top: 0;
     right: 10px;
@@ -188,6 +188,7 @@ h4 {
     font-weight:100;
 }
 
+/* edit comment */
 .edit-comment {
     position: absolute;
     top: 6px;
@@ -195,40 +196,35 @@ h4 {
     font-size: .8em;
 }
 
-
-
+/* posting a comment on recipe details page */
 .post-comment {
     border-radius: 0%;
     max-width: 60%;
     margin: 0 auto;
 }
 
-
 .card-body textarea {
     height: 15vh;
 }
 
-/* -----------Wine detail section----------- */
+/* wine detail image */
+.wine-img {
+    height: 60vh;
+}
 
-
-/* -----------wine form for adding and editing wine---------------- */
-
-
+/* wine form for adding and editing wine*/
 .wine-form select {
     width: 50%;
     margin: 0 auto;
     border-color: #8fac42;;
 }
 
-/* -----------Delete modal for wines----------- */
 
+/*Delete modal for wines*/
 .modal-delete {
     background-color: #dedede;
     font-weight: bold;
 }
-
-
-
 
 /* login page */
 .img-position-relative {
@@ -260,8 +256,7 @@ h4 {
 .login-img {
     position: absolute;
     bottom: 0;
-    left: 15px;
-    
+    left: 15px;   
 }
 
 .login {
@@ -310,16 +305,13 @@ h4 {
     color: #8fac42;
 }
 
-/*------Forms for adding recipes, wine and editing wine------ */
-
+/*Forms for adding recipes, wine and editing wine*/
 .create-form {
     text-align: center;
-    
 }
 
 .create-form input, .create-form textarea{
     border: 1px solid #8fac42;
-    
 }
 
 .create-form input {
@@ -338,20 +330,18 @@ h4 {
     margin: 2% auto;
 }
 
-
 .likes button {
     color: #E84610;
     border: none;
     background: transparent;
 }
 
-
 /* footer style  */
-
 .footer-line {
     width: 30%;
     margin: 2% auto;
 }
+
 .social-media {
     width: 20%;
     margin: 0 auto;
@@ -362,20 +352,14 @@ h4 {
     padding-left: 0;
 }
 
-
-
-
 .social-media > li {
     list-style: none;
 }
-
 
 .social-media i {
     font-size: 150%;
     color: #8fac42;
 }
-
-
 
 /* this is just on hero image */
 @media screen and (min-width: 640px) {
@@ -390,8 +374,7 @@ h4 {
 @media screen and (max-width: 1100px) {
     /* recipe details page */
     .detail-img {
-        width: 80%;
-        
+        width: 80%;  
     }
 
     .recipe-detail-card {
@@ -399,22 +382,19 @@ h4 {
     }
 
     .likes {
-        width: 80%;
-        
+        width: 80%; 
     }
     
     .comment-card {
         max-width: 80%;
-        
     }
 
     .post-comment {
         max-width: 80%;
-        
     }
+   
 
 }
-
 
 
 @media screen and (max-width: 800px) {
@@ -423,8 +403,8 @@ h4 {
         width: 50%; 
          
     }
-    
-    
+
+    /*Forms for adding recipes, wine and editing wine*/
     .create-form input {
         width: 100%;
         margin: 0;
@@ -441,14 +421,13 @@ h4 {
    }
 
 
-   /* recipe details */
+   /* Delete and edit on recipe details page */
    .delete-recipe {
         font-size: larger;
         font-weight: bold;
         top: -7px;
         right: 5px;
     }
-
 
     .edit-recipe {
         position: absolute;
@@ -469,7 +448,6 @@ h4 {
     /* footer */
     .footer-line {
         width: 50%;
-    
     }
     
     .social-media {
@@ -486,22 +464,15 @@ h4 {
         background-color: rgba(0, 0, 0, 0.3); 
     }
     
-    /* .about-card {
-        justify-content: center;
-    }
-     */
-
-     /* card */
+     /* displays image in recipes and wines page */
     .card-img-top {
         width: 100%;
        
     }
 
-
     /* recipe details page */
     .detail-img {
         width: 90%;
-       
     }
 
     .recipe-detail-card {
@@ -518,8 +489,7 @@ h4 {
 
     /* comment section  */
     .comment-card {
-        max-width: 95%;
-        
+        max-width: 95%;  
     }
 
     .comment-body {
@@ -534,12 +504,10 @@ h4 {
     .post-comment {
         max-width: 95%;
         margin-bottom: 5%;
-        
     }
 
     .post-comment-body {
         padding: 3px;
-        
     }
 
     .post-comment-body textarea {
@@ -558,20 +526,19 @@ h4 {
         width: 60%;
     }
     
-
 }
 
+/* extra small screens */
 @media screen and (max-width: 420px) {
     /* home */
     .home-heading {
         top: 10%;
         font-size: 2.5em;
-        
     }
 
     .box {  
-        width: 80%;
-        top: 10%;   
+        width: 90%;
+        top: 8%;   
         background-color: rgba(0, 0, 0, 0.4); 
     }
     
@@ -583,14 +550,15 @@ h4 {
         width: 100%;
     }
 
-}
-
-/* extra small devices */
-@media screen and (max-width: 420px) {
-    .box {  
-        width: 90%;
-        margin-top: 60px;
-        
+    /* comment section */
+    .comment-card > .card-body {
+        padding: 0;
     }
+
+    .btn {
+        font-size: 0.875rem;
+        padding: 0.25rem 0.5rem;
+    }
+
 
 }

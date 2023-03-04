@@ -4,12 +4,14 @@ from django_summernote.widgets import SummernoteWidget
 
 
 class CommentForm(forms.ModelForm):
+    """Comment Form"""
     class Meta:
         model = Comment
         fields = ('info',)
 
 
 class RecipeForm(forms.ModelForm):
+    """Recipe Form"""
     class Meta:
         model = Recipe
         fields = ('title', 'image', 'description',
