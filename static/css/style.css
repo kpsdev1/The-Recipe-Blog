@@ -28,6 +28,10 @@ footer {
     background: #8fac42;
 }
 
+.nav-link {
+    padding-left: 2px;
+}
+
 .active {
     font-weight: 600;
 }
