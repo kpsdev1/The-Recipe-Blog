@@ -13,8 +13,7 @@
                     <br>
                     {% csrf_token %}
                     <button type="submit" class="btn btn-green mt-2">Update</button>
-                    <a href="{% url 'recipe_details' comment.recipe.slug %} "class="btn btn-warning mt-2">Cancel</a>
-                    
+                    <a href="{% url 'recipe_details' comment.recipe.slug %} "class="btn btn-warning mt-2">Cancel</a>  
                 </form>
             </div>       
         </div>

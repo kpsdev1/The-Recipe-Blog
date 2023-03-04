@@ -5,116 +5,116 @@
 
 
 
-    <div class="row">
-        <div class="col-12">
-            <div class="card border-0 mt-4">
-                {% if "placeholder" in recipe.image.url %}
-                    <img src="https://res.cloudinary.com/dudp7r482/image/upload/v1677701569/default-recipe_hiybq1.jpg" class="detail-img" alt="Default image">
-                {% else %}
-                    <img src="{{ recipe.image.url }}" class="detail-img" alt="Image from selected recipe">
-                {% endif %}  
+<div class="row">
+    <div class="col-12">
+        <div class="card border-0 mt-4">
+            {% if "placeholder" in recipe.image.url %}
+                <img src="https://res.cloudinary.com/dudp7r482/image/upload/v1677701569/default-recipe_hiybq1.jpg" class="detail-img" alt="Default image">
+            {% else %}
+                <img src="{{ recipe.image.url }}" class="detail-img" alt="Image from selected recipe">
+            {% endif %}  
 
-                {% if user.is_authenticated and user == recipe.author %}
-                    <a href="" class="delete-recipe" data-toggle="modal" data-target="#deleteRecipeModal">X</a>
-                    <a href="{% url 'edit_recipe' recipe.id %}" class=""><i class="fa fa-pencil edit-recipe"></i></a>
-                {% endif %}
-                <div class="card-body">
-                    <h3 class="recipe-detail-heading text-center">{{ recipe.title }}</h5>
-                    <p class="card-text text-center author"> Posted by {{ recipe.author }}</p>
+            {% if user.is_authenticated and user == recipe.author %}
+                <a href="" class="delete-recipe" data-toggle="modal" data-target="#deleteRecipeModal">X</a>
+                <a href="{% url 'edit_recipe' recipe.id %}" class=""><i class="fa fa-pencil edit-recipe"></i></a>
+            {% endif %}
+            <div class="card-body">
+                <h3 class="recipe-detail-heading text-center">{{ recipe.title }}</h5>
+                <p class="card-text text-center author"> Posted by {{ recipe.author }}</p>
 
-                    <div class="likes">
-                        {% if user.is_authenticated %}
-                        <form class="d-inline" action="{% url 'recipe_like' recipe.slug %}" method="POST">
-                            {% csrf_token %}
-                            {% if liked %}
-                            <button type="submit" name="recipepost_id" value="{{recipe.slug}}"><i class="fas fa-heart"></i></button>
-                                {% if recipe.number_of_likes == 1 %}
-                                <span class="text-secondary"> Liked by you</span>
+                <div class="likes">
+                    {% if user.is_authenticated %}
+                    <form class="d-inline" action="{% url 'recipe_like' recipe.slug %}" method="POST">
+                        {% csrf_token %}
+                        {% if liked %}
+                        <button type="submit" name="recipepost_id" value="{{recipe.slug}}"><i class="fas fa-heart"></i></button>
+                            {% if recipe.number_of_likes == 1 %}
+                            <span class="text-secondary"> Liked by you</span>
 
-                                {% elif recipe.number_of_likes == 2  %}
-                                <span class="text-secondary"> Liked by you and 1 other person</span>
+                            {% elif recipe.number_of_likes == 2  %}
+                            <span class="text-secondary"> Liked by you and 1 other person</span>
 
-                                {% else %}
-                                <span class="text-secondary"> Liked by you and {{ recipe.number_of_likes|add:"-1" }} other people</span>
-                                {% endif %}
                             {% else %}
-                            <button type="submit" name="recipepost_id" value="{{recipe.slug}}"><i class="far fa-heart"></i></button>
-                            <span class="text-secondary"> {{ recipe.number_of_likes }} </span>
+                            <span class="text-secondary"> Liked by you and {{ recipe.number_of_likes|add:"-1" }} other people</span>
                             {% endif %}
-                        </form>
-
                         {% else %}
-                        <span class="text-secondary"><i class="far fa-heart"></i></span>
+                        <button type="submit" name="recipepost_id" value="{{recipe.slug}}"><i class="far fa-heart"></i></button>
+                        <span class="text-secondary"> {{ recipe.number_of_likes }} </span>
                         {% endif %}
+                    </form>
+
+                    {% else %}
+                    <span class="text-secondary"><i class="far fa-heart"></i></span>
+                    {% endif %}
                         
 
                         
-                    </div>
-
-                    <div class="recipe-detail-card">
-                        <h4>Decription</h4>
-                        <p class="card-text"> {{ recipe.description|safe }}</p>
-                        <h4>Ingredients</h4>
-                        <p class="card-text"> {{ recipe.ingredients|safe }}</p>
-                        <h4>Cooking Instructions</h4>
-                        <p class="card-text"> {{ recipe.cooking_instructions|safe }}</p>
-                    </div>
                 </div>
-            </div> 
-        </div>
-    </div> 
+
+                <div class="recipe-detail-card">
+                    <h4>Decription</h4>
+                    <p class="card-text"> {{ recipe.description|safe }}</p>
+                    <h4>Ingredients</h4>
+                    <p class="card-text"> {{ recipe.ingredients|safe }}</p>
+                    <h4>Cooking Instructions</h4>
+                    <p class="card-text"> {{ recipe.cooking_instructions|safe }}</p>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div> 
 
    
-    <!-- Display comment section -->
-    <div class="row">
-        <div class="col-12 mb-2 pb-4">
-            <div class="card comment-card">
-                <h2 class="text-center">Comment Section</h2>
-                <div class="card-body">
-                {% for comment in comments %}
-                <div class="comment-body md-4">
-                    <p>{{ comment.info }}</p>
-                    <p class="mb-2"> Written by <span class="wrote-on">{{ comment.name }}</span> on <span class="wrote-on">{{ comment.date_added }}</span></p>
+<!-- Display comment section -->
+<div class="row">
+    <div class="col-12 mb-2 pb-4">
+        <div class="card comment-card">
+            <h2 class="text-center">Comment Section</h2>
+            <div class="card-body">
+            {% for comment in comments %}
+            <div class="comment-body md-4">
+                <p>{{ comment.info }}</p>
+                 <p class="mb-2"> Written by <span class="wrote-on">{{ comment.name }}</span> on <span class="wrote-on">{{ comment.date_added }}</span></p>
                     
-                    {% if user.is_authenticated and user.username == comment.name %}
-                    <a href="{% url 'delete_comment' comment.id %}" class="delete-comment">X <span>Delete</span></a>
-                    <a href="{% url 'edit_comment' comment.id %}" class=""><i class="fa fa-pencil edit-comment"></i></a>
-                    {% endif %}   
-                </div>   
+                {% if user.is_authenticated and user.username == comment.name %}
+                <a href="{% url 'delete_comment' comment.id %}" class="delete-comment">X <span>Delete</span></a>
+                <a href="{% url 'edit_comment' comment.id %}" class=""><i class="fa fa-pencil edit-comment"></i></a>
+                {% endif %}   
+            </div>   
                   
-                {% endfor %}
-            </div>
-            </div>
+            {% endfor %}
+        </div>
         </div>
     </div>
+</div>
 
 
 
 <!-- Post a comment section -->
-  {% if user.is_authenticated %}
-    <div class="row">
-        <div class="col-12">
-            <div class="card post-comment">
-                <div class="card-body post-comment-body">
-                    <h5>Post a Comment:</h5>
-                    <p>By: {{ user.username }}</p>
-                    <form method="post">
-                        {{ comment_form | crispy }}
-                        {% csrf_token %}
-                        <button type="submit" class="btn btn-green mt-2">Post</button>
-                    </form>
-                    {% endif %}
-                </div>       
-            </div>
+{% if user.is_authenticated %}
+<div class="row">
+    <div class="col-12">
+        <div class="card post-comment">
+            <div class="card-body post-comment-body">
+                <h5>Post a Comment:</h5>
+                <p>By: {{ user.username }}</p>
+                <form method="post">
+                    {{ comment_form | crispy }}
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-green mt-2">Post</button>
+                </form>
+                {% endif %}
+            </div>       
         </div>
     </div>
+</div>
     
 
 
 
 
  <!-- This Modal is from bootstrapmodals page-->
- <div class="modal fade" id="deleteRecipeModal" tabindex="-1" role="dialog" aria-labelledby="deleteRecipeModalLabel" aria-hidden="true">
+<div class="modal fade" id="deleteRecipeModal" tabindex="-1" role="dialog" aria-labelledby="deleteRecipeModalLabel" aria-hidden="true">
     <div class="modal-dialog recipe-delete-modal" role="document">
       <div class="modal-content modal-delete">
         <div class="modal-header">
@@ -135,7 +135,7 @@
         </div>
       </div>
     </div>
-  </div>
+</div>
  
 
 {% endblock %}

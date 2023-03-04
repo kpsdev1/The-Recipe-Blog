@@ -400,6 +400,17 @@ h4 {
 
 }
 
+@media screen and (max-width: 1000px) {
+    .delete-recipe {
+        right: 10px;
+    }
+    
+    .edit-recipe {
+        right: 35px;
+    }
+
+}
+
 
 @media screen and (max-width: 800px) {
     /* index page */
@@ -436,7 +447,6 @@ h4 {
     .edit-recipe {
         position: absolute;
         top: 0;
-        right: 35px;
     }
     
     

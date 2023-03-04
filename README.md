@@ -26,7 +26,7 @@ functionality of the site.
     * [Edit Recipe Page](#edit-recipe-page)
     * [Delete Recipe Page](#delete-recipe)
     * [Edit Comment Page](#edit-comment-page)
-    * [Wines](#wines)
+    * [Wines](#wines-page)
     * [Wine Detail Page](#wine-details-page)
     * [Add Wine Page](#add-wine-page)
     * [Edit Wine Page](#edit-wine-page)
@@ -146,7 +146,7 @@ Below is the Data base diagram that I created using LucidCharts.
 
 ### Recipes Page
 - At the top of the recipes page, right below the Nav bar there is a H1 heading that says **Recipes List** which is underlined and centered.
-- Below this are the recipes cards which are displayed in the bootstrap card format and have six to a page.
+- Below this are the recipe cards which are displayed in the bootstrap card format and have six to a page.
 - The **read more** button is greyed out when the user is logged out and is green when the user is logged in(second screeshot)
 - Above the recipes on the left hand side there is a green **Add Recipe** button, this button is only displayed if the user is logged in.
 - On Large screens they are three accross, on medium devices they are two accross and on small deavices it is just one.
@@ -218,9 +218,15 @@ Below is the Data base diagram that I created using LucidCharts.
 ![edit comment](readme-docs/images/edit-comment.jpg)
 - - -
 
-### Wines
+### Wines Page
+- The **wines** page is only wisible when the user is logged in, the nav link is not there when a user is logged out.
+- This page layout is exactly like the **Recipes** page, with a H1 heading at the top that says **Wine List**.
+- Below the heading on the left hand side is a button to **Add a Wine**.
+- In the cad there is green **view** button that takes the user the wine detail page.
+- Below this are the wine cards which are displayed in the bootstrap card format and have six to a page.
+- Below the Wine cards there will be a next and back button depending on how many wines have been added.
 
-
+![Wines Page](readme-docs/images/wine-page.jpg)
 - - -
 
 ### Wine Details page
