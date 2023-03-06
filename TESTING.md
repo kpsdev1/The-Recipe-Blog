@@ -3,6 +3,59 @@
 ### HTML
 - All the site pages were run through the W3C validator to check for any issues and HTML syntax errors. The W3C validator can be found [here](https://validator.w3.org/). As you can see from the below screenshots there are no errors.
 
+<details>
+    <summary>Home Page</summary>  
+    
+![home validation ](readme-docs/images/htmlhome.jpg.jpg)  
+</details>
+  
+<details>
+    <summary>Recipes page</summary>  
+    
+![Recipes validation](readme-docs/images/htmlrecipes.jpg.jpg)  
+</details>  
+
+<details>
+    <summary>Wines Page</summary>  
+    
+![Wines validation](readme-docs/images/htmlwines.jpg.jpg)
+</details>  
+  
+<details>
+    <summary>Add Wine Page</summary>  
+    
+![Add wine validation](readme-docs/images/htmladdwine.jpg)
+</details> 
+
+<details>
+    <summary>edit Wine Page</summary>  
+    
+![edit wine validation](readme-docs/images/htmleditwine.jpg)
+</details> 
+
+<details>
+    <summary>Register Page</summary>  
+    
+![Register validation](readme-docs/images/htmlregister.jpg)
+</details> 
+
+<details>
+    <summary>Login Page</summary>  
+    
+![Add wine validation](readme-docs/images/htmllogin.jpg)
+</details> 
+
+<details>
+    <summary>Logout Page</summary>  
+    
+![Add wine validation](readme-docs/images/htmllogout.jpg)
+</details> 
+
+The **Add Recipe** and **Edit Recipe** pages through errors in the Validator that were related to the **Summernote** libarary that I used. I ignored these errors as it was not in any code I had written and because it is a popular django library I presume these are false positives. Below you can see a screenshot of the errors.
+
+![Register validation](readme-docs/images/htmladdrecipe.jpg)
+
+
 ### CSS
 - The CSS stylesheet was put through the W3C Jiqsaw validator to see if there was any errors. The W3C Jiqsaw validator can be found [here](https://jigsaw.w3.org/css-validator/)  .
 - As you can see from the below screenshot of the result there were no errors.
