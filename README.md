@@ -307,6 +307,9 @@ beneath that it tells the user if they already have an account they can click he
 - [ElephantSQL](https://www.elephantsql.com/) was used to store the database.
 - - -
 
+## Testing
+The testing section can be found [here](TESTING.md).
+
 ## Deployment
 This website is deployed to Heroku from a github repository, the following steps were taken:
 
