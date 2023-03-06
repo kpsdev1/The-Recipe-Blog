@@ -6,19 +6,19 @@ All the site pages were run through the W3C validator to check for any issues an
 <details>
     <summary>Home Page</summary>  
     
-![home validation ](readme-docs/images/htmlhome.jpg.jpg)  
+![home validation ](readme-docs/images/htmlhome.jpg)  
 </details>
   
 <details>
     <summary>Recipes page</summary>  
     
-![Recipes validation](readme-docs/images/htmlrecipes.jpg.jpg)  
+![Recipes validation](readme-docs/images/htmlrecipes.jpg)  
 </details>  
 
 <details>
     <summary>Wines Page</summary>  
     
-![Wines validation](readme-docs/images/htmlwines.jpg.jpg)
+![Wines validation](readme-docs/images/htmlwines.jpg)
 </details>  
   
 <details>
@@ -54,7 +54,7 @@ All the site pages were run through the W3C validator to check for any issues an
 The **Add Recipe** and **Edit Recipe** pages through errors in the Validator that were related to the **Summernote** libarary that I used. I ignored these errors as it was not in any code I had written and because it is a popular django library I presume these are false positives. Below you can see a screenshot of the errors.
 
 ![Register validation](readme-docs/images/htmladdrecipe.jpg)
-
+- - -
 
 ### CSS
 - The CSS stylesheet was put through the W3C Jiqsaw validator to see if there was any errors. The W3C Jiqsaw validator can be found [here](https://jigsaw.w3.org/css-validator/)  .
