@@ -1,7 +1,7 @@
 ## Validator Testing
 
 ### HTML
-- All the site pages were run through the W3C validator to check for any issues and HTML syntax errors. The W3C validator can be found [here](https://validator.w3.org/). As you can see from the below screenshots there are no errors.
+All the site pages were run through the W3C validator to check for any issues and HTML syntax errors. The W3C validator can be found [here](https://validator.w3.org/). As you can see from the below screenshots there are no errors.
 
 <details>
     <summary>Home Page</summary>  
