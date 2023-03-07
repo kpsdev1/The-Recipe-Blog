@@ -51,7 +51,7 @@ All the site pages were run through the W3C validator to check for any issues an
 ![Add wine validation](readme-docs/images/htmllogout.jpg)
 </details> 
 
-The **Add Recipe** and **Edit Recipe** pages through errors in the Validator that were related to the **Summernote** libarary that I used. I ignored these errors as it was not in any code I had written and because it is a popular django library I presume these are false positives. Below you can see a screenshot of the errors.
+The **Add Recipe** and **Edit Recipe** pages threw errors in the Validator that were related to the **Summernote** library that I used. I ignored these errors as it was not in any code I had written and because it is a popular django library I presume these are false positives. Below you can see a screenshot of the errors.
 
 ![Register validation](readme-docs/images/htmladdrecipe.jpg)
 - - -
@@ -71,7 +71,7 @@ The **Add Recipe** and **Edit Recipe** pages through errors in the Validator tha
 - - -
 
 ### Python
-- I tested the app using the PEP8 validator in gitpod, this I had installed from my previous project, but it can be installed by running **pip3 install pycodestyle** then searching for **Python**, Select **Linter** and then select **pycodestyle**. The PEP8 erorrs would then be underlined in red and also listed in **Problems tab**. This returned no errors.
+- I tested the project using the PEP8 validator in gitpod, this I had installed from my previous project, but it can be installed by running **pip3 install pycodestyle** then searching for **Python**, Select **Linter** and then select **pycodestyle**. The PEP8 erorrs would then be underlined in red and also listed in **Problems tab**. This returned no errors.
 - I also tested the site on **Code Institutes pep8 online** website. Which casn be found [here](https://pep8ci.herokuapp.com/). As you can see from the below screenshots, no errors were found.
 
 ##### Meals App
