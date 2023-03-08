@@ -38,7 +38,7 @@ footer {
 
 /* Index Page */
 .home-background {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('https://res.cloudinary.com/dudp7r482/image/upload/f_webp/v1678298172/homebk_rvgsu0.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('https://res.cloudinary.com/dudp7r482/image/upload/v1678298172/homebk_rvgsu0.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
