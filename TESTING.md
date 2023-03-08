@@ -138,3 +138,28 @@ The **Add Recipe** and **Edit Recipe** pages threw errors in the Validator that 
 
 **#** Just to note, the settings.py file gave some **line too long** errors which are related to the default authorization, which I was told can be ignored in this file.
 - - - 
+
+## Browser and Device Testing
+- In order to make sure the site was fully responsive and compatible with different browsers and devices, I tested the site on multiple browsers and devices. 
+- The browsers I tested the site on **chrome**, **edge** and **Firefox**, when using **chrome** i was able to use the dev tools and test the site on many different device sizes  like **iphones 5, 6, 7, 8, X, SE**, **Ipad mini and air** , and **samsung s9 and s20 ultra**, the site worked as expected on all.
+- I also tested the site on a number of real mobile and tables, the devices i tested on were **Samsung S8 and a53**, **Ipad 7** and **Iphone 7 and 11**.
+
+#### Browser Screenshots
+
+<details>
+    <summary>Chrome</summary>  
+
+![chrome browser test](readme-docs/images/chrome.jpg)
+</details>  
+
+<details>
+    <summary>Edge</summary>  
+
+![edge browser test](readme-docs/images/edge.jpg)
+</details>  
+
+<details>
+    <summary>Firefox</summary>  
+
+![firefox browser test](readme-docs/images/firefox.jpg)
+</details>  
