@@ -139,9 +139,14 @@ The **Add Recipe** and **Edit Recipe** pages threw errors in the Validator that 
 **#** Just to note, the settings.py file gave some **line too long** errors which are related to the default authorization, which I was told can be ignored in this file.
 - - - 
 
+### Lighthouse
+Lighthouse in chrome dev tools was used to generate a report that tests the sites **Performance**, **Accessibility**, **Best Practices** and **Seo**. 
+![chrome browser test](readme-docs/images/lighthouse.jpg)
+- - - 
+
 ## Browser and Device Testing
 - In order to make sure the site was fully responsive and compatible with different browsers and devices, I tested the site on multiple browsers and devices. 
-- The browsers I tested the site on **chrome**, **edge** and **Firefox**, when using **chrome** i was able to use the dev tools and test the site on many different device sizes  like **iphones 5, 6, 7, 8, X, SE**, **Ipad mini and air** , and **samsung s9 and s20 ultra**, the site worked as expected on all.
+- The browsers I tested the site on **chrome**, **edge** and **Firefox**, when using **chrome** i was able to use the dev tools and test the site on many different device sizes  like **iphones 5, 6, 7, 8, X, SE and 12 pro**, **Ipad mini and air** , and **samsung s9+ and s20 ultra**, the site worked as expected on all.
 - I also tested the site on a number of real mobile and tables, the devices i tested on were **Samsung S8 and a53**, **Ipad 7** and **Iphone 7 and 11**.
 
 #### Browser Screenshots
@@ -162,4 +167,58 @@ The **Add Recipe** and **Edit Recipe** pages threw errors in the Validator that 
     <summary>Firefox</summary>  
 
 ![firefox browser test](readme-docs/images/firefox.jpg)
+</details>
+
+<details>
+    <summary>Chrome Dev tools Iphone 5</summary>  
+
+![Iphone 5 image](readme-docs/images/iphone5.jpg)
+</details>  
+
+<details>
+    <summary>Chrome Dev tools Iphone 6, 7, 8</summary>  
+
+![Iphone 6,7,8 image](readme-docs/images/iphone678.jpg)
+</details>  
+
+<details>
+    <summary>Chrome Dev tools Iphone SE</summary>  
+
+![Iphone SE image](readme-docs/images/iphonese.jpg)
+</details>  
+
+<details>
+    <summary>Chrome Dev tools Iphone X</summary>  
+
+![Iphone X image](readme-docs/images/iphonex.jpg)
+</details>  
+
+<details>
+    <summary>Chrome Dev tools Iphone 12 Pro</summary>  
+
+![Iphone 12 image](readme-docs/images/iphone12.jpg)
+</details>  
+
+<details>
+    <summary>Chrome Dev tools Iphone Mini</summary>  
+
+![Iphone mini image](readme-docs/images/ipadmini.jpg)
+</details>  
+
+<details>
+    <summary>Chrome Dev tools Iphone air</summary>  
+
+![Iphone Air image](readme-docs/images/ipadair.jpg)
+</details>  
+
+<details>
+    <summary>Chrome Dev tools Samsung S9 </summary>  
+
+![Samsung S9 image](readme-docs/images/s9.jpg)
+</details>  
+
+<details>
+    <summary>Chrome Dev tools Samsung S20 Ultra</summary>  
+
+![Samsung S20 image](readme-docs/images/s20.jpg)
 </details>  
