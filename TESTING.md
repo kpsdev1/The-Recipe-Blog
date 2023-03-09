@@ -200,15 +200,15 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 </details>  
 
 <details>
-    <summary>Chrome Dev tools Iphone Mini</summary>  
+    <summary>Chrome Dev tools Ipad Mini</summary>  
 
-![Iphone mini image](readme-docs/images/ipadmini.jpg)
+![Ipad mini image](readme-docs/images/ipadmini.jpg)
 </details>  
 
 <details>
-    <summary>Chrome Dev tools Iphone air</summary>  
+    <summary>Chrome Dev tools Ipad air</summary>  
 
-![Iphone Air image](readme-docs/images/ipadair.jpg)
+![Ipad Air image](readme-docs/images/ipadair.jpg)
 </details>  
 
 <details>
@@ -221,4 +221,25 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
     <summary>Chrome Dev tools Samsung S20 Ultra</summary>  
 
 ![Samsung S20 image](readme-docs/images/s20.jpg)
+</details>  
+- - -
+
+#### Real Device Screenshots
+
+<details>
+    <summary>Samsung a53</summary>  
+
+![Samsung a53 image](readme-docs/images/a53.jpg)
+</details>  
+
+<details>
+    <summary> Iphone 11</summary>  
+
+![Iphone 11 image](readme-docs/images/iphone11.jpg)
+</details>  
+
+<details>
+    <summary> Ipad 7</summary>  
+
+![Ipad 7 image](readme-docs/images/ipad7.jpg)
 </details>  
