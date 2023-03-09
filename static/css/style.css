@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Athiti&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
+
+
 * {
     font-family: Athiti, sans-serif;
 }
@@ -38,7 +40,7 @@ footer {
 
 /* Index Page */
 .home-background {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('https://res.cloudinary.com/dudp7r482/image/upload/v1678298172/homebk_rvgsu0.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('https://res.cloudinary.com/dudp7r482/image/upload/f_auto/v1678298172/homebk_rvgsu0.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
