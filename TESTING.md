@@ -271,3 +271,28 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 *As a User I can view the list of recipes so that I can pick one to read.*
  - The user is able to clcik the recipes link in the nav bar and theis will take them to the recipes page where they can view a list of recipes.
  - If they wish to view one in full detail they can click Read More and they will then be able to see the recipe details, the user must be signed in to view the recipe details as if they are not signed in the Read More button will be diabled.
+
+#### Add A Recipe
+*As a User I can add a recipe so that other people can view it.*
+ - When a user is signed in they are able to click on the Add Recipe button on the Recipes page, which will bring them to the Add Recipes page where they are able to upload their recipe.
+
+ #### Edit / Delete A recipe
+ *As a User I can Edit/Delete my recipes so that I can make changes even after I have posted a recipe.*
+  - When viewing a recipe that the User has uploaded in the top right corner they have a choice to either delete or edit the recipe. A user can only dedit or delete a recipe they have added.
+
+ #### Like Recipes
+ *As a User I can like recipes so that I can show that i like a recipe without having to comment.*
+  - On the recipe details there is a like button below the image, it is a Love heart that is empty outline when not liked and then is filled when liked, beside it displays the number of people that like the recipe. A User must be logged in to access this functionality.
+
+
+#### Add A Comment
+*As a User I can comment on other recipes so that I can provide feedback.*
+ - When a user is signed in and they are on the recipe details page for a pacticular recipe, at the bottom of the page there is a comment section where they can add a comment.
+
+#### Edit / delete A comment
+*As a User I can update my comments so that make changes incase I mistyped something or if I wish to delete the comment.*
+ - The User is able to edit or delete any comment that they have created by clicking on the edit or delete button in the right hand side of that comment.
+
+#### Administer The Site
+*As a Site admin  I can administer the site so that I can manage the sites content.*
+ - A super user account was created so that the site can be fully manages from the Admin panel.
