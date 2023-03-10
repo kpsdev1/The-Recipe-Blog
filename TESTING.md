@@ -313,8 +313,19 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 
  ## Mnaual Testing
 
+#### Navigation
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
-| Navigation | Clicked on all nav bar lkinks to make sure they go to correct page.           | Pass      |
 | Logo | Clicking on logo to see if it redirect to home page                                 | Pass      |
+| Home | Clicking on Home link bring user to the home page                              | Pass      |
+| Recipes | Clicking on the recipe link, bring user to the recipe section               | Pass      |
+| Wines  | When signed in Clicking on the wine link, bring user to the recipe section    | Pass      |
+| View Wines | When signed in Clicking on the wine link, bring user to the recipe section    | Pass      |
 
+
+
+
+#### General
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked the site on many different devices, browser and screen widths.    | Pass      |
