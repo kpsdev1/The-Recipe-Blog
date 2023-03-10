@@ -15,7 +15,7 @@
                     <p class="card-text mb-4"> Country Of Origin: {{ wine.country_of_origin }}</p>
                     {% if user.is_authenticated and user == wine.posted_by %}  
                     <a href="{% url 'edit_wine' wine.pk %}" class="btn btn-info mb-4" >Edit</a>
-                    <button type="button" class="btn btn-danger mb-4" data-toggle="modal" data-target="#deleteModal">Delete</button>      
+                    <button type="button" class="btn btn-danger mb-4" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</button>      
                     {% endif %}
                 </div>
             </div>
@@ -31,7 +31,7 @@
       <div class="modal-content modal-delete">
         <div class="modal-header">
           <h5 class="modal-title" id="deleteModalLabel">Delete Wine</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
@@ -39,7 +39,7 @@
           <p>Are you sure you want to delete {{ wine.name }}?</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
           <form action="{% url 'delete_wine' pk=wine.pk %}" method="POST">
             {% csrf_token %}
             <button class="btn btn-danger" value="Confirm">Yes</button>

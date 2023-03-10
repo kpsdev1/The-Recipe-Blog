@@ -5,6 +5,7 @@ from .models import Recipe, Comment
 from .forms import CommentForm, RecipeForm
 from django.http import HttpResponseRedirect
 from django.utils.text import slugify
+from django.contrib.auth.decorators import login_required
 
 
 def home(request):
@@ -74,7 +75,7 @@ class RecipeDetails(View):
             },
         )
 
-
+@login_required
 def create_recipe(request):
     """This is the view that allows users add a recipe"""
     form = RecipeForm()

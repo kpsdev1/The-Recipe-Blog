@@ -372,6 +372,11 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 | Post Comment   | Allow user to post a comment and display it in the comment section        | Pass      |
 
 
+#### Add A Recipe Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+
+
 #### Wines
 | Feature               | Test Performed                                                     | Result    |
 |----------------|--------------------------------------------------------------------|-----------|
