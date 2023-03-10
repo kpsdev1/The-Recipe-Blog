@@ -255,6 +255,19 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 
 
 #### Register
- *As a User I can Create and account so that I can view recipe details and add my own.*
+*As a User I can Create and account so that I can view recipe details and add my own.*
  - In the Navigation bar at the top of the page, if a User clicks on the Register link, they will be brought to the registeration page wehere they can sign up, once they sign up they will be able to access full functionality of the site.
  
+#### Login | Logout
+*As a User I can Sign-in/ Sign-out so that can access features when signed in and sign-out so that no one can access my account.*
+ - When a User is not logged in the login link will be visible in at the far right in the navigation bar, the same link will change to logut when the user is logged in.
+ - When the User enters their login credentials they wil be able to access the full fuctionality of the site, when the user is logged out they will not have full access on the site and their account will be secure.
+
+#### About The site
+*As a User I want to understand what the site is about.*
+ - On the home page is an About us section that cleary tells the user what the site is about and how to use it.
+
+#### View Recipes
+*As a User I can view the list of recipes so that I can pick one to read.*
+ - The user is able to clcik the recipes link in the nav bar and theis will take them to the recipes page where they can view a list of recipes.
+ - If they wish to view one in full detail they can click Read More and they will then be able to see the recipe details, the user must be signed in to view the recipe details as if they are not signed in the Read More button will be diabled.
