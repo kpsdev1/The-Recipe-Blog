@@ -314,18 +314,49 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
  ## Mnaual Testing
 
 #### Navigation
+| Feature               | Test Performed                                                     | Result  |
+|-----------------------|--------------------------------------------------------------------|---------|
+| Logo | Clicking on logo to see if it redirect to home page                                 | Pass    |
+| Home | Clicking on Home link bring user to the home page                                   | Pass    |
+| Recipes | Clicking on the recipe link, bring user to the recipe page                       | Pass    |
+| Wines | When signed in clicking on the wine link, brings user to the wines page            | Pass    |
+| Register | When signed out clicking on the Register link, brings the user to the Registeration page.   | Pass    |
+| Login | When signed out, clicking on the Login link, brings the user to the login page.    | Pass    |
+| Logout | When signed in, clicking on the logout link, brings the user to the logout page.  | Pass    |
+| Correct links display | When a user is signed in or out the correct links display for both.   | Pass    |
+| Displays correctly on all pages | Made sure it displays correctly on all pages.               | Pass    |
+| Current Page | Nav Link is bold for current page that a user is on.                        | Pass    |
+| Responsiveness | Checked to make sure it changes to burger menu on smaller devices         | Pass      |
+
+
+#### Footer
+| Feature               | Test Performed                                                     | Result  |
+|-----------------------|--------------------------------------------------------------------|---------|
+| External links | Clicking on social media opens on a new page.                             | Pass    |
+| Displays correctly on all pages | Made sure it displays correctly on all pages.            | Pass    |
+| Responsiveness | Checked to make sure link icons display correctly on smaller devices.     | Pass    |
+
+
+#### Home
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
-| Logo | Clicking on logo to see if it redirect to home page                                 | Pass      |
-| Home | Clicking on Home link bring user to the home page                              | Pass      |
-| Recipes | Clicking on the recipe link, bring user to the recipe section               | Pass      |
-| Wines  | When signed in Clicking on the wine link, bring user to the recipe section    | Pass      |
-| View Wines | When signed in Clicking on the wine link, bring user to the recipe section    | Pass      |
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Background Image | Checked to make sure background image loads correctly.                  | Pass      |
+| About Us Section | Make sure section displays correctly on all device widths               | Pass      |
 
 
 
-
-#### General
+#### Recipes
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
-| Responsiveness | Checked the site on many different devices, browser and screen widths.    | Pass      |
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Recipe cards   | Check to make sure recipe cards display correctly                         | Pass      |
+| 6 recipes per page | Makse sure that there is only 6 recipes per page.                     | Pass      |
+| Read more button | Allow user to click the read more button under each recipe, when they are signed in.    | Pass      |
+| Add recipe Button | Display an Add Recipe button, when the user is signed in.               | Pass      |
+| Next button | Display a next button at the bottom of the page if there is more than six recipes.    | Pass      |
+| Back button | Display a back button at the bottom of the page if the user is on the second recipe page.    | Pass      |
+
+
+
+#### Wines
