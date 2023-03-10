@@ -148,6 +148,7 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 - In order to make sure the site was fully responsive and compatible with different browsers and devices, I tested the site on multiple browsers and devices. 
 - The browsers I tested the site on **chrome**, **edge** and **Firefox**, when using **chrome** i was able to use the dev tools and test the site on many different device sizes  like **iphones 5, 6, 7, 8, X, SE and 12 pro**, **Ipad mini and air** , and **samsung s9+ and s20 ultra**, the site worked as expected on all.
 - I also tested the site on a number of real mobile and tables, the devices i tested on were **Samsung S8 and a53**, **Ipad 7** and **Iphone 7 and 11**.
+- From testing the site on multiple browsers and devices, along with different screen widths, I can confirm that the site is fully responsive and compatible with multiple browsers and devices as you will see from the screenshots below.
 
 #### Browser Screenshots
 
@@ -222,7 +223,7 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 
 ![Samsung S20 image](readme-docs/images/s20.jpg)
 </details>  
-- - -
+- - - 
 
 #### Real Device Screenshots
 
@@ -243,3 +244,17 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 
 ![Ipad 7 image](readme-docs/images/ipad7.jpg)
 </details>  
+- - - 
+
+
+## User Story Testing
+
+##### Navigation
+*As a User I can easily navigate around the website so that i can view different pages and sections of the site.*
+ - The Navigation at the top of the page is easy to navigate and the current page link is bold which clearly indicates what page you are on.
+
+
+#### Register
+ *As a User I can Create and account so that I can view recipe details and add my own.*
+ - In the Navigation bar at the top of the page, if a User clicks on the Register link, they will be brought to the registeration page wehere they can sign up, once they sign up they will be able to access full functionality of the site.
+ 
