@@ -350,13 +350,34 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
-| Recipe cards   | Check to make sure recipe cards display correctly                         | Pass      |
-| 6 recipes per page | Makse sure that there is only 6 recipes per page.                     | Pass      |
+| Recipe cards   | Check to make sure recipe cards display correctly.                        | Pass      |
+| 6 Recipes Per Page | Make sure that there is only 6 recipes per page.                      | Pass      |
 | Read more button | Allow user to click the read more button under each recipe, when they are signed in.    | Pass      |
-| Add recipe Button | Display an Add Recipe button, when the user is signed in.               | Pass      |
+| Add recipe Button | Display an Add Recipe button, when the user is signed in.              | Pass      |
 | Next button | Display a next button at the bottom of the page if there is more than six recipes.    | Pass      |
-| Back button | Display a back button at the bottom of the page if the user is on the second recipe page.    | Pass      |
+| Back button | Display a back button at the bottom of the page if the user is on the second recipe page. | Pass      |
 
+
+#### Recipe Details Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Recipe Content   | Make sure the recipe content display correctly.                         | Pass      |
+| Edit Recipe   | Allow user to click the edit button to edit their recipe, if they posted the recipe.            | Pass      |
+| Delete Recipe   | Allow user to click the delete button to delete their recipe, if they posted the recipe.      | Pass      |
+| Signed in user access  | Only allow a singed in user access to the recipe details page.    | Pass      |
+| Like button   | Display a like button below the recipe and allow it to be clicked.         | Pass      |
+| Display total number of like   | Display the number of people that like the recipe.        | Pass      |
+| Comment Section  | Display any comments that were added in the comment section.            | Pass      |
+| Post Comment   | Allow user to post a comment and display it in the comment section        | Pass      |
 
 
 #### Wines
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Wine cards   | Check to make sure wine cards display correctly.                            | Pass      |
+| 6 Wine Per Page | Make sure that there is only 6 wine cards per page.                      | Pass      |
+| View button | Allow user to click the View button under each Wine.                         | Pass      |
+| Add Wine Button | Display an Add Wine button.             | Pass      |
+| Next button | Display a next button at the bottom of the page if there is more than six wines.    | Pass      |
+| Back button | Display a back button at the bottom of the page if the user is on the wine page that is not the first.    | Pass      |
