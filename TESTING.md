@@ -6,9 +6,9 @@
     * [Python](#python)
     * [Lighthouse](#lighthouse)
     
-2. [Browser and Deice Testing](#browser-and-device-testing)
-3. [User Story Test](#user-story-testing)
-4. [Manual Test](#manual-testing)
+2. [Browser and Deivce Testing](#browser-and-device-testing)
+3. [User Story Testing](#user-story-testing)
+4. [Manual Testing](#manual-testing)
 
 
 ## Validator Testing
@@ -150,6 +150,8 @@ The **Add Recipe** and **Edit Recipe** pages threw errors in the Validator that 
 </details>  
 
 **#** Just to note, the settings.py file gave some **line too long** errors which are related to the default authorization, which I was told can be ignored in this file.
+
+[Back to the top](#table-of-contents)
 - - - 
 
 ### Lighthouse
@@ -322,9 +324,10 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 *As a Site admin  I can administer the site so that I can manage the sites content.*
  - A super User account was created so that the site can be fully manages from the Admin panel.
 
+[Back to the top](#table-of-contents)
  - - - 
 
- ## Mnaual Testing
+ ## Manual Testing
 
 #### Navigation
 | Feature               | Test Performed                                                     | Result  |
@@ -509,3 +512,5 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
 | Sign Out Button | Check to see if it will sign the user out and redirect them to the login page.  | Pass      |
 | Success Message | Success message is displayed at the top of the screen after clicking Sign Out to let the user know they have logged out. | Pass      |
+
+[Back to the top](#table-of-contents)
