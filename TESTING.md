@@ -1,3 +1,16 @@
+## Table Of Contents:
+1. [Validator Testing](#vadilidator-testing)
+    * [Html](#html)
+    * [CSS](#css)
+    * [JavaScript](#javascript)
+    * [Python](#python)
+    * [Lighthouse](#lighthouse)
+    
+2. [Browser and Deice Testing](#browser-and-device-testing)
+3. [User Story Test](#user-story-testing)
+4. [Manual Test](#manual-testing)
+
+
 ## Validator Testing
 
 ### HTML
