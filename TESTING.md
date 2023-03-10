@@ -402,18 +402,49 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 | Cancel Button | When th user click the cancel button, the delete modal will dissapear and the user will be back on the recipe page.     | Pass      |
 | Clicking Outside The Modal | When the user clicks anywhere ouside the modal the modal will dissapear.    | Pass      |
 | X  | When the user clicks on the X button at the top of the modal, the modal dissapears.   | Pass      |
-
-
-
+| Success Message | Success message is displayed at the top of the screen when a user clicks yes on the delete modal  | Pass      |
 
 
 #### Wines
 | Feature               | Test Performed                                                     | Result    |
 |----------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
-| Wine cards   | Check to make sure wine cards display correctly.                            | Pass      |
+| Wine Cards   | Check to make sure wine cards display correctly.                            | Pass      |
 | 6 Wine Per Page | Make sure that there is only 6 wine cards per page.                      | Pass      |
-| View button | Allow user to click the View button under each Wine.                         | Pass      |
+| View Button | Allow user to click the View button under each Wine.                         | Pass      |
 | Add Wine Button | Display an Add Wine button.             | Pass      |
 | Next button | Display a next button at the bottom of the page if there is more than six wines.    | Pass      |
 | Back button | Display a back button at the bottom of the page if the user is on the wine page that is not the first.    | Pass      |
+
+
+#### Wine Details Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Wine Content   | Make sure the Wine content display correctly.                         | Pass      |
+| Edit Wine   | Allow user to click the edit button to edit their Wine, if they posted the Wine.            | Pass      |
+| Delete Wine   | Allow user to click the delete button to delete their Wine, if they posted the Wine.      | Pass      |
+| Signed in user access  | Only allow a singed in user access to the Wine details page.    | Pass      |
+
+
+#### Add A Wine Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Display form  | Check to see if all input fields display.                                  | Pass      |
+| Submit filled out form  | Fill out all the form and click the submit button at the bottom of the page. | Pass      |
+| Leave Input and Image fields blank | check to make sure form wont submit, and will display warnings. | Pass      |
+| Submit Button | On click it will submit the Wine, and bring the user to the Wines page where the newly added Wine can be seen. | Pass      |
+| Cancel Button | On click it will bring the user back to the Wines list.                  | Pass      |
+| Success Message | Success message is displayed at the top of the screen when a user clicks Submit  | Pass      |
+
+
+#### Update A Wine Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Display form  | Check to see if all input fields display with the orginal wine details.                                  | Pass      |
+| Update form  | Update Field the form and click the submit button at the bottom of the page and check if the recipe has been updated. | Pass      |
+| Update Button | On click it will Update the recipe, and bring the user to the recipes page where the updated recipe can be seen. | Pass      |
+| Cancel Button | On click it will bring the user back to the recipes list.                  | Pass      |
+| Success Message | Success message is displayed at the top of the screen when a user clicks update  | Pass      |
