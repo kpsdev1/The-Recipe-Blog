@@ -389,7 +389,7 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
 | Display form  | Check to see if all input fields display with the orginal recipe.                                  | Pass      |
-| Update form  | Update Field the form and click the submit button at the bottom of the page and check if the recipe has been updated. | Pass      |
+| Update form  | Update the form and click the submit button at the bottom of the page and check if the recipe has been updated. | Pass      |
 | Update Button | On click it will Update the recipe, and bring the user to the recipes page where the updated recipe can be seen. | Pass      |
 | Cancel Button | On click it will bring the user back to the recipes list.                  | Pass      |
 | Success Message | Success message is displayed at the top of the screen when a user clicks update  | Pass      |
@@ -443,8 +443,19 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
-| Display form  | Check to see if all input fields display with the orginal wine details.                                  | Pass      |
-| Update form  | Update Field the form and click the submit button at the bottom of the page and check if the recipe has been updated. | Pass      |
-| Update Button | On click it will Update the recipe, and bring the user to the recipes page where the updated recipe can be seen. | Pass      |
-| Cancel Button | On click it will bring the user back to the recipes list.                  | Pass      |
+| Display Form  | Check to see if all input fields display with the orginal wine details.                                  | Pass      |
+| Update Form  | Update the form and click the submit button at the bottom of the page and check if the Wine has been updated. | Pass      |
+| Update Button | On click it will Update the Wine, and bring the user to the Wines page where the updated Wine can be seen. | Pass      |
+| Cancel Button | On click it will bring the user back to the Wines list.                  | Pass      |
 | Success Message | Success message is displayed at the top of the screen when a user clicks update  | Pass      |
+
+
+#### Delete A Wine Modal
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Yes Button | When th user click the yes button the Wine will be deleted.                 | Pass      |
+| Cancel Button | When th user clicks the cancel button, the delete modal will dissapear and the user will be back on the Wine detail page.     | Pass      |
+| Clicking Outside The Modal | When the user clicks anywhere ouside the modal the modal will dissapear.    | Pass      |
+| X  | When the user clicks on the X button at the top of the modal, the modal dissapears.   | Pass      |
+| Success Message | Success message is displayed at the top of the screen when a user clicks yes on the delete modal  | Pass      |
