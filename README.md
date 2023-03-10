@@ -38,7 +38,6 @@ functionality of the site.
 3. [Future Features](#future-features)
 4. [Technologies Used](#technologies-used)
 5. [Testing](#testing)
-6. [Bugs](#bugs)
 6. [Deployment](#deployment)
 7. [Credits](#credits)
 8. [Acknowledgements](#acknowledgements)
@@ -285,11 +284,15 @@ beneath that it tells the user if they already have an account they can click he
 ![Signin](readme-docs/images/signin.jpg)
 - - -
 
-###Logout page
+### Logout page
 - The **logout** page follows the same style as the regiser and login pages with a grey banner accross the screen, It has a green heading that says **Sign out** and as the user if they are sure they want to sign out. Below this is a green **Sign Out** button which when clicked signs the user out.
 
 ![Signout](readme-docs/images/signout.jpg)
 - - -
+
+## Future Features
+- In the future I would like to make it mandatory for a user to enter their email when registering and then send then a varification email to their email and they would have to verify thier account before they could register. I think this would make the site alot more secure as people could not just sign up with any username this way it is tied to a email acocunt.
+
 
 ## Technologies Used
 - [Balsamiq](https://en.wikipedia.org/wiki/Balsamiq) was used to create the wireframes.
@@ -312,7 +315,6 @@ The testing section can be found [here](TESTING.md).
 
 ## Deployment
 This website is deployed to Heroku from a github repository, the following steps were taken:
-
 
 #### Creating Respository on Github
 - First make sure you are signed into [Github](https://github.com/) and go to code institutes template, which can be found [here](https://github.com/Code-Institute-Org/gitpod-full-template).

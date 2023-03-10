@@ -9,7 +9,7 @@
 2. [Browser and Deivce Testing](#browser-and-device-testing)
 3. [User Story Testing](#user-story-testing)
 4. [Manual Testing](#manual-testing)
-
+5. [Bugs](#bugs)
 
 ## Validator Testing
 
@@ -513,4 +513,14 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 | Sign Out Button | Check to see if it will sign the user out and redirect them to the login page.  | Pass      |
 | Success Message | Success message is displayed at the top of the screen after clicking Sign Out to let the user know they have logged out. | Pass      |
 
+- - - 
+
+## Bugs
+
+### Fixed
+- After creating the project I was getting alot of PEP8 errors, most of which were for **lines too long** as you can see in the below screenshot. To fix this and conform to PEP8 standards I broke the lines up and made sure they did not go past 79 characters.
+
+
+
 [Back to the top](#table-of-contents)
+
