@@ -459,3 +459,40 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 | Clicking Outside The Modal | When the user clicks anywhere ouside the modal the modal will dissapear.    | Pass      |
 | X  | When the user clicks on the X button at the top of the modal, the modal dissapears.   | Pass      |
 | Success Message | Success message is displayed at the top of the screen when a user clicks yes on the delete modal  | Pass      |
+
+
+#### Register Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Sign In link | Under the "already have an account section", click Sign in to see if it brings you to the login page        | Pass      |
+| Submit Filled Out Form  | Fill out the form and click the Signup button to see if new account is created. | Pass      |
+| Leave Email Field Blank  | Fill out all the form except the optional email field and hit submit to see if new account is created.| Pass      |
+| Leave Username Field Blank| Fill out the form and leave Username field blank, to see if it give a warning and does not Sign Up.| Pass      |
+| Leave Password Field Blank| Fill out the form and leave Password field blank, to see if it give a warning and does not Sign Up.| Pass      |
+| Leave Password (again) Field Blank| Fill out the form and leave Password (again) field blank, to see if it give a warning and does not submit.| Pass      |
+| Signup with an taken username| Try to register an account that already has the taken username, and see if it fails and warns you that there is an account with that username. | Pass      |
+| Signup Button | On click check will it submit the user details and log them in if everything is filled out correctly. | Pass      |
+| Success Message | Success message is displayed at the top of the screen when a user enters the correct details and clicks Sign Up. | Pass      |
+
+
+#### Login Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Sign Up link | Under the "if you do not have an account" section, click Sign up to see if it brings you to the Register page        | Pass      |
+| Leave Username Field Blank| Fill out Password Field and leave Username field blank, to see if it give a warning and does not Sign in.| Pass      |
+| Leave Password Field Blank| Fill out the Username field and leave Password field blank, to see if it give a warning and does not submit.| Pass      |
+| Sign In with unregistered account | Try to sign in with an account that is not registered, to see if it will fail. | Pass      |
+| Change on letter in username or password | On click check will tell the user that the username or password is incorrect | Pass      |
+| Sign In Button | On click check will log the user in if they have enter the right credentials and redirect them to the home page. | Pass      |
+| Success Message | Success message is displayed at the top of the screen when a user enters the correct details and clicks Sign in. | Pass      |
+
+
+
+#### Logout Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Sign Out Button | Check to see if it will sign the user out and redirect them to the login page.  | Pass      |
+| Success Message | Success message is displayed at the top of the screen after clicking Sign Out to let the user know they have logged out. | Pass      |
