@@ -308,3 +308,13 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 #### Administer The Site
 *As a Site admin  I can administer the site so that I can manage the sites content.*
  - A super User account was created so that the site can be fully manages from the Admin panel.
+
+ - - - 
+
+ ## Mnaual Testing
+
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Navigation | Clicked on all nav bar lkinks to make sure they go to correct page.           | Pass      |
+| Logo | Clicking on logo to see if it redirect to home page                                 | Pass      |
+
