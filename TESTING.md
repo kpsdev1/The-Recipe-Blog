@@ -375,6 +375,36 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 #### Add A Recipe Page
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Display form  | Check to see if all input fields display.                                  | Pass      |
+| Submit filled out form  | Fill out all the form and click the submit button at the bottom of the page. | Pass      |
+| Leave Image field blank on submission  | Check to make sure image place holder displays after submititng. | Pass      |
+| Leave Input fields blank | check to make sure form wont submit, and will display warnings. | Pass      |
+| Submit Button | On click it will submit the recipe, and bring the user to the recipes page where the newly added recipe can be seen. | Pass      |
+| Cancel Button | On click it will bring the user back to the recipes list.                  | Pass      |
+| Success Message | Success message is displayed at the top of the screen when a user clicks Submit  | Pass      |
+
+#### Update A Recipe Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Display form  | Check to see if all input fields display with the orginal recipe.                                  | Pass      |
+| Update form  | Update Field the form and click the submit button at the bottom of the page and check if the recipe has been updated. | Pass      |
+| Update Button | On click it will Update the recipe, and bring the user to the recipes page where the updated recipe can be seen. | Pass      |
+| Cancel Button | On click it will bring the user back to the recipes list.                  | Pass      |
+| Success Message | Success message is displayed at the top of the screen when a user clicks update  | Pass      |
+
+#### Delete A Recipe Modal
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
+| Yes Button | When th user click the yes button the recipe will be deleted.                 | Pass      |
+| Cancel Button | When th user click the cancel button, the delete modal will dissapear and the user will be back on the recipe page.     | Pass      |
+| Clicking Outside The Modal | When the user clicks anywhere ouside the modal the modal will dissapear.    | Pass      |
+| X  | When the user clicks on the X button at the top of the modal, the modal dissapears.   | Pass      |
+
+
+
 
 
 #### Wines
