@@ -373,6 +373,7 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 
 
 #### Wines
+| Feature               | Test Performed                                                     | Result    |
 |----------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
 | Wine cards   | Check to make sure wine cards display correctly.                            | Pass      |
