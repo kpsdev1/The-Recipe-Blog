@@ -269,7 +269,7 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 
 #### View Recipes
 *As a User I can view the list of recipes so that I can pick one to read.*
- - The user is able to clcik the recipes link in the nav bar and theis will take them to the recipes page where they can view a list of recipes.
+ - The user is able to click the recipes link in the nav bar and theis will take them to the recipes page where they can view a list of recipes.
  - If they wish to view one in full detail they can click Read More and they will then be able to see the recipe details, the user must be signed in to view the recipe details as if they are not signed in the Read More button will be diabled.
 
 #### Add A Recipe
@@ -293,6 +293,18 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 *As a User I can update my comments so that make changes incase I mistyped something or if I wish to delete the comment.*
  - The User is able to edit or delete any comment that they have created by clicking on the edit or delete button in the right hand side of that comment.
 
+### View Wines
+*As a User I can see the list of wines so that I can pick one to view.*
+ - The User must be signed in or the Wines link in the Nav bar will not be visible, if the User is signed in they can select Wines in the Nav bar and this will take them to the Wines page where they can selct a wine to view.
+
+#### Add A Wine
+*As a User I can add a wine that i like so that other people can see it*
+ - When a user is signed in they are able to click on the Add A Wine button on the Wine page, which will bring them to the Add Wine page where they are able to upload a Wine.
+
+ #### Edit / Delete A Wine
+ *As a User I can Edit/Delete my Wines so that I can make changes even after I have posted a Wine.*
+  - In the Wine Detail page there is an edit and delete button at the bottom of the Wine card, which will allow the user to delete or edit the wine that they posted.
+
 #### Administer The Site
 *As a Site admin  I can administer the site so that I can manage the sites content.*
- - A super user account was created so that the site can be fully manages from the Admin panel.
+ - A super User account was created so that the site can be fully manages from the Admin panel.
