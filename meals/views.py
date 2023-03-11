@@ -75,6 +75,7 @@ class RecipeDetails(View):
             },
         )
 
+
 @login_required
 def create_recipe(request):
     """This is the view that allows users add a recipe"""

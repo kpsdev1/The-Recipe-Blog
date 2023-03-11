@@ -291,7 +291,7 @@ beneath that it tells the user if they already have an account they can click he
 - - -
 
 ## Future Features
-- In the future I would like to make it mandatory for a user to enter their email when registering and then send then a varification email to their email and they would have to verify thier account before they could register. I think this would make the site alot more secure as people could not just sign up with any username this way it is tied to a email acocunt.
+- In the future I would like to make it mandatory for a user to enter their email when registering and then send then a varification email to their email and they would have to verify thier account before they could register. I think this would make the site alot more secure as people could not just sign up with any username this way it is tied to a email account.
 
 
 ## Technologies Used

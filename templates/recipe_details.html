@@ -16,7 +16,7 @@
 
             {% if user.is_authenticated and user == recipe.author %}
                 <a href="" class="delete-recipe" data-bs-toggle="modal" data-bs-target="#deleteRecipeModal">X</a>
-                <a href="{% url 'edit_recipe' recipe.id %}" class=""><i class="fa fa-pencil edit-recipe"></i></a>
+                <a href="{% url 'edit_recipe' recipe.id %}" ><i class="fa fa-pencil edit-recipe"></i></a>
             {% endif %}
             <div class="card-body">
                 <h3 class="recipe-detail-heading text-center">{{ recipe.title }}</h3>
@@ -27,7 +27,7 @@
                     <form class="d-inline" action="{% url 'recipe_like' recipe.slug %}" method="POST">
                         {% csrf_token %}
                         {% if liked %}
-                        <button type="submit" name="recipepost_id" value="{{recipe.slug}}"><i class="fas fa-heart"></i></button>
+                        <button type="submit" aria-label="Like Button" name="recipepost_id" value="{{recipe.slug}}"><i class="fas fa-heart"></i></button>
                             {% if recipe.number_of_likes == 1 %}
                             <span class="text-secondary"> Liked by you</span>
 
@@ -38,7 +38,7 @@
                             <span class="text-secondary"> Liked by you and {{ recipe.number_of_likes|add:"-1" }} other people</span>
                             {% endif %}
                         {% else %}
-                        <button type="submit" name="recipepost_id" value="{{recipe.slug}}"><i class="far fa-heart"></i></button>
+                        <button type="submit" aria-label="Like Button" name="recipepost_id" value="{{recipe.slug}}"><i class="far fa-heart"></i></button>
                         <span class="text-secondary"> {{ recipe.number_of_likes }} </span>
                         {% endif %}
                     </form>
@@ -78,7 +78,7 @@
                     
                 {% if user.is_authenticated and user.username == comment.name %}
                 <a href="{% url 'delete_comment' comment.id %}" class="delete-comment">X <span>Delete</span></a>
-                <a href="{% url 'edit_comment' comment.id %}" class=""><i class="fa fa-pencil edit-comment"></i></a>
+                <a href="{% url 'edit_comment' comment.id %}" ><i class="fa fa-pencil edit-comment"></i></a>
                 {% endif %}   
             </div>   
                   
@@ -101,7 +101,7 @@
                 <form method="post">
                     {{ comment_form | crispy }}
                     {% csrf_token %}
-                    <button type="submit" class="btn btn-green mt-2">Post</button>
+                    <button type="submit" aria-label="Post Comment" class="btn btn-green mt-2">Post</button>
                 </form>
                 {% endif %}
             </div>       
@@ -113,7 +113,7 @@
 
 
 
- <!-- This Modal is from bootstrapmodals page-->
+ <!-- This Modal is from bootstrap modals page to delete a recipe-->
 <div class="modal fade" id="deleteRecipeModal" tabindex="-1" role="dialog" aria-labelledby="deleteRecipeModalLabel" aria-hidden="true">
     <div class="modal-dialog recipe-delete-modal" role="document">
       <div class="modal-content modal-delete">
@@ -137,5 +137,7 @@
     </div>
 </div>
  
+
+
 
 {% endblock %}
