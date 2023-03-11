@@ -371,8 +371,9 @@ h4 {
 
 .error {
     text-decoration: none;
-    color: white;
-    background-color: black;
+    color: blue;
+    font-weight: 900;
+    
 }
 
 
