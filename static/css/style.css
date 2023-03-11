@@ -368,6 +368,15 @@ h4 {
     color: #8fac42;
 }
 
+
+.error {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+
+
 /* this is just on hero image */
 @media screen and (min-width: 640px) {
     .card-height {
