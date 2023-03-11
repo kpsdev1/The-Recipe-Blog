@@ -3,6 +3,7 @@
 
 <h1 class="text-center mt-4"><u>Wine List</u></h1>
 
+<!-- list the wines-->
 <div class="container">
     {% if user.is_authenticated %}
         <a href="{% url 'add_wine' %}" class="btn btn-green">Add A Wine</a>
@@ -24,7 +25,7 @@
     </div> 
 </div>
 
-
+<!-- adds next and back button -->
 {% if is_paginated %}
     <div class="pagination justify-content-center mt-4 mb-4">
         {% if page_obj.has_previous %}

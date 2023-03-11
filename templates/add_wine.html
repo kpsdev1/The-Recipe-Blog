@@ -4,7 +4,7 @@
 {% load cloudinary %}
 
 <h1 class="text-center mt-4">Add A Wine Below</h1>
-
+<!-- form to add wine -->
 <div class="container mt-4 create-form wine-form">
     <div class="row mt-4">
         <div class="col-sm-12 col-lg-6 offset-lg-3 mt-4">
@@ -12,7 +12,7 @@
             <form method="post" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form | crispy }}
-                
+    
                 <button type="submit" class="btn btn-green mt-4">Submit</button>
                 <a href="{% url 'wines' %}" class="btn btn-warning mt-4">Cancel</a>
             </form>
