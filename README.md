@@ -10,6 +10,7 @@ functionality of the site.
 
 ## Table Of Contents:
 1. [UX Design](#ux-design)
+    * [User Stories](#user-stories)
     * [Wireframes](#wireframes)
     * [Agile Methodology](#agile-methodology)
     * [Typography](#typography)
