@@ -5,6 +5,7 @@
     * [JavaScript](#javascript)
     * [Python](#python)
     * [Lighthouse](#lighthouse)
+    * [GTmetrix](#gtmetrix)
     
 2. [Browser and Deivce Testing](#browser-and-device-testing)
 3. [User Story Testing](#user-story-testing)
@@ -64,7 +65,7 @@ All the site pages were run through the W3C validator to check for any issues an
 ![Add wine validation](readme-docs/images/htmllogout.jpg)
 </details> 
 
-The **Add Recipe** and **Edit Recipe** pages threw errors in the Validator that were related to the **Summernote** library that I used. I ignored these errors as it was not in any code I had written and because it is a popular django library I presume these are false positives. Below you can see a screenshot of the errors.
+The **Add Recipe** and **Edit Recipe** pages threw errors in the Validator that were related to the **Summernote** library that I used. I was told to ignored these errors as it was not in any code I had written and that because it is a popular django library these are more than likely false positives. Below you can see a screenshot of the errors.
 
 ![Register validation](readme-docs/images/htmladdrecipe.jpg)
 - - -
@@ -85,7 +86,7 @@ The **Add Recipe** and **Edit Recipe** pages threw errors in the Validator that 
 
 ### Python
 - I tested the project using the PEP8 validator in gitpod, this I had installed from my previous project, but it can be installed by running **pip3 install pycodestyle** then searching for **Python**, Select **Linter** and then select **pycodestyle**. The PEP8 erorrs would then be underlined in red and also listed in **Problems tab**. This returned no errors.
-- I also tested the site on **Code Institutes pep8 online** website. Which casn be found [here](https://pep8ci.herokuapp.com/). As you can see from the below screenshots, no errors were found.
+- I also tested the site on **Code Institutes pep8 online** website. Which can be found [here](https://pep8ci.herokuapp.com/). As you can see from the below screenshots, no errors were found.
 
 ##### Meals App
 <details>
@@ -159,9 +160,14 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 ![chrome browser test](readme-docs/images/lighthouse.jpg)
 - - - 
 
+### GTmetrix
+I also tested the sites performance on GTMetrix.
+![GTmetrix test](readme-docs/images/gtmetrix.jpg)
+- - - 
+
 ## Browser and Device Testing
 - In order to make sure the site was fully responsive and compatible with different browsers and devices, I tested the site on multiple browsers and devices. 
-- The browsers I tested the site on **chrome**, **edge** and **Firefox**, when using **chrome** i was able to use the dev tools and test the site on many different device sizes  like **iphones 5, 6, 7, 8, X, SE and 12 pro**, **Ipad mini and air** , and **samsung s9+ and s20 ultra**, the site worked as expected on all.
+- The browsers I tested the site on **Chrome**, **Edge** and **Firefox**, when using **Chrome** i was able to use the dev tools and test the site on many different device sizes  like **iphones 5, 6, 7, 8, X, SE and 12 pro**, **Ipad mini and air** , and **samsung s9+ and s20 ultra**, the site worked as expected on all.
 - I also tested the site on a number of real mobile and tables, the devices i tested on were **Samsung S8 and a53**, **Ipad 7** and **Iphone 7 and 11**.
 - From testing the site on multiple browsers and devices, along with different screen widths, I can confirm that the site is fully responsive and compatible with multiple browsers and devices as you will see from the screenshots below.
 
@@ -332,23 +338,23 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 #### Navigation
 | Feature               | Test Performed                                                     | Result  |
 |-----------------------|--------------------------------------------------------------------|---------|
-| Logo | Clicking on logo to see if it redirect to home page                                 | Pass    |
-| Home | Clicking on Home link bring user to the home page                                   | Pass    |
-| Recipes | Clicking on the recipe link, bring user to the recipe page                       | Pass    |
-| Wines | When signed in clicking on the wine link, brings user to the wines page            | Pass    |
+| Logo | Clicking on logo to see if it redirects to home page.                               | Pass    |
+| Home | Clicking on Home link brings user to the home page.                                 | Pass    |
+| Recipes | Clicking on the recipe link, brings user to the recipe page.                      | Pass    |
+| Wines | When signed in clicking on the wine link, brings user to the wines page.           | Pass    |
 | Register | When signed out clicking on the Register link, brings the user to the Registeration page.   | Pass    |
 | Login | When signed out, clicking on the Login link, brings the user to the login page.    | Pass    |
 | Logout | When signed in, clicking on the logout link, brings the user to the logout page.  | Pass    |
 | Correct links display | When a user is signed in or out the correct links display for both.   | Pass    |
 | Displays correctly on all pages | Made sure it displays correctly on all pages.               | Pass    |
 | Current Page | Nav Link is bold for current page that a user is on.                        | Pass    |
-| Responsiveness | Checked to make sure it changes to burger menu on smaller devices         | Pass      |
+| Responsiveness | Checked to make sure it changes to burger menu on smaller devices.         | Pass      |
 
 
 #### Footer
 | Feature               | Test Performed                                                     | Result  |
 |-----------------------|--------------------------------------------------------------------|---------|
-| External links | Clicking on social media opens on a new page.                             | Pass    |
+| External links | Clicking on social media links opens on a new page.                             | Pass    |
 | Displays correctly on all pages | Made sure it displays correctly on all pages.            | Pass    |
 | Responsiveness | Checked to make sure link icons display correctly on smaller devices.     | Pass    |
 
@@ -378,7 +384,7 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
-| Recipe Content   | Make sure the recipe content display correctly.                         | Pass      |
+| Recipe Content   | Make sure the recipe content displays correctly.                         | Pass      |
 | Edit Recipe   | Allow user to click the edit button to edit their recipe, if they posted the recipe.            | Pass      |
 | Delete Recipe   | Allow user to click the delete button to delete their recipe, if they posted the recipe.      | Pass      |
 | Signed in user access  | Only allow a singed in user access to the recipe details page.    | Pass      |
@@ -395,10 +401,10 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 | Display form  | Check to see if all input fields display.                                  | Pass      |
 | Submit filled out form  | Fill out all the form and click the submit button at the bottom of the page. | Pass      |
 | Leave Image field blank on submission  | Check to make sure image place holder displays after submititng. | Pass      |
-| Leave Input fields blank | check to make sure form wont submit, and will display warnings. | Pass      |
+| Leave Input fields blank | Check to make sure form wont submit, and will display warnings. | Pass      |
 | Submit Button | On click it will submit the recipe, and bring the user to the recipes page where the newly added recipe can be seen. | Pass      |
 | Cancel Button | On click it will bring the user back to the recipes list.                  | Pass      |
-| Success Message | Success message is displayed at the top of the screen when a user clicks Submit  | Pass      |
+| Success Message | Success message is displayed at the top of the screen when a user clicks Submit.  | Pass      |
 
 #### Update A Recipe Page
 | Feature               | Test Performed                                                     | Result    |
@@ -408,7 +414,7 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 | Update form  | Update the form and click the submit button at the bottom of the page and check if the recipe has been updated. | Pass      |
 | Update Button | On click it will Update the recipe, and bring the user to the recipes page where the updated recipe can be seen. | Pass      |
 | Cancel Button | On click it will bring the user back to the recipes list.                  | Pass      |
-| Success Message | Success message is displayed at the top of the screen when a user clicks update  | Pass      |
+| Success Message | Success message is displayed at the top of the screen when a user clicks update.  | Pass      |
 
 #### Delete A Recipe Modal
 | Feature               | Test Performed                                                     | Result    |
@@ -418,7 +424,7 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 | Cancel Button | When th user click the cancel button, the delete modal will dissapear and the user will be back on the recipe page.     | Pass      |
 | Clicking Outside The Modal | When the user clicks anywhere ouside the modal the modal will dissapear.    | Pass      |
 | X  | When the user clicks on the X button at the top of the modal, the modal dissapears.   | Pass      |
-| Success Message | Success message is displayed at the top of the screen when a user clicks yes on the delete modal  | Pass      |
+| Success Message | Success message is displayed at the top of the screen when a user clicks yes on the delete modal.  | Pass      |
 
 
 #### Wines
