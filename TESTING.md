@@ -269,6 +269,12 @@ I also tested the sites performance on GTMetrix.
 
 ![Ipad 7 image](readme-docs/images/ipad7.jpg)
 </details>  
+
+<details>
+    <summary> Samsung S8</summary>  
+
+![Samsung S8 image](readme-docs/images/s8.jpg)
+</details>  
 - - - 
 
 
@@ -529,7 +535,7 @@ I also tested the sites performance on GTMetrix.
 
 ### Fixed
 - After creating the project I was getting alot of PEP8 errors, most of which were for **lines too long** as you can see in the below screenshot. To fix this and conform to PEP8 standards I broke the lines up and made sure they did not go past 79 characters.
-- With the orginal JS file I had for the setTime out function it was throwing a **Uncaught TypeError: Cannot read properties of null** error in the console. The site was working fine with this but i could not get rid of the error in the console, i tried many things from youtube and stack overflow but i could not get rid of the error until i found one way that showed how to do the same thing with jquery. This soilution did not produce any errors in the console and worked exactly the same.
+- With the orginal JS file I had for the setTime out function, it was throwing a **Uncaught TypeError: Cannot read properties of null** error in the console. The site was working fine with this but i could not get rid of the error in the console, i tried many things from youtube and stack overflow but i could not get rid of the error until i found one way that showed how to do the same thing with jquery. This soilution did not produce any errors in the console and worked exactly the same.
 
 
 
