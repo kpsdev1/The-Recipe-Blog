@@ -79,9 +79,13 @@ The **Add Recipe** and **Edit Recipe** pages threw errors in the Validator that 
 
 ### JavaScript
 - The Javascript file was put through Jshint code validator to see if there were any errors. Jshint can be found [here](https://jshint.com/).
-- As you can see from the below screenshot, there were no errors.
+- The first screenshot was the orginal Javascript that I was using for the Settimeout but for some reason it was giving a **Uncaught typeError** in the console, even though the site was working fine. I tried many ways to get rid of the error but I could not so then I eventually found a way to do it with Jquery. I have left the screenshot in for reference as to how i was first doing it. The second screenshot is the current JS that I am using and it has no errors.
 
 ![JS Validator screenshot](readme-docs/images/js-testing.jpg)  
+
+
+**Current JS File**  
+![JS Validator screenshot](readme-docs/images/jshint.jpg)  
 - - -
 
 ### Python
@@ -525,6 +529,7 @@ I also tested the sites performance on GTMetrix.
 
 ### Fixed
 - After creating the project I was getting alot of PEP8 errors, most of which were for **lines too long** as you can see in the below screenshot. To fix this and conform to PEP8 standards I broke the lines up and made sure they did not go past 79 characters.
+- With the orginal JS file I had for the setTime out function it was throwing a **Uncaught TypeError: Cannot read properties of null** error in the console. The site was working fine with this but i could not get rid of the error in the console, i tried many things from youtube and stack overflow but i could not get rid of the error until i found one way that showed how to do the same thing with jquery. This soilution did not produce any errors in the console and worked exactly the same.
 
 
 
