@@ -1,6 +1,7 @@
-let message = document.getElementById('message-alert');
-
-setTimeout(function() {
-    message.style.display = 'none';
-}, 2000);
-
+$(document).ready(function() {
+    setTimeout(function(){
+        if ($('#message-alert').length > 0) {
+            $('#message-alert').remove();
+        }
+    }, 2000);
+});
