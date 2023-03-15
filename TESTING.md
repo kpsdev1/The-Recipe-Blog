@@ -65,7 +65,7 @@ All the site pages were run through the W3C validator to check for any issues an
 ![Add wine validation](readme-docs/images/htmllogout.jpg)
 </details> 
 
-The **Add Recipe** and **Edit Recipe** pages threw errors in the Validator that were related to the **Summernote** library that I used. I was told to ignored these errors as it was not in any code I had written and that because it is a popular django library these are more than likely false positives. Below you can see a screenshot of the errors.
+The **Add Recipe** and **Edit Recipe** pages threw errors in the Validator that were related to the Django **Summernote** widget that I used. From searching on slack and from speaking to tutor support I was told that as I had not written the summernote code, I could ignore these errors as long as my code validated and make a note of it in the readme, These errors do not affect the site functionality. Below you can see a screenshot of the errors.
 
 ![Register validation](readme-docs/images/htmladdrecipe.jpg)
 - - -
