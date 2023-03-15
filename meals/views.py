@@ -95,6 +95,7 @@ def create_recipe(request):
     return render(request, 'add_recipe.html', context)
 
 
+@login_required
 def delete_recipe(request, recipe_id):
     """This is the view that allows users delete their recipe"""
     recipe = Recipe.objects.get(pk=recipe_id)
@@ -103,6 +104,7 @@ def delete_recipe(request, recipe_id):
     return redirect('recipes')
 
 
+@login_required
 def edit_recipe(request, recipe_id):
     """This is the view that allows users update their recipe"""
     recipe = Recipe.objects.get(pk=recipe_id)
@@ -123,6 +125,7 @@ def edit_recipe(request, recipe_id):
     )
 
 
+@login_required
 def delete_comment(request, comment_id):
     """This is the view that allows users delete their Comment"""
     comment = Comment.objects.get(pk=comment_id)
@@ -132,6 +135,7 @@ def delete_comment(request, comment_id):
         reverse('recipe_details', args=[comment.recipe.slug]))
 
 
+@login_required
 def edit_comment(request, comment_id):
     """This is the view that allows users edit their Comment"""
     comment = Comment.objects.get(pk=comment_id)
