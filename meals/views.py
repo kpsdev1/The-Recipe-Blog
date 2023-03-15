@@ -6,6 +6,7 @@ from .forms import CommentForm, RecipeForm
 from django.http import HttpResponseRedirect
 from django.utils.text import slugify
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 def home(request):
@@ -21,7 +22,7 @@ class RecipeList(generic.ListView):
     template_name = 'recipes.html'
 
 
-class RecipeDetails(View):
+class RecipeDetails(LoginRequiredMixin, View):
     """
     View to show the recipe detail page
     which displays all the recipe details
@@ -155,7 +156,7 @@ def edit_comment(request, comment_id):
     )
 
 
-class RecipeLike(View):
+class RecipeLike(LoginRequiredMixin, View):
     """This is the class view to like and unlike a recipe"""
     def post(self, request, slug):
         recipe = get_object_or_404(Recipe, slug=slug)
