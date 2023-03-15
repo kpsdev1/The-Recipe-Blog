@@ -495,13 +495,6 @@ h4 {
         margin: 0;
     }
    
-    /* recipe delete modal */
-    .recipe-delete-modal {
-        width: 90%;
-        margin-right: 10%;
-        
-    }
-
     /* comment section  */
     .comment-card {
         max-width: 95%;  
