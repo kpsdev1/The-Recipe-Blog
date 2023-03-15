@@ -183,17 +183,6 @@ h4 {
     right: 10px;
 }
 
-.delete-comment span {
-    display: none;
-}
-
-.delete-comment:hover span {
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 15px;
-    font-weight:100;
-}
 
 /* edit comment */
 .edit-comment {
