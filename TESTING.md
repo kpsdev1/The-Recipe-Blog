@@ -154,7 +154,7 @@ The **Add Recipe** and **Edit Recipe** pages threw errors in the Validator that 
 ![image of Python testing views.py file in wine app](readme-docs/images/wine-viewspy.jpg)
 </details>  
 
-**#** Just to note, the settings.py file gave some **line too long** errors which are related to the default authorization, which I was told can be ignored in this file.
+**#** Just to note, the settings.py file gave some **line too long** errors which are related to the default authorization, which I was told can be ignored in this file so I added the **Noqa** comment to them so that the linter would not read them.
 
 [Back to the top](#table-of-contents)
 - - - 
