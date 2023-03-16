@@ -5,7 +5,7 @@
 
 
 <!-- display the recipe details-->
-<div class="row">
+<div class="row g-0">
     <div class="col-12">
         <div class="card border-0 mt-4">
             {% if "placeholder" in recipe.image.url %}
@@ -66,7 +66,7 @@
 
    
 <!-- Display comment section -->
-<div class="row">
+<div class="row g-0">
     <div class="col-12 mb-2 pb-4">
         <div class="card comment-card">
             <h2 class="text-center">Comment Section</h2>
@@ -115,7 +115,7 @@
 
 <!-- Post a comment section -->
 {% if user.is_authenticated %}
-<div class="row">
+<div class="row g-0">
     <div class="col-12">
         <div class="card post-comment">
             <div class="card-body post-comment-body">
