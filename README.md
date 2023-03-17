@@ -60,12 +60,12 @@ Below are the user stories that were added to the Github project, They can be fo
 **EPIC | Crud Functionality**
 - As a User I can add a recipe so that other people can view it. 
 - As a User I can Edit/Delete my recipes so that I can make changes even after I have posted a recipe.
-- As a User I can like recipes so that I can show that i like a recipe without having to comment.
+- As a User I can like recipes so that I can show that I like a recipe without having to comment.
 - As a User I can add a wine that I like so that other people can see it.
-- As a User I can edit a wine I added so that so that I can update or make changes.
-- As a User I can delete a wine that I shared so that I have control over the wines i share.
-- As a User I can comment on other recipes so that provide feedback.
-- As a User I can update my comments so that make changes incase I mistyped something or if I wish to delete the comment.
+- As a User I can edit a wine I added so that I can update or make changes.
+- As a User I can delete a wine that I shared so that I have control over the wines I share.
+- As a User I can comment on other recipes so that I can provide feedback.
+- As a User I can update my comments so that I can make changes incase I mistyped something or if I wish to delete the comment.
 - As a User I can View likes so that I can see how popular a recipe or comment is.
 - As a User I can Like comments so that I can show my appreciation of a comment.
   
@@ -75,25 +75,17 @@ Below are the user stories that were added to the Github project, They can be fo
 - As a User I can reset my password so that I can change it if I have forgotten it or want to change it.
 
 
-
-
 **EPIC | Register / Sign in and out**
 - As a User I can create an account so that I can add my own recipes and comment on other peoples recipes.
 - As a User I can Sign-in / Sign-out so that can access features when signed in and sign-out so that no one can access my account.
 
 
-
-
-
-
-
-
-
  *Please note that user stories **Search Recipe** and **Like Comments** have not been implemented in this sprint and plan to be in the next one, **Reset password** will not be implemented as of now.*
 - - -
 
+
 ### Wireframes
-Below are the wireframes for the site that I created using balsamiq. Please note that the website has changed a bit from the orginal wireframes and not every single page is there as i added some pages like the wines section towards the end of the project after the wireframes were created.
+Below are the wireframes for the site that I created using balsamiq. Please note that the website has changed a bit from the orginal wireframes and not every single page is there as I added some pages like the wines section towards the end of the project after the wireframes were created.
 
 
 <details>
@@ -144,8 +136,8 @@ Github projects was used to track the development of this website using the agil
 
 
 ### Colour Scheme
-For this site i decide to keep the main color scheme very simple, with the text either being white or black and the navbar backgound and icons being green.
-I did also have one some button like the delete and cancel buttons red and orange, but the main color scheme of the site was black, white and green.
+For this site I decide to keep the main color scheme very simple, with the text either being white or black and the navbar backgound and icons being green.
+I did also have some button like the delete and cancel buttons red and orange, but the main color scheme of the site was black, white and green.
   
 ![colour scheme](readme-docs/images/color-scheme.jpg)  
 - - - 
@@ -175,7 +167,7 @@ Below is the database diagram that I created using LucidCharts.
 
 ### Footer
 - The footer is found at the bottom of every page and responsive for tablet and mobile too.
-- It displays 4 icons for the biggest scoial media platfoms today, Twitter, Facebook, Youtube and Instagram. These are all green in color to match the sites colour scheme
+- It displays 4 icons for the biggest scoial media platforms today, Twitter, Facebook, Youtube and Instagram. These are all green in color to match the sites colour scheme
 - Above the icons there is a horizontal line that is centered, and it is 30% of the screen width on large devices, 50% on medium and 60% on small devices.
 - When any of the icons are clicked the social media site opens on a seperate tab, this way the user still has the The Recipe Blog website open so they can easily navigate back to it.
   
@@ -195,7 +187,7 @@ Below is the database diagram that I created using LucidCharts.
 - Below this are the recipe cards which are displayed in the bootstrap card format and have six to a page.
 - The **read more** button is greyed out when the user is logged out and is green when the user is logged in(second screeshot)
 - Above the recipes on the left hand side there is a green **Add Recipe** button, this button is only displayed if the user is logged in.
-- On Large screens they are three accross, on medium devices they are two accross and on small deavices it is just one.
+- On Large screens they are three accross, on medium devices they are two accross and on small devices it is just one.
 - Below the recipe cards there will be a next and back button depending on how many recipes have been added.  
 
 ![Recipes](readme-docs/images/recipes.jpg)
