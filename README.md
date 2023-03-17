@@ -236,7 +236,7 @@ Below is the database diagram that I created using LucidCharts.
 - When a user clicks on the delete icon on the recipe details page a bootstrap modal pops up in the center and asks the user to confirm.
 - The modal is a square box with a grey background, with a heading that says **Delete Recipe** and the center text asks **Are you sure you want to delete the recipe**.
 - At the bottom right of the modal box is a red **Yes** button to confim if they want to delete it. The button is red because red is associated with danger and if clicked the recipe will be gone. Once clicked the recipe will be deleted and the user will be returned to the recipes page.
-- Beside the **Yes** button there is a **Cancel** button, that when clicked will make the modal disappear, there is also an **X** in the top right of the modal that will also get right of it.
+- Beside the **Yes** button there is a **Cancel** button, that when clicked will make the modal disappear, there is also an **X** in the top right of the modal that will also get rid of it.
 - If the user clicks anywhere else on the screen the modal will also disapear.
 - Please note that only the user who created the recipe can delete it from here.
 - After deleting the Recipe a success message will be displayed at the top of the screen.
@@ -270,7 +270,7 @@ Below is the database diagram that I created using LucidCharts.
 ### Wine Details page
 - When a user clicks the green **View** button on one of the Wine cards from the **Wines** page they are brought to the **Wine Details** page.
 - Here the user will see a larger bootstrap card that is centered, this displays the image larger and all of the wine details. There is a border around the card which is standard with bootstrap cards.
-- At the bottom of the wine card there is a **Edit** and **Delete** Button.
+-If the user who added the wine is looking at it there will be a **Edit** and **Delete** Button at the bottom.
 
 ![Wine details](readme-docs/images/wine-details.jpg)
 - - -
@@ -288,7 +288,7 @@ Below is the database diagram that I created using LucidCharts.
 
 ### Edit Wine Page
 - The **Edit Wine page** is accessed when the user clicks the **Edit** button on the **Wine details** page.
-- This exactly the same as the **Add Wine** page only for it has the details that the user already enter filled into the form fields so that the user can edit them and the heading also says **Edit Wine**
+- This exactly the same as the **Add Wine** page only for it has the details that the user already entered filled into the form fields so that the user can edit them and the heading also says **Edit Wine**
 - Please note that only the user who created the wine can edit it from here.
 - After editing the Wine a success message will be displayed at the top of the screen.
 
@@ -308,9 +308,9 @@ Below is the database diagram that I created using LucidCharts.
 ### Register Page
 - The **Register** page has grey banner running accross the page and it has an image at the right hand side of the banner. In the center of the Banner is a green heading saying **Sign Up** and
 beneath that it tells the user if they already have an account they can click here to go to the login page.
-- Beneath this is a centered from so that user can enter a **Username**, a **Email** which is optional and then enter the **password** which they will have to confirm by entering it again.
-- At the bottom of the from there is a green **Signup** button.
-- When the user fills out the form and clicks the **Signup** button then they will be logged in and redirected to the home page.
+- Beneath this is a centered form so that the user can enter a **Username**, a **Email** which is optional and then enter the **password** which they will have to confirm by entering it again.
+- At the bottom of the form there is a green **Sign Up** button.
+- When the user fills out the form and clicks the **Sign Up** button then they will be logged in and redirected to the home page.
 - The register nav link is not visible when a user is already signed in.
 
 ![Register](readme-docs/images/register.jpg)
@@ -325,13 +325,13 @@ beneath that it tells the user if they already have an account they can click he
 - - -
 
 ### Logout page
-- The **logout** page follows the same style as the regiser and login pages with a grey banner accross the screen, It has a green heading that says **Sign out** and as the user if they are sure they want to sign out. Below this is a green **Sign Out** button which when clicked signs the user out and redirects them to the **Sign In** page.
+- The **logout** page follows the same style as the regiser and login pages with a grey banner accross the screen, It has a green heading that says **Sign out** and asks the user if they are sure they want to sign out. Below this is a green **Sign Out** button which when clicked signs the user out and redirects them to the **Sign In** page.
 
 ![Signout](readme-docs/images/signout.jpg)
 - - -
 
 ## Future Features
-- In the future I would like to make it mandatory for a user to enter their email when registering and then send them a varification email to their email and they would have to verify thier account before they could register. I think this would make the site alot more secure as people could not just sign up with any username, this way it would be tied to a email account.
+- In the future I would like to make it mandatory for a user to enter their email when registering and then send them a varification email to their email and they would have to verify their account before they could register. I think this would make the site alot more secure as people could not just sign up with any username, this way it would be tied to a email account.
 - Also in the future I would like the user to have a profile section, so they could upload a photo and then also customize their profile. I think it would also look better if the recipe and comments had a small photo of the user who posted next to it, like you see on social media platforms.
 
 
@@ -346,7 +346,7 @@ beneath that it tells the user if they already have an account they can click he
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript) was used for interactiveness.
 - [Gitpod](https://www.gitpod.io/about) was used to create this site and then push everything to github.
 - [Heroku](https://en.wikipedia.org/wiki/Heroku) is used to host this site.
-- [Github](https://en.wikipedia.org/wiki/GitHub) was used for store the code.
+- [Github](https://en.wikipedia.org/wiki/GitHub) was used to store the code.
 - [Git](https://en.wikipedia.org/wiki/Git) was used for version control.
 - [Cloudinary](https://cloudinary.com/) was used to store the images.
 - [ElephantSQL](https://www.elephantsql.com/) was used to store the database.
@@ -373,7 +373,7 @@ This website is deployed to Heroku from a github repository, the following steps
 - Enter a **Name** and keep the plan as **Tiny Turtle Free**, then **tags** field can be left blank, Select a region closest to you, I selected **EU-West-1(Ireland)** as I'm in Ireland. Then click **Review** and afterwards click **create instance**.
 - On The Dashboard click on your database instance name.
 - You will see the details for your database instance, in the url section click on the copy icon to copy the database url.
-- Head over to gitpod and create an **Database URL** enviroment variable in you env.py file and set it equal to the copied url.
+- Head over to gitpod and create an **Database URL** enviroment variable in your env.py file and set it equal to the copied url.
 
 #### Deploying to Heroku.
 - Head back over to [heroku](https://www.heroku.com/) and click on your **app** and then go to the **Settings tab**
