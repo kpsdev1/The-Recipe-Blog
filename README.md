@@ -47,28 +47,49 @@ functionality of the site.
 ## UX Design:
 
 ### User Stories
-Below are the user stories that was added to the Github project:
-1. As a User I can easily navigate around the site so that I can view different pages and sections on the site.
-2. As a User I can create an account so that I can add my own recipes and comment on other peoples recipes.
-3. As a User I can Sign-in / Sign-out so that can access features when signed in and sign-out so that no one can access my account.
-4. As a User I can click on the about page so that so that i can find out what the website is about and how to use it.
-5. As a User I can view the list of recipes so that I can pick one to read.
-6. As a User I can add a recipe so that other people can view it. 
-7. As a User I can Edit/Delete my recipes so that I can make changes even after I have posted a recipe.
-8. As a User I can like recipes so that I can show that i like a recipe without having to comment.
-9. As a User I can see the list of wines so that I can pick one to view.
-10. As a User I can add a wine that i like so that other people can see it.
-11. As a User I can edit a wine I added so that so that I can update or make changes.
-12. As a User I can delete a wine that I shared so that I have control over the wines i share.
-13. As a User I can comment on other recipes so that provide feedback 5
-14. As a Site admin I can administer the site so that I can manage the sites content.
-15. As a User I can update my comments so that make changes incase I mistyped something or if I wish to delete the comment.
-16. As a User I can Like comments so that I can show my appreciation of a comment.
-17. As a User I can View likes so that I can see how popular a recipe or comment is.
-18. As a User I can reset my password so that I can change it if I have forgotten it or want to change it.
-19. As a User I can search so that I can find a recipe that I am looking for.
+Below are the user stories that were added to the Github project, They can be found [here](https://github.com/kpsdev1/The-Recipe-Blog/issues) in the issue section of the repository.
 
- *Please note that user stories **19** and **16** have not been implemented in this sprint and plan to be in the next one, **18** will not be implemented as of now.*
+**EPIC | Site Navigation**
+- As a User I can easily navigate around the site so that I can view different pages and sections on the site.
+- As a User I can click on the about page so that so that i can find out what the website is about and how to use it.
+- As a User I can view the list of recipes so that I can pick one to read.
+- As a User I can see the list of wines so that I can pick one to view.
+- As a User I can search so that I can find a recipe that I am looking for.  
+  
+
+**EPIC | Crud Functionality**
+- As a User I can add a recipe so that other people can view it. 
+- As a User I can Edit/Delete my recipes so that I can make changes even after I have posted a recipe.
+- As a User I can like recipes so that I can show that i like a recipe without having to comment.
+- As a User I can add a wine that I like so that other people can see it.
+- As a User I can edit a wine I added so that so that I can update or make changes.
+- As a User I can delete a wine that I shared so that I have control over the wines i share.
+- As a User I can comment on other recipes so that provide feedback.
+- As a User I can update my comments so that make changes incase I mistyped something or if I wish to delete the comment.
+- As a User I can View likes so that I can see how popular a recipe or comment is.
+- As a User I can Like comments so that I can show my appreciation of a comment.
+  
+
+**EPIC | Administration**
+- As a Site admin I can administer the site so that I can manage the sites content.
+- As a User I can reset my password so that I can change it if I have forgotten it or want to change it.
+
+
+
+
+**EPIC | Register / Sign in and out**
+- As a User I can create an account so that I can add my own recipes and comment on other peoples recipes.
+- As a User I can Sign-in / Sign-out so that can access features when signed in and sign-out so that no one can access my account.
+
+
+
+
+
+
+
+
+
+ *Please note that user stories **Search Recipe** and **Like Comments** have not been implemented in this sprint and plan to be in the next one, **Reset password** will not be implemented as of now.*
 - - -
 
 ### Wireframes
