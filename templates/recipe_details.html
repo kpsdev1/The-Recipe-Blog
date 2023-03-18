@@ -48,14 +48,14 @@
                     {% endif %}
                            
                 </div>
-                <!-- I had to change the |safe template tag to |striptags as it was still throwing errors with the html validator -->
+                
                 <div class="recipe-detail-card">
                     <h4>Decription</h4>
-                    <p class="card-text"> {{ recipe.description|striptags }}</p>
+                    <p class="card-text"> {{ recipe.description|safe }}</p>
                     <h4>Ingredients</h4>
-                    <p class="card-text"> {{ recipe.ingredients|striptags }}</p>
+                    <p class="card-text"> {{ recipe.ingredients|safe }}</p>
                     <h4>Cooking Instructions</h4>
-                    <p class="card-text"> {{ recipe.cooking_instructions|striptags }}</p>
+                    <p class="card-text"> {{ recipe.cooking_instructions|safe }}</p>
                 </div>
             </div>
         </div> 
