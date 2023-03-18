@@ -250,43 +250,43 @@ I also tested the sites performance on GTMetrix.
 </details>
 
 <details>
-    <summary>Chrome Dev tools Iphone 5</summary>  
+    <summary>Chrome Dev tools iPhone 5</summary>  
 
 ![Iphone 5 image](readme-docs/images/iphone5.jpg)
 </details>  
 
 <details>
-    <summary>Chrome Dev tools Iphone 6, 7, 8</summary>  
+    <summary>Chrome Dev tools iPhone 6, 7, 8</summary>  
 
 ![Iphone 6,7,8 image](readme-docs/images/iphone678.jpg)
 </details>  
 
 <details>
-    <summary>Chrome Dev tools Iphone SE</summary>  
+    <summary>Chrome Dev tools iPhone SE</summary>  
 
 ![Iphone SE image](readme-docs/images/iphonese.jpg)
 </details>  
 
 <details>
-    <summary>Chrome Dev tools Iphone X</summary>  
+    <summary>Chrome Dev tools iPhone X</summary>  
 
 ![Iphone X image](readme-docs/images/iphonex.jpg)
 </details>  
 
 <details>
-    <summary>Chrome Dev tools Iphone 12 Pro</summary>  
+    <summary>Chrome Dev tools iPhone 12 Pro</summary>  
 
 ![Iphone 12 image](readme-docs/images/iphone12.jpg)
 </details>  
 
 <details>
-    <summary>Chrome Dev tools Ipad Mini</summary>  
+    <summary>Chrome Dev tools iPad Mini</summary>  
 
 ![Ipad mini image](readme-docs/images/ipadmini.jpg)
 </details>  
 
 <details>
-    <summary>Chrome Dev tools Ipad air</summary>  
+    <summary>Chrome Dev tools iPad air</summary>  
 
 ![Ipad Air image](readme-docs/images/ipadair.jpg)
 </details>  
