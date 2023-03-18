@@ -313,13 +313,13 @@ I also tested the sites performance on GTMetrix.
 </details>  
 
 <details>
-    <summary> Iphone 11</summary>  
+    <summary> iPhone 11</summary>  
 
 ![Iphone 11 image](readme-docs/images/iphone11.jpg)
 </details>  
 
 <details>
-    <summary> Ipad 7</summary>  
+    <summary> iPad 7</summary>  
 
 ![Ipad 7 image](readme-docs/images/ipad7.jpg)
 </details>  
@@ -328,6 +328,12 @@ I also tested the sites performance on GTMetrix.
     <summary> Samsung S8</summary>  
 
 ![Samsung S8 image](readme-docs/images/s8.jpg)
+</details>  
+
+<details>
+    <summary> iPhone 7</summary>  
+
+![iphone 7 image](readme-docs/images/iphone7.jpg)
 </details>  
 - - - 
 
