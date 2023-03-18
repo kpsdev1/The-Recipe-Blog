@@ -161,7 +161,43 @@ The **Add Recipe** and **Edit Recipe** pages threw errors in the Validator that 
 
 ### Lighthouse
 Lighthouse in chrome dev tools was used to generate a report that tests the sites **Performance**, **Accessibility**, **Best Practices** and **Seo**. 
-![chrome browser test](readme-docs/images/lighthouse.jpg)
+
+<details>
+    <summary>Home</summary>  
+    
+![home lighthouse test](readme-docs/images/lighthouse.jpg)
+</details>
+
+<details>
+    <summary>Recipes</summary>  
+    
+![Recipe lighthouse test](readme-docs/images/lighthouse-recipes.jpg)
+</details>
+
+<details>
+    <summary>Wines</summary>  
+    
+![Wines lighthouse test](readme-docs/images/lighthouse-wines.jpg)
+</details>
+
+<details>
+    <summary>Register</summary>  
+    
+![register lighthouse test](readme-docs/images/lighthouse-register.jpg)
+</details>
+
+<details>
+    <summary>Login</summary>  
+    
+![login lighthouse test](readme-docs/images/lighthouse-login.jpg)
+</details>
+
+<details>
+    <summary>Logout</summary>  
+    
+![logout lighthouse test](readme-docs/images/lighthouse-logout.jpg)
+</details>
+
 - - - 
 
 ### GTmetrix
