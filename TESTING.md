@@ -175,9 +175,21 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 </details>
 
 <details>
+    <summary>Add Recipe</summary>  
+    
+![add Recipe lighthouse test](readme-docs/images/lighthouse-addrecipe.jpg)
+</details>
+
+<details>
     <summary>Wines</summary>  
     
 ![Wines lighthouse test](readme-docs/images/lighthouse-wines.jpg)
+</details>
+
+<details>
+    <summary>Add Wine</summary>  
+    
+![add Wine lighthouse test](readme-docs/images/lighthouse-addwine.jpg)
 </details>
 
 <details>
@@ -197,12 +209,18 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
     
 ![logout lighthouse test](readme-docs/images/lighthouse-logout.jpg)
 </details>
+  
 
+*Just to note on the recipes page if I change the **Read more** button to **View** or **Read** the SEO goes from 90 to 100, I had a look on stack overflow and some people have had the same issue it seems like Lighouse has an issue with some words, also adding a **aria-label** tag does not increase it. I have left the button as **Read More**.*
 - - - 
 
 ### GTmetrix
 I also tested the sites performance on GTMetrix.
+
 ![GTmetrix test](readme-docs/images/gtmetrix.jpg)
+
+![GTmetrix test](readme-docs/images/gtmetrix-recipes.jpg)
+
 - - - 
 
 ## Browser and Device Testing
