@@ -79,7 +79,7 @@ The **Add Recipe** and **Edit Recipe** pages threw errors in the Validator that 
 
 ### JavaScript
 - The Javascript file was put through Jshint code validator to see if there were any errors. Jshint can be found [here](https://jshint.com/).
-- The first screenshot was the orginal Javascript that I was using for the Settimeout but for some reason it was giving a **Uncaught typeError** in the console, even though the site was working fine. I tried many ways to get rid of the error but I could not so then I eventually found a way to do it with Jquery. I have left the screenshot in for reference as to how i was first doing it. The second screenshot is the current JS that I am using and it has no errors.
+- The first screenshot was the orginal Javascript that I was using for the Settimeout but for some reason it was giving a **Uncaught typeError** in the console, even though the site was working fine. I tried many ways to get rid of the error but I could not so then I eventually found a way to do it with Jquery. I have left the screenshot in for reference as to how I was first doing it. The second screenshot is the current JS that I am using and it has no errors.
 
 ![JS Validator screenshot](readme-docs/images/js-testing.jpg)  
 
@@ -154,7 +154,7 @@ The **Add Recipe** and **Edit Recipe** pages threw errors in the Validator that 
 ![image of Python testing views.py file in wine app](readme-docs/images/wine-viewspy.jpg)
 </details>  
 
-**#** Just to note, the settings.py file gave some **line too long** errors which are related to the default authorization, which I was told can be ignored in this file so I added the **Noqa** comment to them so that the linter would not read them.
+*Just to note, the settings.py file gave some **line too long** errors which are related to the default authorization, which I was told can be ignored in this file so I added the **Noqa** comment to them so that the linter would not read them.*
 
 [Back to the top](#table-of-contents)
 - - - 
@@ -225,8 +225,8 @@ I also tested the sites performance on GTMetrix.
 
 ## Browser and Device Testing
 - In order to make sure the site was fully responsive and compatible with different browsers and devices, I tested the site on multiple browsers and devices. 
-- The browsers I tested the site on **Chrome**, **Edge** and **Firefox**, when using **Chrome** i was able to use the dev tools and test the site on many different device sizes  like **iphones 5, 6, 7, 8, X, SE and 12 pro**, **Ipad mini and air** , and **samsung s9+ and s20 ultra**, the site worked as expected on all.
-- I also tested the site on a number of real mobile and tables, the devices i tested on were **Samsung S8 and a53**, **Ipad 7** and **Iphone 7 and 11**.
+- The browsers I tested the site on **Chrome**, **Edge** and **Firefox**, when using **Chrome** I was able to use the dev tools and test the site on many different device sizes  like **iPhones 5, 6, 7, 8, X, SE and 12 pro**, **iPad mini and air** , and **Samsung s9+ and s20 ultra**, the site worked as expected on all.
+- I also tested the site on a number of real mobile and tables, the devices I tested on were **Samsung S8 and a53**, **iPad 7** and **iPhone 7 and 11**.
 - From testing the site on multiple browsers and devices, along with different screen widths, I can confirm that the site is fully responsive and compatible with multiple browsers and devices as you will see from the screenshots below.
 
 #### Browser Screenshots
@@ -335,12 +335,12 @@ I also tested the sites performance on GTMetrix.
 ## User Story Testing
 
 ##### Navigation
-*As a User I can easily navigate around the website so that i can view different pages and sections of the site.*
+*As a User I can easily navigate around the website so that I can view different pages and sections of the site.*
  - The Navigation at the top of the page is easy to navigate and the current page link is bold which clearly indicates what page you are on.
 
 
 #### Register
-*As a User I can Create and account so that I can view recipe details and add my own.*
+*As a User I can Create an account so that I can view recipe details and add my own.*
  - In the Navigation bar at the top of the page, if a User clicks on the Register link, they will be brought to the registeration page wehere they can sign up, once they sign up they will be able to access full functionality of the site.
  
 #### Login | Logout
@@ -354,7 +354,7 @@ I also tested the sites performance on GTMetrix.
 
 #### View Recipes
 *As a User I can view the list of recipes so that I can pick one to read.*
- - The user is able to click the recipes link in the nav bar and theis will take them to the recipes page where they can view a list of recipes.
+ - The user is able to click the recipes link in the nav bar and this will take them to the recipes page where they can view a list of recipes.
  - If they wish to view one in full detail they can click Read More and they will then be able to see the recipe details, the user must be signed in to view the recipe details as if they are not signed in the Read More button will be diabled.
 
 #### Add A Recipe
@@ -363,19 +363,19 @@ I also tested the sites performance on GTMetrix.
 
  #### Edit / Delete A recipe
  *As a User I can Edit/Delete my recipes so that I can make changes even after I have posted a recipe.*
-  - When viewing a recipe that the User has uploaded in the top right corner they have a choice to either delete or edit the recipe. A user can only dedit or delete a recipe they have added.
+  - When viewing a recipe that the User has uploaded in the top right corner they have a choice to either delete or edit the recipe. A user can only edit or delete a recipe they have added.
 
  #### Like Recipes
- *As a User I can like recipes so that I can show that i like a recipe without having to comment.*
+ *As a User I can like recipes so that I can show that I like a recipe without having to comment.*
   - On the recipe details there is a like button below the image, it is a Love heart that is empty outline when not liked and then is filled when liked, beside it displays the number of people that like the recipe. A User must be logged in to access this functionality.
 
 
 #### Add A Comment
 *As a User I can comment on other recipes so that I can provide feedback.*
- - When a user is signed in and they are on the recipe details page for a pacticular recipe, at the bottom of the page there is a comment section where they can add a comment.
+ - When a user is signed in and they are on the recipe details page for a particular recipe, at the bottom of the page there is a comment section where they can add a comment.
 
 #### Edit / delete A comment
-*As a User I can update my comments so that make changes incase I mistyped something or if I wish to delete the comment.*
+*As a User I can update my comments so that I can make changes incase I mistyped something or if I wish to delete the comment.*
  - The User is able to edit or delete any comment that they have created by clicking on the edit or delete button in the right hand side of that comment.
 
 ### View Wines
@@ -383,7 +383,7 @@ I also tested the sites performance on GTMetrix.
  - The User must be signed in or the Wines link in the Nav bar will not be visible, if the User is signed in they can select Wines in the Nav bar and this will take them to the Wines page where they can selct a wine to view.
 
 #### Add A Wine
-*As a User I can add a wine that i like so that other people can see it*
+*As a User I can add a wine that I like so that other people can see it*
  - When a user is signed in they are able to click on the Add A Wine button on the Wine page, which will bring them to the Add Wine page where they are able to upload a Wine.
 
  #### Edit / Delete A Wine
@@ -392,12 +392,12 @@ I also tested the sites performance on GTMetrix.
 
 #### Administer The Site
 *As a Site admin  I can administer the site so that I can manage the sites content.*
- - A super User account was created so that the site can be fully manages from the Admin panel.
+ - A super User account was created so that the site can be fully managed from the Admin panel.
 
 [Back to the top](#table-of-contents)
  - - - 
 
- ## Manual Testing
+## Manual Testing
 
 #### Navigation
 | Feature               | Test Performed                                                     | Result  |
@@ -439,9 +439,10 @@ I also tested the sites performance on GTMetrix.
 | Recipe cards   | Check to make sure recipe cards display correctly.                        | Pass      |
 | 6 Recipes Per Page | Make sure that there is only 6 recipes per page.                      | Pass      |
 | Read more button | Allow user to click the read more button under each recipe, when they are signed in.    | Pass      |
+| Read more button |Dont allow user to click the read more button under each recipe, when they are signed out.    | Pass      |
 | Add recipe Button | Display an Add Recipe button, when the user is signed in.              | Pass      |
 | Next button | Display a next button at the bottom of the page if there is more than six recipes.    | Pass      |
-| Back button | Display a back button at the bottom of the page if the user is on the second recipe page. | Pass      |
+| Back button | Display a back button at the bottom of the page if the user is on the next recipe page. | Pass      |
 
 
 #### Recipe Details Page
@@ -484,10 +485,10 @@ I also tested the sites performance on GTMetrix.
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
-| Yes Button | When th user click the yes button the recipe will be deleted.                 | Pass      |
-| Cancel Button | When th user click the cancel button, the delete modal will dissapear and the user will be back on the recipe page.     | Pass      |
-| Clicking Outside The Modal | When the user clicks anywhere ouside the modal the modal will dissapear.    | Pass      |
-| X  | When the user clicks on the X button at the top of the modal, the modal dissapears.   | Pass      |
+| Yes Button | When the user clicks the yes button the recipe will be deleted.                 | Pass      |
+| Cancel Button | When th user clicks the cancel button, the delete modal will disappear and the user will be back on the recipe page.     | Pass      |
+| Clicking Outside The Modal | When the user clicks anywhere ouside the modal the modal will disappear.    | Pass      |
+| X  | When the user clicks on the X button at the top of the modal, the modal disappears.   | Pass      |
 | Success Message | Success message is displayed at the top of the screen when a user clicks yes on the delete modal.  | Pass      |
 
 
@@ -517,9 +518,9 @@ I also tested the sites performance on GTMetrix.
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
-| Display form  | Check to see if all input fields display.                                  | Pass      |
+| Display form  | Checked to see if all input fields display.                                  | Pass      |
 | Submit filled out form  | Fill out all the form and click the submit button at the bottom of the page. | Pass      |
-| Leave Input and Image fields blank | check to make sure form wont submit, and will display warnings. | Pass      |
+| Leave Input and Image fields blank | Check to make sure form wont submit, and will display warnings. | Pass      |
 | Submit Button | On click it will submit the Wine, and bring the user to the Wines page where the newly added Wine can be seen. | Pass      |
 | Cancel Button | On click it will bring the user back to the Wines list.                  | Pass      |
 | Success Message | Success message is displayed at the top of the screen when a user clicks Submit  | Pass      |
@@ -540,7 +541,7 @@ I also tested the sites performance on GTMetrix.
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | Checked Page on many different devices, browser and screen widths.        | Pass      |
-| Yes Button | When th user click the yes button the Wine will be deleted.                 | Pass      |
+| Yes Button | When the user click the yes button the Wine will be deleted.                 | Pass      |
 | Cancel Button | When th user clicks the cancel button, the delete modal will dissapear and the user will be back on the Wine detail page.     | Pass      |
 | Clicking Outside The Modal | When the user clicks anywhere ouside the modal the modal will dissapear.    | Pass      |
 | X  | When the user clicks on the X button at the top of the modal, the modal dissapears.   | Pass      |
@@ -571,7 +572,7 @@ I also tested the sites performance on GTMetrix.
 | Leave Password Field Blank| Fill out the Username field and leave Password field blank, to see if it give a warning and does not submit.| Pass      |
 | Sign In with unregistered account | Try to sign in with an account that is not registered, to see if it will fail. | Pass      |
 | Change on letter in username or password | On click check will tell the user that the username or password is incorrect | Pass      |
-| Sign In Button | On click check will log the user in if they have enter the right credentials and redirect them to the home page. | Pass      |
+| Sign In Button | On click check will it log the user in if they have entered the right credentials and redirect them to the home page. | Pass      |
 | Success Message | Success message is displayed at the top of the screen when a user enters the correct details and clicks Sign in. | Pass      |
 
 
@@ -589,7 +590,8 @@ I also tested the sites performance on GTMetrix.
 
 ### Fixed
 - After creating the project I was getting alot of PEP8 errors, most of which were for **lines too long** as you can see in the below screenshot. To fix this and conform to PEP8 standards I broke the lines up and made sure they did not go past 79 characters.
-- With the orginal JS file I had for the setTime out function, it was throwing a **Uncaught TypeError: Cannot read properties of null** error in the console. The site was working fine with this but i could not get rid of the error in the console, i tried many things from youtube and stack overflow but i could not get rid of the error until i found one way that showed how to do the same thing with jquery. This soilution did not produce any errors in the console and worked exactly the same.
+- With the orginal JS file I had for the setTime out function, it was throwing a **Uncaught TypeError: Cannot read properties of null** error in the console. The site was working fine with this but I could not get rid of the error in the console, I tried many things from youtube and stack overflow but I could not get rid of the error until I found one way that showed how to do the same thing with jquery. This solution did not produce any errors in the console and worked exactly the same.
+- I had an issue where I could not get the delete comment modal to work when I was placing it down at the bottom of the page, I got stuck on this longer that I would like to admit, The reason it would not work was becuase it was outside the django template language forloop in the the **display comment section** of the html so all I had to do was move it up to be in the forloop and then it worked.
 
 
 
