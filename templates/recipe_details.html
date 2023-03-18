@@ -46,11 +46,9 @@
                     {% else %}
                     <span class="text-secondary"><i class="far fa-heart"></i></span>
                     {% endif %}
-                        
-
-                        
+                           
                 </div>
-                <!-- I had change the |safe template tag to |striptags as it was still throwing errors with the html validator -->
+                <!-- I had to change the |safe template tag to |striptags as it was still throwing errors with the html validator -->
                 <div class="recipe-detail-card">
                     <h4>Decription</h4>
                     <p class="card-text"> {{ recipe.description|striptags }}</p>

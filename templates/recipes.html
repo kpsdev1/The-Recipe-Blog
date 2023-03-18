@@ -16,7 +16,7 @@
         <div class="col-md-6 col-lg-4">
             <div class="card mt-4">
                 {% if "placeholder" in recipe.image.url %}
-                    <img src="https://res.cloudinary.com/dudp7r482/image/upload/c_scale,f_webp,w_600/v1678298117/default-recipe_bric56.jpg" class="card-img-top" alt="Default image">
+                    <img src="https://res.cloudinary.com/dudp7r482/image/upload/c_scale,f_webp,w_600/v1678298117/default-recipe_bric56.jpg" class="card-img-top" alt="Default Placeholder image">
                 {% else %}
                     <img src="{{ recipe.image.url }}" class="card-img-top" alt="Image from recipe added by a user">
                 {% endif %}

@@ -104,7 +104,6 @@ footer {
 
 
 /* recipe details Page */
-
 .detail-img {
     margin: 0 auto;
     width: 55%;
@@ -153,8 +152,6 @@ h4 {
     right: 30px;
 }
     
-
-
 /* comments section on recipe details page*/
 .comment-card {
     border-radius: 0%;
@@ -182,7 +179,6 @@ h4 {
     top: 0;
     right: 10px;
 }
-
 
 /* edit comment */
 .edit-comment {
@@ -214,7 +210,6 @@ h4 {
     margin: 0 auto;
     border-color: #8fac42;;
 }
-
 
 /*Delete modal for wines*/
 .modal-delete {
@@ -273,10 +268,10 @@ h4 {
     bottom: 0;
     right: 15px;
 }
+
 .signup label {
     width: 140px;
     display: inline-block;
-
 }
 
 .signup input {
@@ -357,7 +352,6 @@ h4 {
     color: #8fac42;
 }
 
-
 .error {
     text-decoration: none;
     color: blue;
@@ -392,6 +386,7 @@ h4 {
 }
 
 @media screen and (max-width: 1000px) {
+    /* Delete and edit on recipe details page */
     .delete-recipe {
         right: 10px;
     }
@@ -471,8 +466,7 @@ h4 {
     
      /* displays image in recipes and wines page */
     .card-img-top {
-        width: 100%;
-       
+        width: 100%; 
     }
 
     /* recipe details page */
