@@ -1,6 +1,6 @@
 # The Recipe Blog
-The Recipe Blog is a website that I built using the Dajngo Full Stack framework for my Portfolio Porject 4. The Recipe
-Blog is a site that allows users to view and share their favourite recipies and also view and share their favourite wines.
+The Recipe Blog is a website that I built using the Dajngo Full Stack framework for my Portfolio Project 4. The Recipe
+Blog is a site that allows users to view and share their favourite recipes and also view and share their favourite wines.
 They are able to comment underneath recipes and also like them. Users need to be logged in to get the full
 functionality of the site.
   
@@ -51,7 +51,7 @@ Below are the user stories that were added to the Github project, They can be fo
 
 **EPIC | Site Navigation**
 - As a User I can easily navigate around the site so that I can view different pages and sections on the site.
-- As a User I can click on the about page so that so that i can find out what the website is about and how to use it.
+- As a User I can click on the about page so that so that I can find out what the website is about and how to use it.
 - As a User I can view the list of recipes so that I can pick one to read.
 - As a User I can see the list of wines so that I can pick one to view.
 - As a User I can search so that I can find a recipe that I am looking for.  
@@ -77,7 +77,7 @@ Below are the user stories that were added to the Github project, They can be fo
 
 **EPIC | Register / Sign in and out**
 - As a User I can create an account so that I can add my own recipes and comment on other peoples recipes.
-- As a User I can Sign-in / Sign-out so that can access features when signed in and sign-out so that no one can access my account.
+- As a User I can Sign-in / Sign-out so that I can access features when signed in and signed out so that no one can access my account.
 
 
  *Please note that user stories **Search Recipe** and **Like Comments** have not been implemented in this sprint and plan to be in the next one, **Reset password** will not be implemented as of now.*
@@ -85,7 +85,7 @@ Below are the user stories that were added to the Github project, They can be fo
 
 
 ### Wireframes
-Below are the wireframes for the site that I created using balsamiq. Please note that the website has changed a bit from the orginal wireframes and not every single page is there as I added some pages like the wines section towards the end of the project after the wireframes were created.
+Below are the wireframes for the site that I created using balsamiq. Please note that the website has changed a bit from the orginal wireframes and not every single page is there as I added some pages like the wines section towards the end of the project, after the wireframes were created.
 
 
 <details>
@@ -136,8 +136,8 @@ Github projects was used to track the development of this website using the agil
 
 
 ### Colour Scheme
-For this site I decide to keep the main color scheme very simple, with the text either being white or black and the navbar backgound and icons being green.
-I did also have some button like the delete and cancel buttons red and orange, but the main color scheme of the site was black, white and green.
+For this site I decide to keep the main color scheme very simple, with the text either being white or black and the navbar background and icons being green.
+I did also have some buttons like the delete and cancel buttons red and orange, but the main color scheme of the site was black, white and green.
   
 ![colour scheme](readme-docs/images/color-scheme.jpg)  
 - - - 
@@ -155,8 +155,8 @@ Below is the database diagram that I created using LucidCharts.
 - When logged in some of the links change, like the **Login** becomes **Logout** and the **Registeration** link is removed and **Wine** link added.
 - The Navbar background is green with the Navigation links and logo in white colored text.
 - On large to xx-large screens the navigation bar is in the center of the page and is sized by the bootstrap [container-lg](https://getbootstrap.com/docs/5.0/layout/containers/) class.
-- The active page(page that the user is current on) is displayed in bold text, this makes it stand out much more and is clear to the user which page they are on.
-- When on medium to small screens the navigation menu changes to burger menu which shows all the nav links when clicked on.(second screenshot below)
+- The active page (page that the user is currently on) is displayed in bold text, this makes it stand out much more and is clear to the user which page they are on.
+- When on medium to small screens the navigation menu changes to burger menu which shows all the nav links when clicked on (second screenshot below).
   
 ![Nav bar](readme-docs/images/navbar.jpg)  
 
@@ -167,7 +167,7 @@ Below is the database diagram that I created using LucidCharts.
 
 ### Footer
 - The footer is found at the bottom of every page and responsive for tablet and mobile too.
-- It displays 4 icons for the biggest scoial media platforms today, Twitter, Facebook, Youtube and Instagram. These are all green in color to match the sites colour scheme
+- It displays 4 icons for the biggest social media platforms today, Twitter, Facebook, Youtube and Instagram. These are all green in colour to match the sites colour scheme
 - Above the icons there is a horizontal line that is centered, and it is 30% of the screen width on large devices, 50% on medium and 60% on small devices.
 - When any of the icons are clicked the social media site opens on a seperate tab, this way the user still has the The Recipe Blog website open so they can easily navigate back to it.
   
@@ -185,7 +185,7 @@ Below is the database diagram that I created using LucidCharts.
 ### Recipes Page
 - At the top of the recipes page, right below the Nav bar there is a H1 heading that says **Recipes List** which is underlined and centered.
 - Below this are the recipe cards which are displayed in the bootstrap card format and have six to a page.
-- The **read more** button is greyed out when the user is logged out and is green when the user is logged in(second screeshot)
+- The **Read more** button is greyed out when the user is logged out and is green when the user is logged in (second screeshot).
 - Above the recipes on the left hand side there is a green **Add Recipe** button, this button is only displayed if the user is logged in.
 - On Large screens they are three accross, on medium devices they are two accross and on small devices it is just one.
 - Below the recipe cards there will be a next and back button depending on how many recipes have been added.  

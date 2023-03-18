@@ -350,7 +350,7 @@ I also tested the sites performance on GTMetrix.
  - In the Navigation bar at the top of the page, if a User clicks on the Register link, they will be brought to the registeration page wehere they can sign up, once they sign up they will be able to access full functionality of the site.
  
 #### Login | Logout
-*As a User I can Sign-in/ Sign-out so that can access features when signed in and sign-out so that no one can access my account.*
+*As a User I can Sign-in/ Sign-out so that I can access features when signed in and signed out so that no one can access my account.*
  - When a User is not logged in the login link will be visible in at the far right in the navigation bar, the same link will change to logut when the user is logged in.
  - When the User enters their login credentials they wil be able to access the full fuctionality of the site, when the user is logged out they will not have full access on the site and their account will be secure.
 
