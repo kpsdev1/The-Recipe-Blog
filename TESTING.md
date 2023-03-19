@@ -303,7 +303,7 @@ I also tested the sites performance on GTMetrix.
 ![Samsung S20 image](readme-docs/images/s20.jpg)
 </details>  
 
-- - - 
+
 
 #### Real Device Screenshots
 
