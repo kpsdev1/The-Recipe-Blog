@@ -187,7 +187,7 @@ Below is the database diagram that I created using LucidCharts.
 - Below this are the recipe cards which are displayed in the bootstrap card format and have six to a page.
 - The **Read more** button is greyed out when the user is logged out and is green when the user is logged in (second screeshot).
 - Above the recipes on the left hand side there is a green **Add Recipe** button, this button is only displayed if the user is logged in.
-- On Large screens they are three accross, on medium devices they are two accross and on small devices it is just one.
+- On Large screens they are three across, on medium devices they are two across and on small devices it is just one.
 - Below the recipe cards there will be a next and back button depending on how many recipes have been added.  
 
 ![Recipes](readme-docs/images/recipes.jpg)
@@ -237,7 +237,7 @@ Below is the database diagram that I created using LucidCharts.
 - The modal is a square box with a grey background, with a heading that says **Delete Recipe** and the center text asks **Are you sure you want to delete the recipe**.
 - At the bottom right of the modal box is a red **Yes** button to confim if they want to delete it. The button is red because red is associated with danger and if clicked the recipe will be gone. Once clicked the recipe will be deleted and the user will be returned to the recipes page.
 - Beside the **Yes** button there is a **Cancel** button, that when clicked will make the modal disappear, there is also an **X** in the top right of the modal that will also get rid of it.
-- If the user clicks anywhere else on the screen the modal will also disapear.
+- If the user clicks anywhere else on the screen the modal will also disappear.
 - Please note that only the user who created the recipe can delete it from here.
 - After deleting the Recipe a success message will be displayed at the top of the screen.
 
@@ -270,7 +270,7 @@ Below is the database diagram that I created using LucidCharts.
 ### Wine Details page
 - When a user clicks the green **View** button on one of the Wine cards from the **Wines** page they are brought to the **Wine Details** page.
 - Here the user will see a larger bootstrap card that is centered, this displays the image larger and all of the wine details. There is a border around the card which is standard with bootstrap cards.
--If the user who added the wine is looking at it there will be a **Edit** and **Delete** Button at the bottom.
+- If the user who added the wine is looking at it there will be a **Edit** and **Delete** Button at the bottom.
 
 ![Wine details](readme-docs/images/wine-details.jpg)
 - - -
@@ -278,7 +278,7 @@ Below is the database diagram that I created using LucidCharts.
 ### Add Wine Page
 - When a user clicks the **Add Wine** button on the **Wines** page they are taken to the **Add Wine** page where they are greeted with a form to enter the details of the wine.
 - At the top is a H1 heading that says for the user to **Add a Wine Below**
-- Below the heading is a simple form that is centered on the page and ask the user to fill in the following fields enter the **Name** of the wine, upload an **Image**, choose a type of **Wine** from the drop down, add the **Alcohol Percentage** and finally add the **Country of Orgin** for the wine.
+- Below the heading is a simple form that is centered on the page and asks the user to fill in the following fields enter the **Name** of the wine, upload an **Image**, choose a type of **Wine** from the drop down, add the **Alcohol Percentage** and finally add the **Country of Orgin** for the wine.
 - Below this is a green **Submit** button that when clicked adds the wine and brings the user back to the Wines page, where they can see the wine they added as the first in the list.
 - Beside the **Submit** button is an amber **Cancel** button, that will bring the user back to the **Wines** page if they decide that they do not want to post a wine.
 - After adding a Wine a success message will be displayed at the top of the screen.
@@ -318,7 +318,7 @@ beneath that it tells the user if they already have an account they can click he
 
 ### Login Page
 - The **login** page is similar to the register page as it has a grey banner running accross the page and it has an image at the left hand side of the banner. In the center of the banner is a green heading saying **Sign In** and underneath  it tells the user if they dont have an account they can click here to go to the register page.
-- Below the banner and center is the login form with the **Username** and **Password**  fields and a **Remember Me** checkbox. At the bottom of the form is a green **SIGN IN** button and once clicked, it signs the user in and redirects them to the home page.
+- Below the banner and centered is the login form with the **Username** and **Password**  fields and a **Remember Me** checkbox. At the bottom of the form is a green **SIGN IN** button and once clicked, it signs the user in and redirects them to the home page.
 - The login Nav link changes to a logout link when the user is signed in.
 
 ![Signin](readme-docs/images/signin.jpg)
@@ -373,7 +373,7 @@ This website is deployed to Heroku from a github repository, the following steps
 - Enter a **Name** and keep the plan as **Tiny Turtle Free**, then **tags** field can be left blank, Select a region closest to you, I selected **EU-West-1(Ireland)** as I'm in Ireland. Then click **Review** and afterwards click **create instance**.
 - On The Dashboard click on your database instance name.
 - You will see the details for your database instance, in the url section click on the copy icon to copy the database url.
-- Head over to gitpod and create an **Database URL** enviroment variable in your env.py file and set it equal to the copied url.
+- Head over to gitpod and create a **Database URL** enviroment variable in your env.py file and set it equal to the copied url.
 
 #### Deploying to Heroku.
 - Head back over to [heroku](https://www.heroku.com/) and click on your **app** and then go to the **Settings tab**
@@ -386,7 +386,7 @@ This website is deployed to Heroku from a github repository, the following steps
 - - -
 
 ## Credits
-- Django For begginers book, I wish I had read this book before I started the project as it would have made everything so much easier, I had most of the project done before i started to read this book but after reading the first 8 chapters i decided to go back and add the **Wines** app to the project to test out what I had learned, this made me understand how to create simple class based views. The first 4 chapters can be read [here](https://djangoforbeginners.com/introduction/).
+- Django For Beginners book, I wish I had read this book before I started the project as it would have made everything so much easier, I had most of the project done before I started to read this book but after reading the first 8 chapters I decided to go back and add the **Wines** app to the project to test out what I had learned, this made me understand how to create simple class based views. The first 4 chapters can be read [here](https://djangoforbeginners.com/introduction/).
 - Code Institutes **I Think I Can Blog** walk through was a great help, this really thought me the fundamentals of creating a project with django, I would have been totally lost without this.
 - Emmanuel Okiches youtube video for how to add an **active** class using djangos template lanuage. The video can be found [here](https://www.youtube.com/watch?v=e_D_hoJ1kAc).
 - Denis Ivy's Django Framework(3.0) crash course on youtube was a great help for me in creating this project, this is a briliant resourse if you are learning Django. The vidoes can be found [here](https://www.youtube.com/watch?v=xv_bwpA_aEA&list=PL-51WBLyFTg2vW-_6XBoUpE7vpmoR3ztO).
@@ -394,7 +394,7 @@ This website is deployed to Heroku from a github repository, the following steps
 - [Stack Overflow](https://stackoverflow.com/) is probably a developers best resource, this provided me with many answers to my questions.
 - [W3schools](https://www.w3schools.com/) this was great for looking up forgotten **CSS** syntax and how to use it.
 - [bbcgoodfood](https://www.bbcgoodfood.com/) as some of the recipes came from this site. This site is a great resource for anyone who likes cooking.
-- [Unsplash](https://unsplash.com/) all images were take from unsplash
+- [Unsplash](https://unsplash.com/) all images were take from unsplash.
 - [30secondsofcode](https://www.30secondsofcode.org/articles/s/css-footer-at-the-bottom) showed me how to keep the footer at the bottom of the page.
 
 ## Acknowledgements:

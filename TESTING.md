@@ -79,7 +79,7 @@ The **Add Recipe** and **Edit Recipe** pages threw errors in the Validator that 
 
 ### JavaScript
 - The Javascript file was put through Jshint code validator to see if there were any errors. Jshint can be found [here](https://jshint.com/).
-- The first screenshot was the orginal Javascript that I was using for the Settimeout but for some reason it was giving a **Uncaught typeError** in the console, even though the site was working fine. I tried many ways to get rid of the error but I could not so then I eventually found a way to do it with Jquery. I have left the screenshot in for reference as to how I was first doing it. The second screenshot is the current JS that I am using and it has no errors.
+- The first screenshot was the orginal Javascript that I was using for SetTimeout but for some reason it was giving a **Uncaught typeError** in the console, even though the site was working fine. I tried many ways to get rid of the error but I could not so then I eventually found a way to do it with Jquery. I have left the screenshot in for reference as to how I was first doing it. The second screenshot is the current JS that I am using and it has no errors.
 
 ![JS Validator screenshot](readme-docs/images/js-testing.jpg)  
 
@@ -89,7 +89,7 @@ The **Add Recipe** and **Edit Recipe** pages threw errors in the Validator that 
 - - -
 
 ### Python
-- I tested the project using the PEP8 validator in gitpod, this I had installed from my previous project, but it can be installed by running **pip3 install pycodestyle** then searching for **Python**, Select **Linter** and then select **pycodestyle**. The PEP8 erorrs would then be underlined in red and also listed in **Problems tab**. This returned no errors.
+- I tested the project using the PEP8 validator in gitpod, this I had installed from my previous project, but it can be installed by running **pip3 install pycodestyle** then searching for **Python**, Select **Linter** and then select **pycodestyle**. The PEP8 errors would then be underlined in red and also listed in the **Problems tab**. This returned no errors.
 - I also tested the site on **Code Institutes pep8 online** website. Which can be found [here](https://pep8ci.herokuapp.com/). As you can see from the below screenshots, no errors were found.
 
 ##### Meals App
@@ -302,6 +302,7 @@ I also tested the sites performance on GTMetrix.
 
 ![Samsung S20 image](readme-docs/images/s20.jpg)
 </details>  
+
 - - - 
 
 #### Real Device Screenshots
@@ -335,6 +336,7 @@ I also tested the sites performance on GTMetrix.
 
 ![iphone 7 image](readme-docs/images/iphone7.jpg)
 </details>  
+
 - - - 
 
 
@@ -595,8 +597,8 @@ I also tested the sites performance on GTMetrix.
 ## Bugs
 
 ### Fixed
-- After creating the project I was getting alot of PEP8 errors, most of which were for **lines too long** as you can see in the below screenshot. To fix this and conform to PEP8 standards I broke the lines up and made sure they did not go past 79 characters.
-- With the orginal JS file I had for the setTime out function, it was throwing a **Uncaught TypeError: Cannot read properties of null** error in the console. The site was working fine with this but I could not get rid of the error in the console, I tried many things from youtube and stack overflow but I could not get rid of the error until I found one way that showed how to do the same thing with jquery. This solution did not produce any errors in the console and worked exactly the same.
+- After creating the project I was getting alot of PEP8 errors, most of which were for **lines too long**. To fix this and conform to PEP8 standards I broke the lines up and made sure they did not go past 79 characters.
+- With the orginal JS file I had for the setTimeout function, it was throwing a **Uncaught TypeError: Cannot read properties of null** error in the console. The site was working fine with this but I could not get rid of the error in the console, I tried many things from youtube and stack overflow but I could not get rid of the error until I found one way that showed how to do the same thing with jquery. This solution did not produce any errors in the console and worked exactly the same.
 - I had an issue where I could not get the delete comment modal to work when I was placing it down at the bottom of the page, I got stuck on this longer that I would like to admit, The reason it would not work was becuase it was outside the django template language forloop in the the **display comment section** of the html so all I had to do was move it up to be in the forloop and then it worked.
 
 
